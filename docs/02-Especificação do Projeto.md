@@ -34,13 +34,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`|          QUERO/PRECISO ... `FUNCIONALIDADE`                    |                 PARA ... `MOTIVO/VALOR`                                        |
 ______________________________________________________________________________________________________________________________________________________________________
-| Patricia Amaral       Adotar um animal de pequeno porte pois mora em apartamento       Adoro animais e me fará companhia quando eu estiver em casa                    
+| Patricia Amaral      | Adotar um animal de pequeno porte pois mora em apartamento      | Adoro animais e me fará companhia quando eu estiver em casa                    
 _______________________________________________________________________________________________________________________________________________________________________
-| Maria Aparecida      Um site onde eu possa escolher qual pet adotar sem sair de casa   Pelas minhas limitações não posso sair de casa pra encontrar um animal         
+| Maria Aparecida      | Um site onde eu possa escolher qual pet adotar sem sair de casa | Pelas minhas limitações não posso sair de casa pra encontrar um animal         
 _______________________________________________________________________________________________________________________________________________________________________
-| Francisca Santos     Um pet para ajudar no desenvolvimento dos filhos                  Os filhos terem uma ocupação a mais em casa enquanto ela está no trabalho     
+| Francisca Santos     | Um pet para ajudar no desenvolvimento dos filhos                | Os filhos terem uma ocupação a mais em casa enquanto ela está no trabalho     
 _______________________________________________________________________________________________________________________________________________________________________
-| Lúcio Sabino        Divulgar os animais que são abandonados que precisam de ajuda      Encontrar um lar para os animais que foram abandonados                        
+| Lúcio Sabino        | Divulgar os animais que são abandonados que precisam de ajuda    | Encontrar um lar para os animais que foram abandonados                        
 _______________________________________________________________________________________________________________________________________________________________________
 
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |

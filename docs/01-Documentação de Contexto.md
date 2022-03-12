@@ -1,6 +1,10 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O relacionamento das pessoas com os animais doméstico vem se intensificando ao longo do tempo. Com o isolamento social por conta da pandemia e o aumento do número de casais que optaram por não ter filho e adotar um animal, os pets estão ganhando espaço como membros da família nos lares brasileiro. Apesar dos abandonos de pets terem aumentado, “ONGs e protetores dos animais afirmam que a procura por adoção de cães e gatos teve um aumento de até 50% nos primeiros meses de pandemia” (VEJA, 2021). 
+
+De acordo com uma pesquisa feita pela Radar pet 2021, a principal porta de entrada dos animais nas famílias brasileiras é por meio da adoção, que já era uma tendência, mas que ganhou força durante a pandemia. Diante disso é comum vermos em redes sociais postagens de famílias em busca de pets para adoção e também pets que precisam de acolhimento. 
+
+Portanto é fundamental a criação de canais que facilite a conexão de animais que precisam de um novo lar, a famílias que querem adotar um pet.  
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.

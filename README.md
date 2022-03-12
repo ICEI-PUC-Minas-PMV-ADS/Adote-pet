@@ -14,10 +14,11 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Nome completo do aluno 2
 * Nome completo do aluno 3
 * Nome completo do aluno 4
+* Fábio Furlan
 
 ## Orientador
 
-* Nome completo do professor 1
+* Luciana de Nardin
 
 ## Instruções de utilização
 

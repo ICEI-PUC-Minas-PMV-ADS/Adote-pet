@@ -6,8 +6,6 @@ De acordo com uma pesquisa feita pela Radar pet 2021, a principal porta de entra
 
 Portanto é fundamental a criação de canais que facilite a conexão de animais que precisam de um novo lar, a famílias que querem adotar um pet.  
 
-###### link vídeo apresentação do problema e solução: https://drive.google.com/drive/folders/1ieLfchx4x9tT5kozy6N5mpqYxrKq_bOj
-
 ## Problema
 
 Mesmo com a era da informação ainda é comum pessoas terem dificuldade para encontrar um animalzinho para adoção. O obstáculo de acesso a esse tipo de informação é dado a falta de desenvolvimento de uma funcionalidade a um clique de distância, com toda a simplicidade em que estamos acostumados, pois os únicos meios em que se consegue acesso aos Pets que precisam de cuidados, é por meios informais: como posts ou grupos fechados em redes sociais. Essa falta de praticidade prejudica o alcance a quem realmente deseja proporcionar uma vida melhor para os bichinhos. 

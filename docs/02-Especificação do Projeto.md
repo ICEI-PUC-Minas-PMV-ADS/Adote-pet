@@ -42,36 +42,34 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir. 
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues. 
+
+| **ID** | **Descrição**                                                | **Prioridade** |
+| ------ | ------------------------------------------------------------ | -------------- |
+| RF-01  | O site deve permitir que o usuário crie perfil               | Alta           |
+| RF-02  | O site deve permitir que o usuário poste foto dos animais que precisam de adoção | Alta           |
+| RF-03  | O site deve possibilitar fazer uma descrição das características e da localização dos animais que será adotado no momento da postagem | Alta           |
+| RF-04  | O site deve permitir que com um único perfil o usuário possa adotar ou postar um animal para adoção | Média          |
+| RF-05  | O site de permitir o usuário editar o perfil                 | Alta           |
+| RF-06  | O site deve permitir que o usuário edite fotos dos animais que precisam de adoção | Media          |
+| RF-07  | O site deve permitir a edição da descrição das características e localização do dos animais | Media          |
+| RF-08  | O site deve permitir que o perfil que postou fotos, dados ou características dos animais posso exclui-la ou colocar com adotado. | Media          |
+| RF-09  | O site deve permitir ao usuário pesquisar animais.           | Alta           |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender. 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| **ID** | **Descrição**                                                | **Prioridade** |
+| ------ | ------------------------------------------------------------ | -------------- |
+| RNF-01 | O site deverá ser responsivo permitindo a visualização em um celular de forma adequada | Alta           |
+| RNF-02 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari) | Alta           |
+|        |                                                              |                |
+|        |                                                              |                |
 
 ## Restrições
 

@@ -8,7 +8,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Patricia Amaral tem 20 anos, solteira, é analista de marketing, trabalha em tempo integral e está focada no seu crescimento profissional. É apaixonada por animais e está sempre acompanhando pelas redes sociais.
+
+Maria Aparecida tem 62 anos, viuva, aposentada e tem uma vida financeiramente tranquila, pois adora animais, plantas e está sempre ajudando a ONG próximo sua casa. Gosta de postar fotos de suas plantas e trabalhos na ONG em suas redes sociais.
+
+Francisca Santos tem 37 anos, casada e tem 2 filhos, trabalha em casa como cabeleleira e divulga seu trabalho pelas redes socias. Pensa futuramente em adotar um pet para seus filhos, gosta de ir ao parque com a família aos finais de semana.
+
+Lúcio Sabino tem 42 anos, solteiro, trabalha como veterinário é especialista em animais de pequeno porte. Faz parte de uma ONG onde acolhe animais de ruas.Em sua folga gosta estudar sobre animais e ir ao parque com seu pet.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
@@ -26,8 +32,17 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
+|EU COMO... `PERSONA`|          QUERO/PRECISO ... `FUNCIONALIDADE`                    |                 PARA ... `MOTIVO/VALOR`                                        |
+|____________________|________________________________________________________________|________________________________________________________________________________|
+| Patricia Amaral    | Adotar um animal de pequeno porte pois mora em apartamento     | Adoro animais e me fará companhia quando eu estiver em casa                    |
+|____________________|________________________________________________________________|________________________________________________________________________________|
+| Maria Aparecida    | Um site onde eu possa escolher qual pet adotar sem sair de casa| Pelas minhas limitações não posso sair de casa pra encontrar um animal         |
+|____________________|________________________________________________________________|________________________________________________________________________________|
+| Francisca Santos   | Um pet para ajudar no desenvolvimento dos filhos               |  Os filhos terem uma ocupação a mais em casa enquanto ela está no trabalho     |
+|____________________|________________________________________________________________|________________________________________________________________________________|
+| Lúcio Sabino       |Divulgar os animais que são abandonados que precisam de ajuda   |  Encontrar um lar para os animais que foram abandonados                        |
+|____________________|________________________________________________________________|________________________________________________________________________________|
+
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 

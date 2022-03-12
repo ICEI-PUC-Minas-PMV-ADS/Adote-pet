@@ -7,25 +7,22 @@ De acordo com uma pesquisa feita pela Radar pet 2021, a principal porta de entra
 Portanto é fundamental a criação de canais que facilite a conexão de animais que precisam de um novo lar, a famílias que querem adotar um pet.  
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Mesmo com a era da informação ainda é comum pessoas terem dificuldade para encontrar um animalzinho para adoção. O obstáculo de acesso a esse tipo de informação é dado a falta de desenvolvimento de uma funcionalidade a um clique de distância, com toda a simplicidade em que estamos acostumados, pois os únicos meios em que se consegue acesso aos Pets que precisam de cuidados, é por meios informais: como posts ou grupos fechados em redes sociais. Essa falta de praticidade prejudica o alcance a quem realmente deseja proporcionar uma vida melhor para os bichinhos. 
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O problema do abandono de animais no Brasil é enorme e não se resume apenas a esse momento de crise. A OMS estima que existam no país cerca de 10 milhões de gatos e 20 milhões de cães abandonados no país. Uma pesquisa de 2015 do IBOPE e Instituto Waltham mostrou que seis em cada dez brasileiros deixariam seu animal caso tivessem que se mudar de casa, sendo esse o principal motivo de abandono entre as pessoas que já tiveram um cão ou gato. Entre os motivos evitáveis ainda estão a falta de tempo, questões comportamentais e a chegada de um filho. 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral deste trabalho é gerar um portal para facilitar o contato de pessoas que procuram animas para adotar e pessoas com animais para adoção, que apresente ferramentas de fácil uso e que permita o acesso rápido. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos, podemos ressaltar: 
+
+  1 - Fornecer funcionalidades que permitam acesso a dados dos animais disponíveis para adoção. 
+
+  2 - Facilitar a comunicação inicial entre pessoas que querem efetuar adoção de animais. 
+
+  3 - Permitir a busca de pets conforme características, tais como: tipo, porte, idade e localidade. 
 
 ## Justificativa
 

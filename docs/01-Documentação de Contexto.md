@@ -26,9 +26,9 @@ Como objetivos específicos, podemos ressaltar:
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+De acordo com a pesquisa Radar Pet 2021, realizada pela Comissão de Animais de Companhia (Comac), houve aumento de 30% no número de pets em lares brasileiros durante o isolamento social. Por consequência disso, o número de abandono também aumentou, dando margem para diversos Pets em situação de rua em estado crítico e com saúde debilitada. Diariamente nos deparamos com várias denúncias, seja por via de Rede Sociais ou televisionados, de animais negligenciados pelos donos e procurando por um lar seguro e afetuoso. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Segundo ONGs entre o início de 2020 até metade de 2021 houve um aumento de procura para animais para adoção, esse aumento foi de 50%, porem devido à crise que passamos houve também um aumento no número de abandono de aminas atingindo 61% a mais que no mesmo período de anos anteriores. 
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)

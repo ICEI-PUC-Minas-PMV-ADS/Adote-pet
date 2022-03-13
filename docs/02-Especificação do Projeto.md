@@ -82,7 +82,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 
 | **ID** | **Descrição**                                                | **Prioridade** |
 | ------ | ------------------------------------------------------------ | -------------- |
-| RNF-01 | O site deverá ser responsivo permitindo a visualização em um celular de forma adequada | Alta           |
+| RNF-01 | O site deverá ser responsivo permitindo a visualização em um dispositivo móvel de forma adequada | Alta           |
 | RNF-02 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari) | Alta           |
 
 

@@ -1,10 +1,10 @@
 # Adote Pet
 
-`CURSO`
+Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+Projeto: Desenvolvimento de uma Aplicação Interativa
 
-`SEMESTRE`
+Eixo 2
 
 ## Integrantes
 
@@ -13,6 +13,7 @@
 * Nome completo do aluno 3
 * Nome completo do aluno 4
 * Fábio Furlan
+* Victor Ribeiro Gammaro
 
 ## Orientador
 

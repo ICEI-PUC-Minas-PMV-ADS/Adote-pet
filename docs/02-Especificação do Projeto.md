@@ -8,7 +8,7 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 As personas levantadas durante o processo de entendimento do problema são apresentadas na Figuras que se seguem. 
 
 
-| ![img](docs\img\Patricia.jpg) | **Patrícia Amaral**                                          |                                                              |
+| ![patricia](Adote-pet/docs/img/patricia.jpg) | **Patrícia Amaral**                                          |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Idade**: 20 anos. **Ocupação**: Analista de marketing tem uma vida bastante corrida, trabalha em tempo integral e está focada no seu crescimento profissional. | **Aplicativos:** Instagram, Facebook, WhatsApp, LinkedIn.    |                                                              |
 | **Motivações**: Apaixonada por animais. Gosta de admirar os pets nos app e futuramente pretende fazer uma adoção. | **Frustrações**: Por está focada em sua carreira não pretende casar no momento. Não tem muitas amizades, mas sente falta de companhia. | **Hobbies, História**: Entende e gosta muito de animais. Sempre ajuda animais que vive na rua. |

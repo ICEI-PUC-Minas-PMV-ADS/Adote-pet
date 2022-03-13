@@ -67,13 +67,13 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | ------ | ------------------------------------------------------------ | -------------- |
 | RF-01  | O site deve permitir que o usuário crie perfil               | Alta           |
 | RF-02  | O site deve permitir que o usuário poste foto dos animais que precisam de adoção | Alta           |
-| RF-03  | O site deve possibilitar fazer uma descrição das características e da localização dos animais que será adotado no momento da postagem | Alta           |
+| RF-03  | O site deve permitir fazer a descrição da localização dos animais que será adotado. | Alta           |
 | RF-04  | O site deve permitir que com um único perfil o usuário possa adotar ou postar um animal para adoção | Média          |
-| RF-01  | O site de permitir o usuário editar o perfil                 | Alta           |
-| RF-02  | O site deve permitir que o usuário edite fotos dos animais que precisam de adoção | Media          |
-| RF-03  | O site deve permitir a edição da descrição das características e localização do dos animais | Media          |
-| RF-04  | O site deve permitir que o perfil que postou fotos, dados ou características dos animais posso exclui-la ou colocar como adotado. | Media          |
-| RF-05  | O site deve permitir ao usuário pesquisar animais.           | Alta           |
+| RF-05  | O site de permitir o usuário editar o perfil                 | Alta           |
+| RF-06  | O site deve permitir que o usuário edite fotos dos animais que precisam de adoção | Media          |
+| RF-07  | O site deve permitir a edição da descrição das características dos animais. | Media          |
+| RF-08  | O site deve permitir que o perfil que postou fotos, dados ou características dos animais posso exclui-la ou colocar como adotado. | Media          |
+| RF-09  | O site deve permitir ao usuário pesquisar animais.           | Alta           |
 
 
 ### Requisitos não Funcionais
@@ -89,7 +89,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 ## Restrições
 
 As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir. 
- 
+
 
 | **ID** | **Descrição**                                                |
 | ------ | ------------------------------------------------------------ |

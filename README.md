@@ -10,7 +10,7 @@ Eixo 2
 
 * Bruna Caroline
 * Bruna Ester Rolim Rocha
-* Nome completo do aluno 3
+* Bruno Ribeiro Gammaro
 * Nome completo do aluno 4
 * Fábio Furlan
 * Victor Ribeiro Gammaro

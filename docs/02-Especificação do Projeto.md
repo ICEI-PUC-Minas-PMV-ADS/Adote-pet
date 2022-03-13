@@ -33,7 +33,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Idade**: 52 anos. **Descrição**: Consultor de moda, mora junto com o namorado há mais de 10 anos. | **Aplicativos**: Google, Facebook, WhatsApp, Instagram.          |                                                              |
 | **Motivações**: Pensa em ter um animal para poder cuidar, e para dar mais alegria em sua casa. Preencher seu tempo no dia-a-dia com cuidados do seu Pet. Ter mais disposição para sair na companhia do seu bichinho. | **Frustrações**: Acha muito burocrático adotar uma criança com o seu companheiro, e não sente tanta disposição para cuidar de crianças. | **Hobbies, História**:  Adora caminhar ao ar livre nos fins de semana. |
 
-| ![debora](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Debora.jpg) | **Debora Alencar**                                        |                                   |
+| ![debora](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Debora,.jpg) | **Debora Alencar**                                        |                                   |
 | ------------------------------------------------------------ | --------------------------------------------------------- | --------------------------------- |
 | **Idade**: 28 anos. **Descrição**: Trabalha no mercado financeiro, acabou de se mudar para casa do namorado. | **Aplicativos**: Google, LinkedIn, WhatsApp, Instagram.   |                                   |
 | **Motivações** Começou um relacionamento a pouco tempo, e querem adotar um animal. | **Frustrações**: Ainda não está preparada para engravidar. | **Hobbies, História**:  Ler livros. |
@@ -101,13 +101,5 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
+[img](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Diagrama.jpg)
 > **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)

@@ -20,18 +20,18 @@ O objetivo geral deste trabalho é gerar um portal para facilitar o contato de p
 
 Como objetivos específicos, podemos ressaltar: 
 
-  1 - Fornecer funcionalidades que permitam acesso a dados dos animais disponíveis para adoção. 
+  1 - Fornecer funcionalidades que permitam acesso a dados dos animais disponíveis para adoção;
 
-  2 - Facilitar a comunicação inicial entre pessoas que querem efetuar adoção de animais. 
+  2 - Facilitar a comunicação inicial entre pessoas que querem efetuar adoção de animais; 
 
   3 - Permitir a busca de pets conforme características, tais como: tipo, porte, idade e localidade. 
 
 
 ## Justificativa
 
-De acordo com a pesquisa Radar Pet 2021, realizada pela Comissão de Animais de Companhia (Comac), houve aumento de 30% no número de pets em lares brasileiros durante o isolamento social. Por consequência disso, o número de abandono também aumentou, dando margem para diversos Pets em situação de rua em estado crítico e com saúde debilitada. Diariamente nos deparamos com várias denúncias, seja por via de Rede Sociais ou televisionados, de animais negligenciados pelos donos e procurando por um lar seguro e afetuoso. 
+De acordo com a pesquisa Radar Pet 2021, realizada pela Comissão de Animais de Companhia (Comac), houve aumento de 30% no número de pets em lares brasileiros durante o isolamento social. No entanto, o número de abandono também aumentou, dando margem para diversos Pets em situação de rua em estado crítico e com saúde debilitada. Diariamente nos deparamos com várias denúncias, seja por via de Rede Sociais ou televisionados, de animais negligenciados pelos donos e procurando por um lar seguro e afetuoso. 
 
-Segundo ONGs entre o início de 2020 até metade de 2021 houve um aumento de procura para animais para adoção, esse aumento foi de 50%, porem devido à crise que passamos houve também um aumento no número de abandono de aminas atingindo 61% a mais que no mesmo período de anos anteriores. 
+Segundo ONGs entre o início de 2020 até metade de 2021 houve um aumento de procura para animais para adoção, esse aumento foi de 50%, porém devido à crise atual houve também um aumento no número de abandono de animais atingindo 61% a mais que no mesmo período de anos anteriores. Vale ressaltar, que a expectativa de vida dos pets é de 10 anos, logo a decisão ter um pet deve ser bem planejada.
 
 
 ## Público-Alvo

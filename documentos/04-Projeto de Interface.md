@@ -15,7 +15,7 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 
 
-![][Animal de estimação](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet)/[documentos](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/tree/main/docs)/[imagem](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/tree/main/docs/img)**/fluxo.png** _
+<p><img src="docs/img/fluxo.png" alt=""></p>
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
 

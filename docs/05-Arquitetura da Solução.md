@@ -19,7 +19,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
 
-![Modelo Relacional](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/modelo_er.png)  
+![Modelo Relacional](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/modelo_er.png)    
 
 
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)

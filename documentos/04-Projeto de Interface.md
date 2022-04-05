@@ -15,7 +15,9 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 
 
-<p><img src="\projeto-2-periodo\Adote-pet\docs\img\fluxo.png" alt=""></p>
+<br/>
+
+![padrao](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/fluxo.png)
 
 
 
@@ -28,6 +30,9 @@ Conforme fluxo de telas do projeto amostrado no item anterior, as telas do siste
 - **Rodapé** - apresenta um mapa do site e informações adicionais.
 
 
+<br/>
+
+![padrao](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-padrao.png)
 
 
 
@@ -42,9 +47,9 @@ Com base na estrutura padrão, o bloco de conteúdo traz um filtro para facilita
 - O ícone do gato filtrará somente os gatos disponíveis; 
 - Para uma filtragem avançada temos um componente para fazer busca por localização e porte.  
 
+<br/>
 
-
-![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-padrao.png))
+![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/home-tela.png)
 
 
 
@@ -52,6 +57,9 @@ Com base na estrutura padrão, o bloco de conteúdo traz um filtro para facilita
 
 A tela de login apresenta o cabeçalho padrão, no bloco de conteúdo temos um formulário que solicita e-mail e senha para que o usuário efetue o login no sistema. Há também a opção para cadastro de novos usuários .
 
+<br/>
+
+![login](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/login.png)
 
 
 ## Tela - Cadastro 
@@ -62,7 +70,10 @@ O usuário será redirecionado para a tela de cadastro caso não possua cadastro
 
 - O componente CRIAR UMA SENHA / REPITA SENHA só ficará visível quando o usuário estiver criando o perfil, para edição de perfil esse componente não ficará visível.   
 
-  
+  <br/>
+
+![cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/cadastro-tela.png)
+
 
 ## Tela – Cadastro Pet 
 
@@ -72,3 +83,10 @@ A tela cadastro pet, no bloco de conteúdo temos um formulário para que seja in
 - O componente FOTO DO PET permite que o doador insira uma foto do animal; 
 - No componente DESCRIÇÃO é possível que o doador adicione informações adicionais. 
 - É possível que as informações do pet sejam editadas no componente EDITAR INFORMAÇÕES 
+
+<br/>
+
+![cadastro-pet](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-cad-pet.png)
+
+
+

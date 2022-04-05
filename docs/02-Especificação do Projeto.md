@@ -33,7 +33,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Idade**: 52 anos. **Descrição**: Consultor de moda, mora junto com o namorado há mais de 10 anos. | **Aplicativos**: Google, Facebook, WhatsApp, Instagram.          |                                                              |
 | **Motivações**: Pensa em ter um animal para poder cuidar, e para dar mais alegria em sua casa. Preencher seu tempo no dia-a-dia com cuidados do seu Pet. Ter mais disposição para sair na companhia do seu bichinho. | **Frustrações**: Acha muito burocrático adotar uma criança com o seu companheiro, e não sente tanta disposição para cuidar de crianças. | **Hobbies, História**:  Adora caminhar ao ar livre nos fins de semana. |
 
-| ![debora](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Debora,.jpg) | **Debora Alencar**                                        |                                   |
+| ![debora](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Debora.jpg) | **Debora Alencar**                                        |                                   |
 | ------------------------------------------------------------ | --------------------------------------------------------- | --------------------------------- |
 | **Idade**: 28 anos. **Descrição**: Trabalha no mercado financeiro, acabou de se mudar para casa do namorado. | **Aplicativos**: Google, LinkedIn, WhatsApp, Instagram.   |                                   |
 | **Motivações** Começou um relacionamento a pouco tempo, e querem adotar um animal. | **Frustrações**: Ainda não está preparada para engravidar. | **Hobbies, História**:  Ler livros. |

@@ -29,9 +29,9 @@ Conforme fluxo de telas do projeto amostrado no item anterior, as telas do siste
 - **Conteúdo** - apresenta o conteúdo da tela em questão, com informações e foto dos animais, filtro para busca;  
 - **Rodapé** - apresenta um mapa do site e informações adicionais.
 
+![padrao](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-padrao.png)
 
 
-img (https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-padrao.png)
 
 ## Tela - Home Page   
 

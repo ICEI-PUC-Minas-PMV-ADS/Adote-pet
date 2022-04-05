@@ -15,37 +15,56 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 
 
-<p><img src="docs/img/fluxo.png" alt=""></p>
+<p><img src="\projeto-2-periodo\Adote-pet\docs\img\fluxo.png" alt=""></p>
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
 
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
 
 ## Wireframes
 
-Conforme fluxo de telas do projeto amostrado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. Todas essas telas têm uma estrutura comum que é apresentada na *Figura 6*. Nesta estrutura existem 3 grandes blocos, descritos a seguir. São eles:
+Conforme fluxo de telas do projeto amostrado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. Todas essas telas têm uma estrutura comum que é apresentada na imagem. Nesta estrutura existem 3 grandes blocos, descritos a seguir. São eles:
 
 - **Cabeçalho** - local onde são dispostos elementos fixos de identidade (logo) e ícone de usuário;  
 - **Conteúdo** - apresenta o conteúdo da tela em questão, com informações e foto dos animais, filtro para busca;  
 - **Rodapé** - apresenta um mapa do site e informações adicionais.
 
-![image-20220328184216959](C:\Users\bruna\AppData\Roaming\Typora\typora-user-images\image-20220328184216959.png)
 
 
 
-## Tela - Home Page  
 
-É a principal tela do site, permite visualizar os animais que estão disponíveis para adoção. A tela home também redireciona para as demais telas como a de login, e para criar cadastro. 
+## Tela - Home Page   
 
-![image-20220328185201235](C:\Users\bruna\AppData\Roaming\Typora\typora-user-images\image-20220328185201235.png) 
+A tela de home-page tem como principal objetivo fazer as buscas pelos pets que estão disponíveis para adoção 
+
+Com base na estrutura padrão, o bloco de conteúdo traz um filtro para facilitar a busca, um carrossel de imagem dos pets que estão disponíveis para adoção e ao passar o mouse sobre a imagem do pet, a imagem será ampliada e ao lada da imagem terá as descrições das características dos pets.  
+
+- Caso o usuário esteja logado, ao clicar no botão DOAR ele será redirecionado para a tela CADASTRO PET, para que ele faça o cadastro do pet que será doado. Se o usuário não estiver logado ele será redirecionado para a tela login. 
+- O ícone do cachorro filtrará somente os cachorros disponíveis; 
+- O ícone do gato filtrará somente os gatos disponíveis; 
+- Para uma filtragem avançada temos um componente para fazer busca por localização e porte.  
 
 
 
 ## Tela - Login
 
+A tela de login apresenta o cabeçalho padrão, no bloco de conteúdo temos um formulário que solicita e-mail e senha para que o usuário efetue o login no sistema. Há também a opção para cadastro de novos usuários .
 
 
-A página de login apresenta o cabeçalho padrão e no bloco de conteúdo, espaços para inserir os dados cadastrais e fazer o *login* no site. Há também a opção de clicar em “esqueceu sua senha?” e ser redirecionado a outra tela, para a recuperação da mesma. Por fim, há também uma opção de cadastro de usuário. 
 
-![image-20220328185458505](C:\Users\bruna\AppData\Roaming\Typora\typora-user-images\image-20220328185458505.png)
+## Tela - Cadastro 
+
+O usuário será redirecionado para a tela de cadastro caso não possua cadastro ou queira editar as informações do perfil.  
+
+- Nesta mesma tela o componente CADASTRO DE PET redireciona para a tela CADASTRO PET.  
+
+- O componente CRIAR UMA SENHA / REPITA SENHA só ficará visível quando o usuário estiver criando o perfil, para edição de perfil esse componente não ficará visível.   
+
+  
+
+## Tela – Cadastro Pet 
+
+A tela cadastro pet, no bloco de conteúdo temos um formulário para que seja inserido as informações do pet. 
+
+- O ícone cachorro e gato deverá ser selecionado de acordo com o animal que será doado. 
+- O componente FOTO DO PET permite que o doador insira uma foto do animal; 
+- No componente DESCRIÇÃO é possível que o doador adicione informações adicionais. 
+- É possível que as informações do pet sejam editadas no componente EDITAR INFORMAÇÕES 

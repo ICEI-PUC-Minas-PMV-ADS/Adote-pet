@@ -14,11 +14,9 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
 
 
+<br/>
 
-p><img *src*="https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/fluxo.png" *alt*=""> </p>
-
-
-
+![padrao](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/fluxo.png)
 
 
 ## Wireframes
@@ -28,6 +26,8 @@ Conforme fluxo de telas do projeto amostrado no item anterior, as telas do siste
 - **Cabeçalho** - local onde são dispostos elementos fixos de identidade (logo) e ícone de usuário;  
 - **Conteúdo** - apresenta o conteúdo da tela em questão, com informações e foto dos animais, filtro para busca;  
 - **Rodapé** - apresenta um mapa do site e informações adicionais.
+
+<br/>
 
 ![padrao](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-padrao.png)
 
@@ -44,11 +44,17 @@ Com base na estrutura padrão, o bloco de conteúdo traz um filtro para facilita
 - O ícone do gato filtrará somente os gatos disponíveis; 
 - Para uma filtragem avançada temos um componente para fazer busca por localização e porte.  
 
+<br/>
 
+![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/home-tela.png)
 
 ## Tela - Login
 
 A tela de login apresenta o cabeçalho padrão, no bloco de conteúdo temos um formulário que solicita e-mail e senha para que o usuário efetue o login no sistema. Há também a opção para cadastro de novos usuários.
+
+<br/>
+
+![login](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/login.png)
 
 
 
@@ -58,7 +64,13 @@ O usuário será redirecionado para a tela de cadastro caso não possua cadastro
 
 - Nesta mesma tela o componente CADASTRO DE PET redireciona para a tela CADASTRO PET.  
 
-- O componente CRIAR UMA SENHA / REPITA SENHA só ficará visível quando o usuário estiver criando o perfil, para edição de perfil esse componente não ficará visível.   
+- O componente CRIAR UMA SENHA / REPITA SENHA só ficará visível quando o usuário estiver criando o perfil, para edição de perfil esse componente não ficará visível.  
+
+
+<br/>
+
+![cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/cadastro-tela.png)
+
 
   
 
@@ -70,3 +82,9 @@ A tela cadastro pet, no bloco de conteúdo temos um formulário para que seja in
 - O componente FOTO DO PET permite que o doador insira uma foto do animal; 
 - No componente DESCRIÇÃO é possível que o doador adicione informações adicionais. 
 - É possível que as informações do pet sejam editadas no componente EDITAR INFORMAÇÕES 
+
+<br/>
+
+![cadastro-pet](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-cad-pet.png)
+
+

@@ -15,7 +15,9 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 
 
-<p><img src="\projeto-2-periodo\Adote-pet\docs\img\fluxo.png" alt=""></p>
+p><img *src*="https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/fluxo.png" *alt*=""> </p>
+
+<p><img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/fluxo.png" alt=""></p>
 
 
 
@@ -46,7 +48,7 @@ Com base na estrutura padrão, o bloco de conteúdo traz um filtro para facilita
 
 ## Tela - Login
 
-A tela de login apresenta o cabeçalho padrão, no bloco de conteúdo temos um formulário que solicita e-mail e senha para que o usuário efetue o login no sistema. Há também a opção para cadastro de novos usuários .
+A tela de login apresenta o cabeçalho padrão, no bloco de conteúdo temos um formulário que solicita e-mail e senha para que o usuário efetue o login no sistema. Há também a opção para cadastro de novos usuários.
 
 
 

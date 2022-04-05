@@ -42,7 +42,11 @@ Com base na estrutura padrão, o bloco de conteúdo traz um filtro para facilita
 - O ícone do gato filtrará somente os gatos disponíveis; 
 - Para uma filtragem avançada temos um componente para fazer busca por localização e porte.  
 
+
+
 ![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-padrao.png))
+
+
 
 ## Tela - Login
 

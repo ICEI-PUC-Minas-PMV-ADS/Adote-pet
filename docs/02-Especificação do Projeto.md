@@ -33,7 +33,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Idade**: 52 anos. **Descrição**: Consultor de moda, mora junto com o namorado há mais de 10 anos. | **Aplicativos**: Google, Facebook, WhatsApp, Instagram.          |                                                              |
 | **Motivações**: Pensa em ter um animal para poder cuidar, e para dar mais alegria em sua casa. Preencher seu tempo no dia-a-dia com cuidados do seu Pet. Ter mais disposição para sair na companhia do seu bichinho. | **Frustrações**: Acha muito burocrático adotar uma criança com o seu companheiro, e não sente tanta disposição para cuidar de crianças. | **Hobbies, História**:  Adora caminhar ao ar livre nos fins de semana. |
 
-| ![debora](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Debora,.jpg) | **Debora Alencar**                                        |                                   |
+| ![debora](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Debora.jpg) | **Debora Alencar**                                        |                                   |
 | ------------------------------------------------------------ | --------------------------------------------------------- | --------------------------------- |
 | **Idade**: 28 anos. **Descrição**: Trabalha no mercado financeiro, acabou de se mudar para casa do namorado. | **Aplicativos**: Google, LinkedIn, WhatsApp, Instagram.   |                                   |
 | **Motivações** Começou um relacionamento a pouco tempo, e querem adotar um animal. | **Frustrações**: Ainda não está preparada para engravidar. | **Hobbies, História**:  Ler livros. |
@@ -68,13 +68,13 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | RF-01  | O site deve permitir que o usuário crie perfil               | Alta           |
 | RF-02  | O site deve permitir que o usuário poste foto dos animais que precisam de adoção | Alta           |
 | RF-03  | O site deve permitir fazer a descrição da localização dos animais que será adotado. | Alta           |
-| RF-04  | O site deve permitir que com um único perfil o usuário possa adotar ou postar um animal para adoção | Média          |
+| RF-04  | O site deve permitir que com um único perfil o usuário possa adotar ou postar um animal para adoção | Media          |
 | RF-05  | O site de permitir o usuário editar o perfil                 | Alta           |
 | RF-06  | O site deve permitir que o usuário edite fotos dos animais que precisam de adoção | Media          |
 | RF-07  | O site deve permitir a edição da descrição das características dos animais. | Media          |
 | RF-08  | O site deve permitir que o perfil que postou fotos, dados ou características dos animais posso exclui-la ou colocar como adotado. | Media          |
 | RF-09  | O site deve permitir ao usuário pesquisar animais.           | Alta           |
-
+| RF-10  | O site deve permitir que o usuário adote o animal disponivel.           | Alta           |
 
 ### Requisitos não Funcionais
 

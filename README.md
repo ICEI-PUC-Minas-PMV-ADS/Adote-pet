@@ -11,7 +11,7 @@ Eixo 2
 * Bruna Caroline
 * Bruna Ester Rolim Rocha
 * Bruno Ribeiro Gammaro
-* Nome completo do aluno 4
+* Denver Gonçalves Gomes
 * Fábio Furlan
 * Victor Ribeiro Gammaro
 

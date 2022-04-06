@@ -1,19 +1,41 @@
 # Plano de Testes de Software
+###### Os testes funcionais a serem realizados no portal serão descritos a seguir:
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+##### Quadro – Casos de Testes
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
+|  CASO DE TESTE |    CT-01 – Acesso a página de cadastro    |
+|     :---:             |     :---:                                              |
+|    Objetivo do Teste  | Verificar se o cadastro está funcionando corretamente  |
+|    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, 4. Acessar a página de login/cadastro     |
+|    Critérios de Êxito | Deve ser permitido o preenchimento de todos os campos do cadastro. Ao clicar em “Cadastre-se”, ser redirecionado à página principal com usuário já logado.      |
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+|  CASO DE TESTE |    CT-02 – Login Usuário    |
+|     :---:             |     :---:                                              |
+|    Objetivo do Teste  | Verificar se o login funciona corretamente  |
+|    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, 4. Acessar a página de login/cadastro     |
+|    Critérios de Êxito | Permitir o preenchimento de todos os campos do login. Ao clicar em “Entrar”, ser redirecionado para a tela principal com usuário já logado.    |
+
+|  CASO DE TESTE |    CT-03 – Pesquisa de Pets   |
+|     :---:             |     :---:                                              |
+|    Objetivo do Teste  | Verificar se a pesquisa funciona corretamente e direciona para a página de Pets para aldoção de acordo com filtro utilizado.  |
+|    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, 4. Acessar a ferramenta de pesquisa no canto superior     |
+|    Critérios de Êxito | Permitir a pesquisa de Pets por características físicas.   |
+
+|  CASO DE TESTE |    CT-04 – Cadastrar Pet    |
+|     :---:             |     :---:                                              |
+|    Objetivo do Teste  | Verificar se é redirecionado para a página de formulário e permitir o preenchimento de todos os campos.  |
+|    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, 4. Acessar a página de login/cadastro , 5. Após logar, clicar em cadastrar Pet, 6. Preencher o formulário de cadastro    |
+|    Critérios de Êxito | Ao selecionar, deve ser redirecionado para a tela de Formulário de cadastro de Pets. Permitir o preenchimento correto das informações e envio de imagem do Pet.   |
+
+|  CASO DE TESTE |    CT-05 – Acessar Pets para adoção   |
+|     :---:             |     :---:                                              |
+|    Objetivo do Teste  | Verificar se é redirecionado para a Página principal  |
+|    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, onde exibirá os pets disponíveis para adoção     |
+|    Critérios de Êxito | Ao selecionar, deve ser redirecionado para a tela Sobre o Projeto. |
+
+|  CASO DE TESTE |    CT-06 – Adotar Pets   |
+|     :---:             |     :---:                                              |
+|    Objetivo do Teste  | Verificar se é redirecionado para a página de formulário para adoção.  |
+|    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, onde exibirá os pets disponíveis para adoção, 4. Selecionar Pet para adoção, 5. Se usuário não estiver logado, ser redirecionado para a página de login, 6. Quando usuário estiver logado, ser redirecionado para formulário de preenchimento para adoção de Pet   |
+|    Critérios de Êxito | Ao selecionar Pet desejado, deve ser redirecionado para a página de formulário de adoção. |

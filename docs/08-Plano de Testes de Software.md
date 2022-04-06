@@ -39,3 +39,6 @@
 |    Objetivo do Teste  | Verificar se é redirecionado para a página de formulário para adoção.  |
 |    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, onde exibirá os pets disponíveis para adoção, 4. Selecionar Pet para adoção, 5. Se usuário não estiver logado, ser redirecionado para a página de login, 6. Quando usuário estiver logado, ser redirecionado para formulário de preenchimento para adoção de Pet   |
 |    Critérios de Êxito | Ao selecionar Pet desejado, deve ser redirecionado para a página de formulário de adoção. |
+
+
+###### Fonte: Desenvolvedores do Projeto.

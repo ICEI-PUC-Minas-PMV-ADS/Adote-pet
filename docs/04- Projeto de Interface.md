@@ -16,7 +16,7 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 <br/>
 
-![padrao](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/fluxo.png)
+![padrao](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Fluxo-usuario-novo.png)
 
 
 ## Wireframes

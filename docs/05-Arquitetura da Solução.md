@@ -11,7 +11,7 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 
 
 > - [Diagramas de Classes](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/diagramadeclasses.png)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+
 
 ## Modelo ER
 

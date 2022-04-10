@@ -10,7 +10,7 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 
 
 
-> - [Diagramas de Classes](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/diagramadeclasses.png)
+![Diagramas de Classes](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/diagramadeclasses.png)
 
 
 ## Modelo ER

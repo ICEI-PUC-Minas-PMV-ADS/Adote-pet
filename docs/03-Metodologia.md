@@ -42,16 +42,16 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 Os papéis dos membros do grupo foram divididos da seguinte forma:
 
 #### Scrum Master
- Bruno Ribeiro Gammaro
+- Bruno Ribeiro Gammaro
 
 #### Product Owner
- Denver Gonçalves Gomes
+- Denver Gonçalves Gomes
 
-#### Dev Team
- Bruna Caroline
- Bruna Ester Rolim Rocha
- Fábio Furlan
- Victor Ribeiro Gammaro
+#### Dev Team:
+- Bruna Caroline, 
+- Bruna Ester Rolim Rocha, 
+- Fábio Furlan
+- Victor Ribeiro Gammaro.
 
 
 

@@ -65,16 +65,11 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 | **ID** | **Descrição**                                                | **Prioridade** |
 | ------ | ------------------------------------------------------------ | -------------- |
-| RF-01  | A aplicação deve permitir que o usuário crie perfil               | Alta           |
-| RF-02  | A aplicação deve permitir que o usuário poste foto dos animais que precisam de adoção | Alta           |
-| RF-03  | A aplicação deve possibilitar fazer uma descrição das características e da localização dos animais que será adotado no momento da postagem | Alta           |
+| RF-01  | A aplicação deve permitir que o usuário gerencie o perfil, tais como criar, excluir e editar.| Alta           |
+| RF-02  | A aplicação deve permitir que o usuário gerencie informações de animais a serem adotados, tais como foto, localização e características dos animais. | Alta           |
 | RF-04  | A aplicação deve permitir que com um único perfil o usuário possa adotar ou postar um animal para adoção | Média          |
-| RF-01  | A aplicação de permitir o usuário editar o perfil                 | Alta           |
-| RF-02  | A aplicação deve permitir que o usuário edite fotos dos animais que precisam de adoção | Media          |
-| RF-03  | A aplicação deve permitir a edição da descrição das características e localização do dos animais | Media          |
-| RF-04  | A aplicação deve permitir que o perfil que postou fotos, dados ou características dos animais posso exclui-la ou colocar como adotado. | Media          |
-| RF-05  | A aplicação deve permitir ao usuário pesquisar animais.           | Alta           |
-| RF-06  | A aplicação deve permitir ao usuário pesquisar dados sobre os animais adotados.           | Media          |
+| RF-09  | A aplicação deve permitir ao usuário pesquisar animais.           | Alta           |
+| RF-10  | A aplicação deve permitir que o usuário adote o animal disponível. | Alta           |
 
 
 ### Requisitos não Funcionais

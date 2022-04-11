@@ -38,6 +38,6 @@ Portanto, é necessário que o adotante seja devidamente orientado sobre o privi
 
 ## Público-Alvo
 
-O foco deste trabalho está no público que estão em busca de tutores para cães e gatos que precisam serem adotados e pessoas que querem doar.  
+O foco deste trabalho está em conectar tutores de pets e pessoas que querem doar cães e gatos.  
 
 Desta forma, estabeleceu-se como público-alvo dos adotantes: homens e mulheres acima de 18 anos que gostem e possam proteger e cuidar de animais que esperam por adoção.  

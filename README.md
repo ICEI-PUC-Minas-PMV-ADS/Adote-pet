@@ -12,7 +12,7 @@ Eixo 2
 * Bruna Ester Rolim Rocha
 * Bruno Ribeiro Gammaro
 * Denver Gonçalves Gomes
-* Fábio Furlan
+* Fabio Furlan Cavalcante 
 * Victor Ribeiro Gammaro
 
 ## Orientador

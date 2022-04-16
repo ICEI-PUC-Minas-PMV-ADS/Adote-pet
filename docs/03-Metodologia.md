@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times). teste
+Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times). 
 
 ## Controle de Versão
 
@@ -39,7 +39,21 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+Os papéis dos membros do grupo foram divididos da seguinte forma:
+
+#### Scrum Master
+- Bruno Ribeiro Gammaro
+
+#### Product Owner
+- Denver Gonçalves Gomes
+
+#### Dev Team:
+- Bruna Caroline, 
+- Bruna Ester Rolim Rocha, 
+- Fábio Furlan
+- Victor Ribeiro Gammaro.
+
+
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
@@ -48,7 +62,11 @@ Apresente a divisão de papéis entre os membros do grupo.
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+O grupo optou pelo uso de duas ferramentas para gestão de processos para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução: 
+
+A primeira ferramenta é o Trello https://trello.com/b/2teH7qw3/kanban-adote-pet que permite dinamismo no acompanhamento com uso de metodologia Kanban para facilitar a visualização.
+
+A segunda é o GitHub Projects https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet, que permite monitorar os marcos (milestones) e tarefas (issues) das Sprints do projeto.
  
 > **Links Úteis**:
 > - [Project management, made simple](https://github.com/features/project-management/)
@@ -60,9 +78,11 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Editor de código: utilizaremos o Virtual Studio Code da Microsoft e conexão com repositório no GitHub; e o Replit (https://replit.com/) se necessário
+
+- Ferramentas de comunicação: a comunicação da equipe tem sido feita semanalmente pelo Microsoft Teams e diariamente pelo aplicativo WhatApp.
+
+- Ferramentas de desenho de tela (_wireframing_):
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem

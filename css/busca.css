@@ -1,14 +1,23 @@
 .menu>h1:hover {
     font-size: 35px;
     color: #82370E;
-    padding: 10px ;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     /*font-weight: bold;*/
-    text-align: right;    
+    text-align: right;
 }
-header{
+
+header {
     background-color: #f88c38;
 }
 
+body {
+    background-color: #eee9e6;
+}
 
+/* colores
+#82370E
+#eee9e6
+#f88c38 
 
+*/

@@ -1,0 +1,47 @@
+/*Principais cores*/
+footer {
+    color: #0fa259
+    #95d65b
+    #e3e6ea
+    #04add4
+    #094056
+}
+
+
+/* modal para login */
+.btn-login {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.btn-login:hover {
+    background-color: #e3e6ea;
+    pointer-events: visible;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    opacity: 0;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-conteudo {
+    background-color: #e3e6ea;
+    border-radius: 4px;
+    border-top: 5px solid #094056;    /* borda superior do box do conteúdo */
+}
+
+.modal-link {
+    display: flex;
+    justify-content: center;
+    background-color: #95d65b;
+    border-radius: 4px;
+    align-items: center;
+}

@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adote Pet</title>
-    </head>
-    
-    <body>
-        <header class="menu">
-            <div class="logo">
-                <form method="get" action="index.html">
-                    <input type="image" src="" width="200px"><!--Imagem logo para retorno a pagina principal-->>
-                </form>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="logo">
+            <form method="get" action="index.html">
+                <input type="image" src="" width="200px">
+                <!--Imagem logo para retorno a pagina principal-->>
+            </form>
+        </div>
+        <div class="login">
+            <form method="get" action="login.html">
+                <input type="image" src="/img/icones/login01.png" width="30px">
+            </form>
+            <!--Imagem login para efetuar login-->
+            </form>
+        </div>
+
+        <!-- Criação do modal para janela de logon-->
+
+        <a href="#modal" class="btn-login">Botão modal</a>
+
+        <div id="modal" class="modal">
+            <div class="modal-conteudo">
+                <h1>conteúdo da área de login que será feita pelo Fábio</h1>
+                <a href="#" class="modal-link">Fechar</a>
             </div>
-            <div class="login">     
-                <form method="get" action="login.html">
-                    <input type="image" src="" width="30px"></form><!--Imagem login para efetuar login-->
-                </form>
-            </div>
-        </header>
-    </body>
+
+        </div>
+    </header>
+</body>
+
 </html>

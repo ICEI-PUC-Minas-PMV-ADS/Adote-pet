@@ -10,6 +10,11 @@ A paleta de cores definida conta com 2 cores primárias, sendo a principál dela
 <br/>
 ![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Paleta.png)
 
+> **A escoçha da cores foi definida de acordo com os seguintes criterios**:
+> - Verde foi escolhido por ser a cor padrão de veterinaria.
+> - Tons mais suaves foram escolhidos pois os pets são considerados filhos para seus donos e como isso cores mais suaves remetem a filhos.
+
+
 > **Links Úteis**:
 >
 > - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)

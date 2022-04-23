@@ -8,6 +8,7 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 A paleta de cores definida conta com 2 cores primárias, sendo a principál delas definida como cor base, variando entre 2 tonalidades e uma escala de preto que conta com 4 variações ate o branco.
 <br/>
+
 ![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Paleta.png)
 
 > **A escoçha da cores foi definida de acordo com os seguintes criterios**:
@@ -18,7 +19,7 @@ A paleta de cores definida conta com 2 cores primárias, sendo a principál dela
 
 As fontes usadas na aplicação são happy monkey  e sunny spells, e seguem as segintes definições de tamanho e estilização.
 <br/>
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tipografia.png)
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/)
 
 > **Links Úteis**:
 >

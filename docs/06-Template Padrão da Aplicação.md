@@ -4,6 +4,11 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
+# Paleta de cores
+
+A paleta de cores definida conta com 2 cores primárias, sendo a principál delas definida como cor base, variando entre 2 tonalidades e uma escala de preto que conta com 4 variações ate o branco.
+[paleta](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Paleta de cores.png)
+
 > **Links Úteis**:
 >
 > - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)

@@ -19,7 +19,7 @@ A paleta de cores definida conta com 2 cores primárias, sendo a principál dela
 
 As fontes usadas na aplicação são happy monkey  e sunny spells, e seguem as segintes definições de tamanho e estilização.
 <br/>
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/)
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tipografia.png)
 
 > **Links Úteis**:
 >

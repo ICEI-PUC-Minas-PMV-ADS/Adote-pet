@@ -14,6 +14,11 @@ A paleta de cores definida conta com 2 cores primárias, sendo a principál dela
 > - Verde foi escolhido por ser a cor padrão de veterinaria.
 > - Tons mais suaves foram escolhidos pois os pets são considerados filhos para seus donos e como isso cores mais suaves remetem a filhos.
 
+# Tipografia
+
+As fontes usadas na aplicação são happy monkey  e sunny spells, e seguem as segintes definições de tamanho e estilização.
+<br/>
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tipografia.png)
 
 > **Links Úteis**:
 >

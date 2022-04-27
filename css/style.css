@@ -5,6 +5,12 @@ footer {
     #e3e6ea
     #04add4
     #094056
+    #e3e6ea
+}
+
+header{
+    background-color: #e3e6ea;
+    height: 300px;
 }
 
 /* modal para login */

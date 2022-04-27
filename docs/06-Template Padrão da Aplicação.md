@@ -6,14 +6,15 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 # Paleta de cores
 
-A paleta de cores definida conta com 2 cores primárias, sendo a principál delas definida como cor base, variando entre 2 tonalidades e uma escala de preto que conta com 4 variações ate o branco.
+A paleta de cores definida conta com 2 cores primárias, sendo a principal delas definida como cor base, variando entre 2 tonalidades e uma escala de preto que conta com 4 variações até o branco.
 <br/>
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Paleta.png)
 
-> **A escoçha da cores foi definida de acordo com os seguintes criterios**:
-> - Verde foi escolhido por ser a cor padrão de veterinaria.
+> **A escolha da cores foi definida de acordo com os seguintes critérios**:
+> - Verde foi escolhido por ser a cor padrão de veterinária.
 > - Tons mais suaves foram escolhidos pois os pets são considerados filhos para seus donos e como isso cores mais suaves remetem a filhos.
+> - Sendo os tons azuis rementem ao céu, consequentemente, a espaços abertos que são locais de práticas recreativas de pets com seus donos.
 
 # Tipografia
 

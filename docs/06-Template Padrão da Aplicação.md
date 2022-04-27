@@ -24,6 +24,22 @@ As fontes usadas na aplicação são happy monkey  e sunny spells, e seguem as s
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tipografia.png)
 
+
+
+## Aplicação nas telas e fluxos
+
+### Tela - home / pesquisa
+
+A tela inicial ou Home apresentada na figura abaixo permite visualizar os animas disponivel para adoção, na barra de pesquisa pode localizar outros animais e o login abre outra pagina.
+
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/home 3.png)
+
+### Tela - Login
+
+A tela de login possui duas 
+
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/PgLogin.png)
+
 > **Links Úteis**:
 >
 > - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)

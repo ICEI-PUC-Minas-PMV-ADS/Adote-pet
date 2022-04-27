@@ -38,7 +38,7 @@ A tela inicial ou Home apresentada na figura abaixo permite visualizar os animas
 
 A tela de login possui duas 
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/PgLogin.png)
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/PgLogin2.png)
 
 > **Links Úteis**:
 >

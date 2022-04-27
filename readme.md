@@ -1,4 +1,3 @@
-@@ -1,50 +0,0 @@
 # Adote Pet
 
 Análise e Desenvolvimento de Sistemas

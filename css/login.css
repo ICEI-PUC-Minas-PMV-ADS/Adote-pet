@@ -8,27 +8,29 @@ h1 {
     flex-direction: column;
    
 }
-.img {
-   position: absolute;
-   top: 40%;
+header {
+   /*position: absolute;
+   
+   top: 40%; 
    left: 35%;
    transform: translate(-100%,-80%);
-   padding: 80px;   
-}
-image {
-    color: rgb(186, 23, 23);
+   padding: 80px; */
+   display: grid;
+   justify-content: left;
 }
 
 .tela-login {
    background-color:#0fa259; 
-   position: absolute;
+   position:fixed;
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
    padding: 80px;
    border-radius: 18px;
    color:#094056;
-   
+   /*margin-left: auto;
+   margin-right: auto;*/
+  
 }
 input {
     padding: 15px;
@@ -58,7 +60,4 @@ button:hover {
 .login-reset:hover{
     background-color:#04add4 ;
     cursor: pointer; 
-}
-image {
-    cursor: pointer;
 }

@@ -24,33 +24,37 @@
                 <li><a href="/">Perfil</a></li>
                 <li><a href="/">Sobre</a></li>
                 <!--usando modal-->
-                <li><a href="#" id="button" class="button">Login</a></li>
-                <!--<a href="#bg-modal"><input type="image" src="img\user.png" width="40px"></a>-->
+                <a href="#abrirModal">Login</a>
+
+                <div id="abrirModal" class="modal">
+                    <!-- conteúdo do modal aqui -->
+                    <img src="src\user.png" alt="" width="50px">
+
+                    <form action="">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Senha">
+
+                        <a href="" class="button"> Entrar </a>
+                        <a class="login-reset" href="">Novo usuário</a>
+                        <a class="login-reset" href="">Esqueci a senha</a>
+                    </form>
+                    <!--Abrir Log-->
+                    <a href="#abrirModal"></a>
+
+                    <div id="abrirModal" class="modal">
+                        <a href="#fechar" title="Fechar" class="fechar">x</a>
+                        <h2>Janela Modal</h2>
+
+                    </div>
+                </div>
             </ul>
         </nav>
     </header>
-    <!--Modal Base-->
-    <div class=".bg-modal">
-        <div class="modal-content">
-            <div class="close"> + </div>
-            <img src="login01.png" alt="" width="130px">
 
-            <form action="">
-                <input type="email" placeholder="Email">
-                <br><br>
-                <input type="password" placeholder="Senha">
-                <br><br>
-                <a href="#" class="button"> Entrar </a>
-                <br><br>
-                <a class="login-reset" href="">Novo usuário</a>
-                <br><br>
-                <a class="login-reset" href="">Esqueci a senha</a>
-            </form>
-        </div>
-
-    </div>
-    <!--<script src="login.js"></script>-->
-
+    <footer>
+        © Copyright 2022 Adote Pet
+    </footer>
 </body>
+
 
 </html>

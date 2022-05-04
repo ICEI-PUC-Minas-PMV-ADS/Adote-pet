@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: ;
-    src: url('') format('');
+    src: url("/Font/SunnyspellsRegular.otf") format("opentype");
 }
 body{
     height: 100%;
@@ -20,22 +20,98 @@ header{
     height: 150px;
 }
 
-#logo{
+.logo{
     float: left;
-    margin: -70px 30px;
+    margin: -70px 0px 0px 30px;
 }
 
-#menu{
-    text-align: right;
-    padding-top: 60px;
-    padding-right: 30px;
-
+.menu{
+    margin: 0px;
+    float: right;
+    padding: 30px;
+    list-style-type: none;
 }
 
-#menu a{
-    color: #0fa259;
-    padding-right: 15px;
+.menu ul{
+    list-style: none;
+    position: relative;
+    display: block;
     text-decoration: none;
-    font-family: ;
+    
+}
+
+.menu ul li{
+    width: 90px;
+    float: left;
+}
+
+.menu a{
+    color: #0fa259;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #094056;
+}
+
+.menu ul ul{
+    padding: 0px;
+    position: absolute;
+    visibility: hidden;
+    border: solid 1px #04add4;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
 
 }
+
+.menu ul ul li{
+    float: none;
+}
+
+.menu-button{
+    display: none;
+}
+#closeMenu{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .menu-button{
+        display: block;
+        color: #0fa259;
+        background-color: #094056;
+        border: none;
+        width: 50px;
+        margin: 55px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .menu{
+        background-color: #094056;
+        float: right;
+        padding: 10px;
+        width: 160px;
+        margin: 15px;
+        transition: all .4s;
+        z-index: 9;
+    }
+
+    .menu ul li{
+        float: none;
+    }
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+}
+    

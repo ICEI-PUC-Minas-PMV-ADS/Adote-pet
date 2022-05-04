@@ -20,15 +20,17 @@ static void main(string[] args)
         OpenConnection();
         
     }
-    if (email = temail)
+    if()
     {
-        if(senha = tsenha)
+        if (email = temail)
         {
+            if(senha = tsenha)
+            {
 
+            }
+            else
+            Console.Write("Senha Invalida");
         }
-        else
-        Console.Write("Senha Invalida");
+        else 
+        Console.Write("Email invalido");
     }
-    else 
-    Console.Write("Email invalido");
-}

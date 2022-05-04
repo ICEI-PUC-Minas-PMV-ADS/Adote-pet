@@ -1,0 +1,44 @@
+/* estilo menu */
+
+a {
+  color: #0fa259;
+  text-decoration: none;
+  font-family: sans-serif;
+ }
+   
+ a:hover {
+  font-size: 20px;
+ }
+ 
+ .logo {
+  margin-top: 30px;
+ }
+   
+ [data-header="cabecalho"] {
+  box-sizing: border-box;
+  margin-top: 1px;
+  height: 100px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #094056;
+ }
+   
+ [data-menu="menu"] {
+   display: flex;
+   list-style: none;
+   gap: .5rem;
+ }
+   
+ [data-menu="menu"] a {
+   display: block;
+   padding: .5rem;
+ }
+   
+ [data-botao="btnMobile"] {
+   display: none;
+ }
+  
+ 
+ 

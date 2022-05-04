@@ -1,62 +1,41 @@
-/*Principais cores*/
-footer {
-    color: #0fa259
+.cores{
+    cores: 
+    #0fa259
     #95d65b
     #e3e6ea
     #04add4
     #094056
     #e3e6ea
 }
-
-header {
-    background-color: #e3e6ea;
-    height: 300px;
-    padding: auto;
-    
+@font-face {
+    font-family: ;
+    src: url('') format('');
+}
+body{
+    height: 100%;
 }
 
-/* modal para login */
-.btn-login {
-    display: inline-flex;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+header{
+    background-color: #094056;
+    height: 150px;
 }
 
-.btn-login:hover {
-    background-color: #e3e6ea;
-    pointer-events: visible;
+#logo{
+    float: left;
+    margin: -70px 30px;
 }
 
-.modal {
-    position: fixed;
-    width: 100%;
-    display: grid;
-    place-content: center;
-    opacity: 0;
+#menu{
+    text-align: right;
+    padding-top: 60px;
+    padding-right: 30px;
+
 }
 
-.modal:target {
-    visibility: visible;
-    opacity: 1;
-}
+#menu a{
+    color: #0fa259;
+    padding-right: 15px;
+    text-decoration: none;
+    font-family: ;
 
-.modal-conteudo {
-    background-color: #e3e6ea;
-    border-radius: 4px;
-    border-top: 5px solid #094056;    /* borda superior do box do conteúdo */
-}
-
-.modal-link {
-    display: flex;
-    justify-content: center;
-    background-color: #95d65b;
-    border-radius: 4px;
-    align-items: center;
-}
-
-.menu > .login {
-    position: absolute; 
-    left: 95%;
-    display: inline-block;
 }

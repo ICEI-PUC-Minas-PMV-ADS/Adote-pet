@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="css\login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header data-header="cabecalho">
-        <img src="/src/logo-adote-pet.png" alt="logo" class="logo">
+        <img src="src\logo-adote-pet.png" alt="logo" class="logo">
         <nav data-nav="nav">
 
             <button aria-label="Abrir Menu" data-botao="btnMobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-        <span data-span="hamburguer"></span>
-      </button>
+            <span data-span="hamburguer"></span>
+            </button>
 
             <ul data-menu="menu" role="menu">
                 <li><a href="/">Home</a></li>
@@ -25,34 +26,58 @@
                 <li><a href="/">Perfil</a></li>
                 <li><a href="/">Sobre</a></li>
                 <!--usando modal-->
-                <a href="#abrirModal">Login</a>
+                <!--<li><a href="modalExemplo" class="abrirModal">Login</a></li>-->
+                <label for="modalExemplo" class="abrirModal">Login</label>
 
-                <div id="abrirModal" class="modal">
-                    <!-- conteúdo do modal aqui -->
-                    <img src="/src/avatar.png" alt="" width="130px">
-                    <h1>Login</h1>
-                    <form action="">
-                        <input type="email" placeholder="Email">
-                        <br><br>
-                        <input type="password" placeholder="Senha">
-                        <br><br>
-                        <a href="" class="button"> Entrar </a>
-                        <a class="login-reset" href="">Novo usuário</a>
-                        <a class="login-reset" href="">Esqueci a senha</a>
-                    </form>
-                    <!--Abrir Log-->
-                    <a href="#abrirModal"></a>
-
-                    <div id="abrirModal" class="modal">
-                        <a href="#fechar" title="Fechar" class="fechar">x</a>
-                        <h2>Janela Modal</h2>
-
-                    </div>
-                </div>
             </ul>
         </nav>
     </header>
 
+    <input type="checkbox" id="modalExemplo" class="checkboxModal">
+    <div class="modal">
+        <!--<li><a href="modalExemplo" class="fecharModal">x</a></li>-->
+
+
+        <label for="modalExemplo" class="fecharModal">x</label>
+
+
+        <div class="conteudoModal">
+
+            <div class="container">
+
+                <div class="Login-Form">
+                    <img src="src\avatar.png" alt="" width="130px">
+                    <div class="title">Login </div>
+                    <form action="#">
+
+                        <div class="input-box">
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" placeholder="Digite seu Email" required>
+
+                        </div>
+
+                        <div class="input-box">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" placeholder="Digite sua Senha" required>
+
+                        </div>
+
+                        <div class="input-box">
+                            <input type="submit" value="Entrar">
+                        </div>
+
+                        <div class="fotget"> <a href="#"> Esqueceu a Senha</a></div>
+                        <br>
+                        <div class="fotget"> <a href="#">Cadastre-se</a></div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
 
 </body>
 

@@ -5,7 +5,7 @@
     #e3e6ea
     #04add4
     #094056
-    #e3e6ea
+
 }
 @font-face {
     font-family: ;
@@ -13,6 +13,7 @@
 }
 body{
     height: 100%;
+    background-color: #e3e6ea;
 }
 
 header{
@@ -23,6 +24,9 @@ header{
 .logo{
     float: left;
     margin: -70px 0px 0px 30px;
+}
+.logo input{
+    width: 300px;
 }
 
 .menu{
@@ -71,47 +75,110 @@ header{
     float: none;
 }
 
-.menu-button{
-    display: none;
-}
-#closeMenu{
-    display: none;
+.menu a:hover, .menu a:focus{
+    color: #95d65b;
 }
 
 @media (max-width: 900px){
+    header{
+        height: 50px;
+    }
+    .logo{
+        float: left;
+        margin: -22px 0px 0px 10px;
+    }
+    .logo input{
+        width: 100px;
+    }
     .menu-button{
         display: block;
-        color: #0fa259;
-        background-color: #094056;
+        background-color: transparent;
         border: none;
         width: 50px;
-        margin: 55px;
+        margin: 10px;
         float: right;
         cursor: pointer;
     }
-
+    .menu-button i {
+        color: #0fa259;
+    }
     .menu{
-        background-color: #094056;
-        float: right;
-        padding: 10px;
-        width: 160px;
+        display: none;
+    }
+
+    .closebtn{
+        position: absolute;
+        color: #094056;
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 40px;
+        right: 45px;
+        cursor: pointer;
+        
+    }
+    
+    .menuresp{
+        position: relative;
+        text-align: center;
+        padding: 20px;
         margin: 15px;
         transition: all .4s;
         z-index: 9;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
     }
 
-    .menu ul li{
+    .menuresp ul li{
         float: none;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 15px;
     }
-    .menu ul ul{
+
+    .menuresp ul ul{
         position: static;
         overflow: hidden;
         max-height: 0;
         transition: all .4s;
+        display: block;
     }
-    .menu ul li:hover ul{
+
+    .menuresp ul li:hover ul{
         height: auto;
         max-height: 200px;
     }
+    .menuresp a{
+        text-decoration: none;
+        color: #094056;
+        font-size: 20px;
+
+    }
+
+    .overlay{
+        width: 0;
+        height: 100%;
+        background-color: #0fa259;
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+        float: right;
+    }
+    .overlay a:hover, .overlay a:focus{
+        color: #04add4;
+    }
+    .closebtn a:hover, .closebtn a:focus{
+        color: #04add4;
+    }
 }
-    
+@media (min-width: 900px){
+    .menu-button{
+        display: none;
+    }
+    #myNav{
+        display: none;
+    }
+}

@@ -1,8 +1,7 @@
 
-function openMenu(){
-    document.getElementById("closeMenu")
+function openNav(){
+    document.getElementById("myNav").style.width = '100%';
 }
-
-function closeMenu(){
-    alert("teste 2")
+function closeNav(){
+    document.getElementById("myNav").style.width = '0';
 }

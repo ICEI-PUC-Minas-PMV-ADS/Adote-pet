@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto-Adote-Pet", "Projeto-Adote-Pet\Projeto-Adote-Pet.csproj", "{B01E64C9-A8EA-4588-B942-505FF43E2613}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B01E64C9-A8EA-4588-B942-505FF43E2613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01E64C9-A8EA-4588-B942-505FF43E2613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01E64C9-A8EA-4588-B942-505FF43E2613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01E64C9-A8EA-4588-B942-505FF43E2613}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53201D4F-BB81-4F6A-81DB-44683940FDD5}
+	EndGlobalSection
+EndGlobal

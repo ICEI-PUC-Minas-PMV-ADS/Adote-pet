@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Editar cadastro do pet";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Edite cadastro do pet</h1>
+       
+</div>
+<!--Formulário https://getbootstrap.com/docs/4.1/components/forms/-->
+<form>
+  <div class="form-group">
+    <label for="Nome">Nome</label>
+    <input type="text" class="form-control" placeholder="Digite o nome do Pet">    
+  </div>
+
+  <div class="form-group">
+    <label for="Especie">Espécie</label>
+    <input type="text" class="form-control" placeholder="Digite Gato ou Cachorro">    
+  </div>
+
+  <div class="form-group">
+    <label for="Sexo">Sexo</label>
+    <input type="text" class="form-control" placeholder="Macho ou Fêmea">    
+  </div>
+
+    <button type="submit" class="btn btn-danger btn-block">Alterar</button>
+    <a class="btn btn-secondary btn-block" asp-controller="Cadastro" asp-action="Index" role="button">Voltar</a>
+</form>

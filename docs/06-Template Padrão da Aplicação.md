@@ -33,13 +33,45 @@ As fontes usadas na aplicação são happy monkey  e sunny spells, e seguem as s
 A tela inicial ou Home apresentada na figura abaixo permite visualizar os animas disponivel para adoção, na barra de pesquisa pode localizar outros animais e o login abre outra pagina.
 RF-04 - permite o usuario da aplicação pesquisar aniamis para adoção
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/home3.png)
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Home.png)
 
 ### Tela - Login
 
 A tela de login possui duas 
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/PgLogin2.png)
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/homemodallogin.png)
+
+### Tela - buscar
+
+A tela buscar
+
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Buscar.png)
+
+### Tela - Cadastro usuario
+
+A tela de cadastro de usuario
+
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/cadastrousuario.png)
+
+### Tela - Editar perfil
+
+A tela de editar perfil
+
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/editarperfil.png)
+
+### Tela - Pets
+
+A tela de incluir e editar pets
+
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/incluireeditarpet.png)
+
+### Tela - Sobre
+
+A tela sobre a 
+
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Sobre.png)
+
+
 
 > **Links Úteis**:
 >

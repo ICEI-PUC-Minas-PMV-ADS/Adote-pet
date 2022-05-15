@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B7xXbocpln0JJvjYfAwLF125qSD2Eo1weUhaLr9a5J/dVhu5LbHap4Q9SV7GKRarRyvd5lioUaTbhwhnpXTQtw==",
+  "dgSpecHash": "l56IuQugh72pS/YOqT1yL7GR0ty7iFLq4IWFKiyv0Gj2vI+YiMJON8grPb6ZN0bpKnDn6KTgE+kn4Q9hx441BQ==",
   "success": true,
-  "projectFilePath": "F:\\PUC-Tecnologo-ADS\\AdotePet2 - Copia\\AdotePet2 - Copia\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
+  "projectFilePath": "C:\\Users\\Denver\\Desktop\\Adotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Denver\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Denver\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -7295,11 +7295,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\PUC-Tecnologo-ADS\\AdotePet2 - Copia\\AdotePet2 - Copia\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
+      "projectUniqueName": "C:\\Users\\Denver\\Desktop\\Adotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
       "projectName": "Projeto-Adote-Pet",
-      "projectPath": "F:\\PUC-Tecnologo-ADS\\AdotePet2 - Copia\\AdotePet2 - Copia\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
+      "projectPath": "C:\\Users\\Denver\\Desktop\\Adotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
       "packagesPath": "C:\\Users\\Denver\\.nuget\\packages\\",
-      "outputPath": "F:\\PUC-Tecnologo-ADS\\AdotePet2 - Copia\\AdotePet2 - Copia\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\",
+      "outputPath": "C:\\Users\\Denver\\Desktop\\Adotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Denver\\AppData\\Roaming\\NuGet\\NuGet.Config",

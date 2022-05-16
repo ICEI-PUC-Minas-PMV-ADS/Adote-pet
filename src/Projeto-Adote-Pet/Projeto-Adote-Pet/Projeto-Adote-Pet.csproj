@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Projeto_Adote_Pet</RootNamespace>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <UserSecretsId>eb51a74b-164f-4301-a2e9-8531d3d973de</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

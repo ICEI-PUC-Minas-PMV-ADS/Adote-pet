@@ -1,0 +1,30 @@
+{
+  "dependencies": {},
+  "parameters": {
+    "Projeto-Adote-Pet20220515200557.subscriptionId": {
+      "Name": "Projeto-Adote-Pet20220515200557.subscriptionId",
+      "Type": "subscription",
+      "Value": "f9287cb5-c930-4835-8702-188f13269b2e"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "f9287cb5-c930-4835-8702-188f13269b2e"
+    },
+    "Projeto-Adote-Pet20220515200557.resourceName": {
+      "Name": "Projeto-Adote-Pet20220515200557.resourceName",
+      "Type": null,
+      "Value": "Projeto-Adote-Pet20220515200557"
+    },
+    "Projeto-Adote-Pet20220515200557.resourceGroupName": {
+      "Name": "Projeto-Adote-Pet20220515200557.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Projeto-Adote-Pet20220515200557ResourceGroup"
+    },
+    "Projeto-Adote-Pet20220515200557.resourceGroupLocation": {
+      "Name": "Projeto-Adote-Pet20220515200557.resourceGroupLocation",
+      "Type": null,
+      "Value": "centralus"
+    }
+  }
+}

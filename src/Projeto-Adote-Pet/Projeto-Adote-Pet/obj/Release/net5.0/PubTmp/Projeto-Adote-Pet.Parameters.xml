@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="Projeto-Adote-Pet" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="Projeto-Adote-Pet20220515200557" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

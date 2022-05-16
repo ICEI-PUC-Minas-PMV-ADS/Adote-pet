@@ -42,7 +42,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Foi utilizada a plataforma Azure em conjunto com o Visual Studio. Aplicação foi hospedada em https://projeto-adote-pet20220515200557.azurewebsites.net/. Criado o cadastro no Azure e o banco de dados SQL. Conectado o Azure junto ao Visual Studio e feitas as adequações do servidor no arquivo JSON. Em seguida foi publicado o projeto do Github no Azure.
 
 > **Links Úteis**:
 >

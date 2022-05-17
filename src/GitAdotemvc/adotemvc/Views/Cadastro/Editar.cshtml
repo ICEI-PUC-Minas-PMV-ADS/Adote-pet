@@ -1,0 +1,35 @@
+﻿@model CadastroModel
+@{
+    ViewData["Title"] = "Editar cadastro do pet";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Edite cadastro do pet</h1>
+       
+</div>
+
+<!--Semelhante ao criar-->
+<form asp-controller="Cadastro" asp-action="Alterar" method="post">
+    
+    <!--pega o Idanimal, mas não aparece na página. Poderia ser usado para restringir a edição-->
+    <input type="hidden" asp-for="Idanimal"/>
+
+  <div class="form-group">
+    <label for="Nome">Nome</label>
+    <!--asp-for="Nome" faz um o nome à model-->
+    <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do Pet">    
+  </div>
+
+  <div class="form-group">
+    <label for="Especie">Espécie</label>
+    <input type="text" asp-for="Especie" class="form-control" placeholder="Digite Gato ou Cachorro">    
+  </div>
+
+  <div class="form-group">
+    <label for="Sexo">Sexo</label>
+    <input type="text" asp-for="Sexo" class="form-control" placeholder="Macho ou Fêmea">    
+  </div>
+
+    <button type="submit" class="btn btn-danger btn-block">Alterar</button>
+    <a class="btn btn-secondary btn-block" asp-controller="Cadastro" asp-action="Index" role="button">Voltar</a>
+</form>

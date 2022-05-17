@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Projeto-Adote-Pet"
+    "\\src\\GitAdotemvc",
+    "\\src\\GitAdotemvc\\adotemvc",
+    "\\src\\GitAdotemvc\\adotemvc\\Views",
+    "\\src\\GitAdotemvc\\adotemvc\\Views\\Cadastro",
+    "\\src\\Projeto-Adote-Pet",
+    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet",
+    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Views",
+    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Views\\Usuarios"
   ],
-  "SelectedNode": "\\src\\GitAdotemvc",
+  "SelectedNode": "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet.sln",
   "PreviewInSolutionExplorer": false
 }

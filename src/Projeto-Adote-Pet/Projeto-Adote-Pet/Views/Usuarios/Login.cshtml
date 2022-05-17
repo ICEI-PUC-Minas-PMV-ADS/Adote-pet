@@ -27,11 +27,18 @@
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
   
+            <!--Botões da tela de login-->
             <div class="form-group">
                 <input type="submit" value="Entrar" class="btn btn-primary" />
-                <a class="btn btn-info" asp-controller="Home" asp-action="Index">Voltar</a>
+                <a class="btn btn-success" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>                
+            </div>
+            
+            <div>
+            <a asp-action="Index">Voltar</a>
             </div>
         </form>
+
+        
 
         <h3>@ViewBag.Message</h3>
 

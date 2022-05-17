@@ -20,10 +20,8 @@ namespace Projeto_Adote_Pet.Models
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Telefone { get; set; }
 
-        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Endereco { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]

@@ -2,6 +2,13 @@ C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet
 C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\css\LogoAdotepet3.png
 C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
 C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
+C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\images\image001.png
+C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\images\image002.png
+C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\images\image003.png
+C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\images\image004.png
+C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\images\image005.png
+C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\images\image006.png
+C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\images\image007.png
 C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\js\site.js
 C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\Denver\Documents\GitAtuais\GitAdotepet4\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

@@ -8,7 +8,6 @@
 
 <h3>Tem Certeza que deseja apagar?</h3>
 <div>
-    <h4>Usuario</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -51,7 +50,10 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Cpf" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Voltar</a>
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <div>
+            <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25px"></> </a>
+        </div>
+
     </form>
 </div>

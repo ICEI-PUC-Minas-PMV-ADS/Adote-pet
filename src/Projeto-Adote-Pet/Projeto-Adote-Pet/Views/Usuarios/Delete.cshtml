@@ -50,10 +50,11 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Cpf" />
-        <input type="submit" value="Delete" class="btn btn-danger" />
-        <div>
+
+        <input type="image" src="~/images/icone-excluir.png" width="47" value="Delete" class="btn btn-danger" />
+        <br /><br />
             <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25px"></> </a>
-        </div>
+        
 
     </form>
 </div>

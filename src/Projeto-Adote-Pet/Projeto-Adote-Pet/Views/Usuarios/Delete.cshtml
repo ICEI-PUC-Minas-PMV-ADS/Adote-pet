@@ -4,11 +4,10 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Deletar</h1>
+<h3>Tem certeza que deseja Apagar?</h3>
+<hr />
 
-<h3>Tem Certeza que deseja apagar?</h3>
 <div>
-    <hr />
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
@@ -51,10 +50,13 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="Cpf" />
 
-        <input type="image" src="~/images/icone-excluir.png" width="47" value="Delete" class="btn btn-danger" />
-        <br /><br />
-            <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25px"></> </a>
-        
+        <input type="image" src="~/images/icone-excluir.png" width="50" value="Delete" class="btn btn-outline-danger" />
+       
+        <p></p>  
+
+        <div>
+            <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25"></> </a>
+        </div> 
 
     </form>
 </div>

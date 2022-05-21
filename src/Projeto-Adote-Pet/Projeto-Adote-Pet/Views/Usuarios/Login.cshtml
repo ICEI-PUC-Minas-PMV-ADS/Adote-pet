@@ -4,10 +4,9 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
-
-
+<h2>Login</h2>
 <hr />
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Login">
@@ -29,13 +28,10 @@
   
             <!--Botões da tela de login-->
             <div class="form-group">
-                <input type="submit" value="Entrar" class="btn btn-primary" />
-                <a class="btn btn-success" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>                
-            </div>
+                <input type="submit" value="Entrar" class="btn btn-outline-primary" />
+                <a class="btn btn-outline-success" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>                
+            </div>            
             
-            <div>        
-                <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25px"></> </a>
-            </div>
         </form>
 
         

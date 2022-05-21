@@ -4,7 +4,10 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Cadastrar usuário</h1>
+<div>
+    <img class=imgicone src="~/images/icone-adicionar.png" alt="Editar" width="40"/>
+    <h2 class="imgtexto">Cadastre-se abaixo:</h2>
+</div>
 
 <hr />
 <div class="row">
@@ -47,14 +50,10 @@
                 <span asp-validation-for="Perfil" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Criar" class="btn btn-primary" />
+                <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />
             </div>
         </form>
     </div>
-</div>
-
-<div>        
-    <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25px"></> </a>
 </div>
 
 @section Scripts {

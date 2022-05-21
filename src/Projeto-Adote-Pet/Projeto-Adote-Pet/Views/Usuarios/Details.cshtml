@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Details";
 }
-
+<br />
 <h2>Detalhes da sua conta</h2>
 <hr />
 
@@ -44,7 +44,7 @@
 </div>
 
 <div>
-   <img src="~/images/icone-editar.png"width="40" /> <a class="btn btn-outline-info" asp-action="Edit" asp-route-id="@Model.Cpf">Editar</a>                
+    <a class="btn btn-outline-info" asp-action="Edit"><img src="~/images/icone-editar.png"width="15" asp-route-id="@Model.Cpf">  Editar</a>                
 </div>
 
 <p> </p>

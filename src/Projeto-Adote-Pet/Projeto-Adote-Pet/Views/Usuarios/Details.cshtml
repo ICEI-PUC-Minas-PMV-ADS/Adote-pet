@@ -3,12 +3,11 @@
 @{
     ViewData["Title"] = "Details";
 }
-
-<h1>Detalhes</h1>
 <br />
-<div>
-    <h4>Usuário</h4>
-    <hr />
+<h2>Detalhes da sua conta</h2>
+<hr />
+
+<div>     
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
@@ -43,12 +42,13 @@
         </dd>
     </dl>
 </div>
-<div>
 
-   <img src="~/images/icone-editar.png"width="40" /> <a class="btn btn-info asp-action="Edit" asp-route-id="@Model.Cpf">Editar</a>                
+<div>
+    <a class="btn btn-outline-info" asp-action="Edit"><img src="~/images/icone-editar.png"width="15" asp-route-id="@Model.Cpf">  Editar</a>                
 </div>
-<br
+
+<p> </p>
 
 <div>
-    <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25px"></> </a>
+    <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25"></> </a>
 </div>

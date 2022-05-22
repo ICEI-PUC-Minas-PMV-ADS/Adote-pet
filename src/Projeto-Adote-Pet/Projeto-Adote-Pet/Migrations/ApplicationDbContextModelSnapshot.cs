@@ -23,6 +23,10 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<string>("Cpf")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("ConfirmeSenha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

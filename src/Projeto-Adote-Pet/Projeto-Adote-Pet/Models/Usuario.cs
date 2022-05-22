@@ -32,6 +32,11 @@ namespace Projeto_Adote_Pet.Models
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
+
+        [DataType(DataType.Password)] // Configuração para a senha do usuário não aparecer 
+        public string ConfirmeSenha { get; set; }
+
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         
         public Perfil Perfil { get; set; }
     }

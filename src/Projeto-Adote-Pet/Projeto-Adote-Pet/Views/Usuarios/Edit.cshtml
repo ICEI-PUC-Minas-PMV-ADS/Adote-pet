@@ -3,8 +3,12 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
-<h1>Editar cadastro</h1>
+<br />
+<div class="text-left">
+    
+     <h2 class="imgtexto"><img class=imgicone src="~/images/icone-editar.png" alt="Editar" width="30"/>  Tela de Edição</h2>
+   
+</div>
 
 <hr />
 <div class="row">
@@ -44,15 +48,19 @@
                 <span asp-validation-for="Perfil" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-outline-primary" />
             </div>
+
         </form>
     </div>
 </div>
 
-<div>        
-    <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25px"></> </a>
-</div>
+<p></p>
+
+<div>
+    <a asp-action="Index"><img src="~/images/icone-voltar.png" alt="Voltar" width="25"></> </a>
+</div> 
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

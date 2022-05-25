@@ -4,8 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
+using System.ComponentModel.DataAnnotations.Schema;
+using Amazon.EC2.Model;
 
-[Table(Name = "Animal")]
+//sintaxe table estava errada
+// ln 56 public string Especie não seria sexo?
+// não está reconhecendo "Storage
+
+[Table ("Animal")]
 public class Animal   
 {
     private string _Idanimal;
@@ -167,8 +173,8 @@ public class Animal
     }
 }
 public class main
-{ 
-   foreach (Animal cust in custQuery)
+{
+    Foreach(Animal cust in custQuery)
     {
         Console.WriteLine("ID={0}, Nome={1}, Especie={2}, Sexo{3}, Raca{4}", cust.Idanimal, cust.NomePet, cust.Especie, cust.Sexo, cust.Raca);
     }

@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "dT4Xsk4S97MKZadAWiLEh1KhNa4MGGrL9EikNSZO7u73EaETPbRh38sEGeDcH1bmYdaz409hUfMhp6sehGCs7Q==",
+  "dgSpecHash": "DYuNdzpoHmw4e7uRerinMF/54PuYasci+8u2kOkry15EmlmJBJ8ipYXzUKgb4Kk9jX5N1CHI69nEsTenW2kplg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Denver\\.nuget\\packages\\awssdk\\2.3.55.2\\awssdk.2.3.55.2.nupkg.sha512",
     "C:\\Users\\Denver\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Denver\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Denver\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -134,16 +133,5 @@
     "C:\\Users\\Denver\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Denver\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'AWSSDK 2.3.55.2' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "AWSSDK",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

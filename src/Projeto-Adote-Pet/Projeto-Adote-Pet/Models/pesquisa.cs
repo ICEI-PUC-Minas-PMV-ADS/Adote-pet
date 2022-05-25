@@ -5,7 +5,6 @@ using System.Text;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
 using System.ComponentModel.DataAnnotations.Schema;
-using Amazon.EC2.Model;
 
 //sintaxe table estava errada
 // ln 56 public string Especie não seria sexo?

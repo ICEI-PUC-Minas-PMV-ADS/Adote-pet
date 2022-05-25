@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\Projeto-Adote-Pet",
-    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet",
-    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Models",
-    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Views",
-    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Views\\Usuarios"
+    ""
   ],
-  "SelectedNode": "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Models\\pesquisa.cs",
+  "SelectedNode": "\\Projeto-Adote-Pet.sln",
   "PreviewInSolutionExplorer": false
 }

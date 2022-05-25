@@ -7290,19 +7290,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Denver\\.nuget\\packages\\": {}
+    "C:\\Users\\Pichau\\.nuget\\packages\\": {},
+    "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
+      "projectUniqueName": "C:\\Users\\Pichau\\Documents\\Projetos\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
       "projectName": "Projeto-Adote-Pet",
-      "projectPath": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
-      "packagesPath": "C:\\Users\\Denver\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdotepet4\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\",
+      "projectPath": "C:\\Users\\Pichau\\Documents\\Projetos\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
+      "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Pichau\\Documents\\Projetos\\Adote-pet\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Denver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

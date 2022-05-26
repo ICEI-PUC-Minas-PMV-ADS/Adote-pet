@@ -122,7 +122,7 @@ namespace Projeto_Adote_Pet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Cpf,Nome,Email,Telefone,Endereco,Senha,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Cpf,Nome,Email,Telefone,Endereco,Senha,ConfirmeSenha,Perfil")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -155,7 +155,7 @@ namespace Projeto_Adote_Pet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Cpf,Nome,Email,Telefone,Endereco,Senha,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Edit(string id, [Bind("Cpf,Nome,Email,Telefone,Endereco,Senha,ConfirmeSenha,Perfil")] Usuario usuario)
         {
             if (id != usuario.Cpf)
             {

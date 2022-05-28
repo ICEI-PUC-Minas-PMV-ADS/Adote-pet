@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\CarrosselController.cs" />
+    <Compile Remove="Models\pesquisa.cs" />
   </ItemGroup>
 
   <ItemGroup>

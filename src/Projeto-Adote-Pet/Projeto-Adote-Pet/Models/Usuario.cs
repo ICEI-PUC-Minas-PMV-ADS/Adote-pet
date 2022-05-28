@@ -31,7 +31,7 @@ namespace Projeto_Adote_Pet.Models
         [DataType(DataType.Password)] // Configuração para a senha do usuário não aparecer 
         public string Senha { get; set; }
 
-        //(ErrorMessage = "Campo Obrigatório!")]
+        //[Required(ErrorMessage = "Campo Obrigatório!")]
 
         [DataType(DataType.Password)] // Configuração para a senha do usuário não aparecer 
         public string ConfirmeSenha { get; set; }

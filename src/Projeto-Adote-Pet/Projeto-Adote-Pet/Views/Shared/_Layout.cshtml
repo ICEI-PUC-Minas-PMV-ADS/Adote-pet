@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-info border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/css/LogoAdotepet3.png" alt="Logo" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -30,9 +30,9 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
-
-                                Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout"><img src="~/images/icone-sair.png" alt="sair" width=20px /></a>
                                 
+                                    Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout"><img src="~/images/icone-sair.png" alt="sair" width=20px /></a>
+                                               
                             </li>
 
                         }
@@ -40,8 +40,16 @@
                         {
                             <li class="nav-item">
 
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login"><img src="~/images/loginuser.png" alt="Login" width=30px /></a>
+                                <div>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login"><img src="~/images/loginuser.png" alt="Login" width=30px />Logon</a>
+                                </div>
+                                
+                                <div>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>
+                                </div>
+        
                             </li>
+
                         }
                        
                     </ul>
@@ -55,7 +63,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted bg-dark">
+    <footer class="border-top footer text-light bg-info">
         <div class="container">
             &copy; 2022 - Adote Pet - Conectando pets e cuidadores
         </div>

@@ -46,10 +46,10 @@ namespace Projeto_Adote_Pet.Models
         [Display(Name = "Status")]
         public PstatusEnum Pstatus { get; set; }
 
-        public int UsuarioCpf { get; set; }
+        //public int UsuarioCpf { get; set; }
         
-        [ForeignKey("UsuarioCpf")]
-        public Usuario Usuario { get; set; }
+        //[ForeignKey("UsuarioCpf")]
+        //public Usuario Usuario { get; set; }
 
 
         public enum EspecieEnum

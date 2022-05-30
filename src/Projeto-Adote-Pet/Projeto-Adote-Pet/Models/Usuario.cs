@@ -41,7 +41,7 @@ namespace Projeto_Adote_Pet.Models
         public Perfil Perfil { get; set; }
 
         //link virtualmente com FK dos Pets
-        public ICollection<PetModel> Pets { get; set; }
+        //public ICollection<PetModel> Pets { get; set; }
     }
 
     public enum Perfil

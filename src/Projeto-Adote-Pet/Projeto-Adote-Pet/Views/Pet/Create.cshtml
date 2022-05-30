@@ -1,4 +1,5 @@
-﻿@model Projeto_Adote_Pet.Models.PetModel
+﻿@using static Projeto_Adote_Pet.Models.PetModel
+@model Projeto_Adote_Pet.Models.PetModel
 
 @{
     ViewData["Title"] = "Create";
@@ -14,12 +15,12 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Especie" class="control-label"></label>
-                <select asp-for="Especie" class="form-control"></select>
+                <select asp-for="Especie" class="form-control" asp-items="Html.GetEnumSelectList<EspecieEnum>()"></select>
                 <span asp-validation-for="Especie" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Sexo" class="control-label"></label>
-                <select asp-for="Sexo" class="form-control"></select>
+                <select asp-for="Sexo" class="form-control" asp-items="Html.GetEnumSelectList<SexoEnum>()"></select>
                 <span asp-validation-for="Sexo" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -34,7 +35,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Porte" class="control-label"></label>
-                <select asp-for="Porte" class="form-control"></select>
+                <select asp-for="Porte" class="form-control" asp-items="Html.GetEnumSelectList<PorteEnum>()"></select>
                 <span asp-validation-for="Porte" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -54,7 +55,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Estado" class="control-label"></label>
-                <select asp-for="Estado" class="form-control"></select>
+                <select asp-for="Estado" class="form-control" asp-items="Html.GetEnumSelectList<EstadoEnum>()"></select>
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -64,16 +65,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="Pstatus" class="control-label"></label>
-                <select asp-for="Pstatus" class="form-control"></select>
+                <select asp-for="Pstatus" class="form-control" asp-items="Html.GetEnumSelectList<PstatusEnum>()"></select>
                 <span asp-validation-for="Pstatus" class="text-danger"></span>
-            </div>
+            </div>            
             <div class="form-group">
-                <label asp-for="Cpf" class="control-label"></label>
-                <input asp-for="Cpf" class="form-control" />
-                <span asp-validation-for="Cpf" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>

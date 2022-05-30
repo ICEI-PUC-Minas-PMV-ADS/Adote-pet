@@ -15,10 +15,10 @@ namespace Projeto_Adote_Pet.Models
 
         [Required(ErrorMessage = "Escolha uma opção")]
         [Display(Name = "Espécie")]
-        public string Especie { get; set; }
+        public EspecieEnum Especie { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
-        public string Sexo { get; set; }
+        public SexoEnum Sexo { get; set; }
         
         [Required(ErrorMessage = "Campo Obrigatório!")]
         [Display(Name = "Raça")]
@@ -28,29 +28,55 @@ namespace Projeto_Adote_Pet.Models
         public string Idade { get; set; }
 
         [Required(ErrorMessage = "Escolha uma opção")]
-        public string Porte { get; set; }
+        public PorteEnum Porte { get; set; }
+        
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Nome { get; set; }
 
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Cor { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Cidade { get; set; }
 
         [Required(ErrorMessage = "Escolha uma opção")]
-        public string Estado { get; set; }
+        public EstadoEnum Estado { get; set; }
         
-        [Display(Name = "Descrição (Opcional")]
+        [Display(Name = "Descrição")]
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Escolha uma opção")]
         [Display(Name = "Status")]
-        public string Pstatus { get; set; }
+        public PstatusEnum Pstatus { get; set; }
 
         //public int UsuarioCpf { get; set; }
-        
+
         //[ForeignKey("UsuarioCpf")]
         //public Usuario Usuario { get; set; }
-        
+
+        public enum EspecieEnum
+        {
+            Cachorro,
+            Gato
+        }
+        public enum SexoEnum
+        {
+            Macho,
+            Fêmea
+        }
+        public enum PorteEnum
+        {
+            Pequeno,
+            Médio,
+            Grande
+        }
+        public enum PstatusEnum
+        {
+            Adotado,
+            Disponível
+        }
+
         public enum EstadoEnum
         {
             AC,

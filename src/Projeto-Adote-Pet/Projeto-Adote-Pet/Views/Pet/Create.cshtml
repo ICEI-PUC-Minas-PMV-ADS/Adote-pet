@@ -4,35 +4,42 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<h1>Create</h1>
-
-<h4>PetModel</h4>
+<div>
+    <img class=imgicone src="~/images/image-adicao.png" alt="Editar" width="40"/>
+    <h2 class="imgtexto">Cadastre-se o Pet:</h2>
+</div>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Especie" class="control-label"></label>
-                <select asp-for="Especie" class="form-control" asp-items="Html.GetEnumSelectList<EspecieEnum>()"></select>
-                <span asp-validation-for="Especie" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sexo" class="control-label"></label>
-                <select asp-for="Sexo" class="form-control" asp-items="Html.GetEnumSelectList<SexoEnum>()"></select>
-                <span asp-validation-for="Sexo" class="text-danger"></span>
-            </div>
+            
+            <fieldset class="form-group"><legend>Espécie</legend>
+                <input asp-for="Especie" id="cCao" name="Especie" value="Cachorro" type="radio"> <label for="cCao">Cachorro</label>  <br />                   
+                <input asp-for="Especie" id="cGato" name="Especie" value="Gato" type="radio"><label for="cCao">Gato</label>                     
+            </fieldset>
+            
+            <fieldset class="form-group" id="cSexo"><legend>Sexo</legend>
+                <input asp-for="Sexo" id="cMac" name="Sexo" value="Macho" type="radio"> <label for="cMac">Macho</label> <br />
+                <input asp-for="Sexo" id="cFem" name="Sexo" value="Fêmea" type="radio"> <label for="cFem">Fêmea</label> 
+            </fieldset>                                   
             <div class="form-group">
                 <label asp-for="Raca" class="control-label"></label>
-                <input asp-for="Raca" class="form-control" />
+                <input asp-for="Raca" class="form-control" placeholder="Informe a raça do Pet"/>
                 <span asp-validation-for="Raca" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Idade" class="control-label"></label>
-                <input asp-for="Idade" class="form-control" />
+                <input asp-for="Idade" class="form-control" placeholder="Coloque a idade em meses ou em anos"/>
                 <span asp-validation-for="Idade" class="text-danger"></span>
             </div>
+
+            <fieldset class="form-group"><legend>Porte</legend>
+                <input asp-for="Porte" id="cPeq" name="Porte" value="Pequeno" type="radio"> <label for="CPeq">Pequeno</label> <br />                   
+                <input asp-for="Porte" id="cMed" name="Porte" value="Médio" type="radio"><label for="cMed">Médio</label> <br />
+                <input asp-for="Porte" id="cGra" name="Porte" value="Grande" type="radio"><label for="cGra">Grande</label>                     
+            </fieldset>
+
             <div class="form-group">
                 <label asp-for="Porte" class="control-label"></label>
                 <select asp-for="Porte" class="form-control" asp-items="Html.GetEnumSelectList<PorteEnum>()"></select>
@@ -40,17 +47,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
+                <input asp-for="Nome" class="form-control" placeholder="Nome do Pet"/>
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Cor" class="control-label"></label>
-                <input asp-for="Cor" class="form-control" />
+                <input asp-for="Cor" class="form-control" placeholder="Cor ou cores do Pet" />
                 <span asp-validation-for="Cor" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Cidade" class="control-label"></label>
-                <input asp-for="Cidade" class="form-control" />
+                <input asp-for="Cidade" class="form-control" placeholder="Escreva o nome completo da cidade que está o Pet" />
                 <span asp-validation-for="Cidade" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -60,23 +67,23 @@
             </div>
             <div class="form-group">
                 <label asp-for="Descricao" class="control-label"></label>
-                <input asp-for="Descricao" class="form-control" />
+                <input asp-for="Descricao" class="form-control" placeholder="Descreva um pouco sobre o Pet"/>
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
+            <fieldset class="form-group" id="cStatus"><legend>Status</legend>
+                <input asp-for="Pstatus" id="cAdo" name="Pstatus" value="Adotado" type="radio"> <label for="cAdo">Adotado</label> <br />
+                <input asp-for="Pstatus" id="cDisp" name="Pstatus" value="Disponível" type="radio"> <label for="cDisp">Disponível</label> 
+            </fieldset>             
+            
             <div class="form-group">
-                <label asp-for="Pstatus" class="control-label"></label>
-                <select asp-for="Pstatus" class="form-control" asp-items="Html.GetEnumSelectList<PstatusEnum>()"></select>
-                <span asp-validation-for="Pstatus" class="text-danger"></span>
-            </div>            
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-outline-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para lista</a>
 </div>
 
 @section Scripts {

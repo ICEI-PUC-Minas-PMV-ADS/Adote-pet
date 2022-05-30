@@ -13,12 +13,13 @@ namespace Projeto_Adote_Pet.Models
         [Key]
         public int Idanimal { get; set; }
 
-        [Required(ErrorMessage = "Campo Obrigatório!")]
+        [Required(ErrorMessage = "Escolha uma opção")]
         [Display(Name = "Espécie")]
-        public EspecieEnum Especie { get; set; }
+        public string Especie { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
-        public SexoEnum Sexo { get; set; }
+        public string Sexo { get; set; }
+        
         [Required(ErrorMessage = "Campo Obrigatório!")]
         [Display(Name = "Raça")]
         public string Raca { get; set; }
@@ -26,8 +27,8 @@ namespace Projeto_Adote_Pet.Models
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Idade { get; set; }
 
-        [Required(ErrorMessage = "Campo Obrigatório!")]
-        public PorteEnum Porte { get; set; }
+        [Required(ErrorMessage = "Escolha uma opção")]
+        public string Porte { get; set; }
         public string Nome { get; set; }
 
         public string Cor { get; set; }
@@ -35,39 +36,21 @@ namespace Projeto_Adote_Pet.Models
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Cidade { get; set; }
 
-        [Required(ErrorMessage = "Campo Obrigatório!")]
-        public EstadoEnum Estado { get; set; }
-
-        [Required(ErrorMessage = "Campo Obrigatório!")]
-        [Display(Name = "Descrição")]
+        [Required(ErrorMessage = "Escolha uma opção")]
+        public string Estado { get; set; }
+        
+        [Display(Name = "Descrição (Opcional")]
         public string Descricao { get; set; }
 
-        [Required(ErrorMessage = "Campo Obrigatório!")]
+        [Required(ErrorMessage = "Escolha uma opção")]
         [Display(Name = "Status")]
-        public PstatusEnum Pstatus { get; set; }
+        public string Pstatus { get; set; }
 
         //public int UsuarioCpf { get; set; }
         
         //[ForeignKey("UsuarioCpf")]
         //public Usuario Usuario { get; set; }
-
-
-        public enum EspecieEnum
-        {
-            Cachorro,
-            Gato
-        }
-        public enum SexoEnum
-        {
-            Macho,
-            Fêmea
-        }
-        public enum PorteEnum
-        {
-            Pequeno,
-            Médio,
-            Grande
-        }
+        
         public enum EstadoEnum
         {
             AC,
@@ -97,11 +80,6 @@ namespace Projeto_Adote_Pet.Models
             SP,
             SE,
             TO
-        }
-        public enum PstatusEnum
-        {
-            Adotado,
-            Disponível
         }
     }
 }

@@ -6,7 +6,7 @@
 <br />
 <div class="text-left">
     
-     <h2 class="imgtexto"><img class=imgicone src="~/images/icone-editar.png" alt="Editar" width="30"/>  Tela de Edição</h2>
+     <h2 class="imgtexto"><img class=imgicone src="~/images/icone-editar.png" alt="Editar" width="30"/>Edição de dados do usuário</h2>
    
 </div>
 
@@ -47,8 +47,9 @@
                 <select asp-for="Perfil" class="form-control" asp-items="Html.GetEnumSelectList<Perfil>()"></select>
                 <span asp-validation-for="Perfil" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Salvar" class="btn btn-outline-primary" />
+                <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />
             </div>
 
         </form>

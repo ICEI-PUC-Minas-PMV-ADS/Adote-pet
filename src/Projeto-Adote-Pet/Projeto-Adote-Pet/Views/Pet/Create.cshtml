@@ -15,8 +15,8 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             
             <fieldset class="form-group"><legend>Espécie</legend>
-                <input asp-for="Especie" id="cCao" name="Especie" value="Cachorro" type="radio"> <label for="cCao">Cachorro</label>  <br />                   
-                <input asp-for="Especie" id="cGato" name="Especie" value="Gato" type="radio"><label for="cCao">Gato</label>                     
+                <input asp-for="Especie" id="cCao" name="Especie" value="Cachorro" type="radio"> <label for="cCao">Cachorro</label> <br />                   
+                <input asp-for="Especie" id="cGato" name="Especie" value="Gato" type="radio"> <label for="cGato">Gato</label>                     
             </fieldset>
             
             <fieldset class="form-group" id="cSexo"><legend>Sexo</legend>
@@ -35,16 +35,11 @@
             </div>
 
             <fieldset class="form-group"><legend>Porte</legend>
-                <input asp-for="Porte" id="cPeq" name="Porte" value="Pequeno" type="radio"> <label for="CPeq">Pequeno</label> <br />                   
-                <input asp-for="Porte" id="cMed" name="Porte" value="Médio" type="radio"><label for="cMed">Médio</label> <br />
-                <input asp-for="Porte" id="cGra" name="Porte" value="Grande" type="radio"><label for="cGra">Grande</label>                     
+                <input asp-for="Porte" id="cPeq" name="Porte" value="Pequeno" type="radio"> <label for="cPeq">Pequeno</label>                    
+                <input asp-for="Porte" id="cMed" name="Porte" value="Médio" type="radio"> <label for="cMed">Médio</label> 
+                <input asp-for="Porte" id="cGra" name="Porte" value="Grande" type="radio"> <label for="cGra">Grande</label>                     
             </fieldset>
 
-            <div class="form-group">
-                <label asp-for="Porte" class="control-label"></label>
-                <select asp-for="Porte" class="form-control" asp-items="Html.GetEnumSelectList<PorteEnum>()"></select>
-                <span asp-validation-for="Porte" class="text-danger"></span>
-            </div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" class="form-control" placeholder="Nome do Pet"/>

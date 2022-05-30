@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote28\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj": {}
+    "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote29\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote28\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj": {
+    "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote29\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote28\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
+        "projectUniqueName": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote29\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
         "projectName": "Projeto-Adote-Pet",
-        "projectPath": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote28\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
+        "projectPath": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote29\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Projeto-Adote-Pet.csproj",
         "packagesPath": "C:\\Users\\Denver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote28\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\",
+        "outputPath": "C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote29\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Denver\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,17 +50,21 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.16, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.16, )"
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.16, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

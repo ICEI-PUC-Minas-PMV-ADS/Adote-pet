@@ -13,7 +13,7 @@ namespace Projeto_Adote_Pet.Models
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<CadastroModel> Cadastros { get; set; }
+        public DbSet<PetModel> Pets { get; set; }
     }
     
 }

@@ -14,11 +14,13 @@ namespace Projeto_Adote_Pet.Models
         public int Idanimal { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
+        [Display(Name = "Espécie")]
         public EspecieEnum Especie { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public SexoEnum Sexo { get; set; }
         [Required(ErrorMessage = "Campo Obrigatório!")]
+        [Display(Name = "Raça")]
         public string Raca { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
@@ -37,11 +39,18 @@ namespace Projeto_Adote_Pet.Models
         public EstadoEnum Estado { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
+        [Display(Name = "Descrição")]
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
+        [Display(Name = "Status")]
         public PstatusEnum Pstatus { get; set; }
-        public string Cpf { get; set; }
+
+        public int UsuarioCpf { get; set; }
+        
+        [ForeignKey("UsuarioCpf")]
+        public Usuario Usuario { get; set; }
+
 
         public enum EspecieEnum
         {

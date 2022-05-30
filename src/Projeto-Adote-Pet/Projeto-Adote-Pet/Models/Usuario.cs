@@ -39,6 +39,9 @@ namespace Projeto_Adote_Pet.Models
         [Required(ErrorMessage = "Campo Obrigatório!")]
         
         public Perfil Perfil { get; set; }
+
+        //link virtualmente com FK dos Pets
+        public ICollection<PetModel> Pets { get; set; }
     }
 
     public enum Perfil

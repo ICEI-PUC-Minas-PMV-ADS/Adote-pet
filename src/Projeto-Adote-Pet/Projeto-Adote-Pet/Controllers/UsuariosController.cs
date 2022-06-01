@@ -34,12 +34,11 @@ namespace Projeto_Adote_Pet.Controllers
 
             if (pessoa == null)
             {
-                ViewBag.Message = "Usuário ou senha inválidos";
+                ViewBag.Message = "Usuário e/ou Senha inválidos";
                 return View();
             }
 
             bool isSenhaOk = BCrypt.Net.BCrypt.Verify(usuario.Senha, pessoa.Senha);
-
 
             if (isSenhaOk)
             {
@@ -51,7 +50,8 @@ namespace Projeto_Adote_Pet.Controllers
                     new Claim(ClaimTypes.NameIdentifier, pessoa.Nome),
                     new Claim(ClaimTypes.Role, pessoa.Perfil.ToString())
                 };
-
+                
+                //valida os dados
                 var pessoaIdentity = new ClaimsIdentity(claims, "login");
 
                 ClaimsPrincipal principal = new ClaimsPrincipal(pessoaIdentity);
@@ -59,13 +59,13 @@ namespace Projeto_Adote_Pet.Controllers
                 var props = new AuthenticationProperties //expiração da autenticação
                 {
                     AllowRefresh = true,
-                    ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(30),
+                    ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(7),
                     IsPersistent = true
                 };
 
                 await HttpContext.SignInAsync(principal, props);
-
-                return Redirect("/"); //redirecionamento do cliente autenticado 
+                
+                return Redirect("/"); //redirecionamento do cliente autenticado para Home "/"
 
 
                 
@@ -78,6 +78,7 @@ namespace Projeto_Adote_Pet.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
+            // ("View", "Controller")
             return RedirectToAction("Login", "Usuarios");
         }
 
@@ -127,6 +128,7 @@ namespace Projeto_Adote_Pet.Controllers
             if (ModelState.IsValid)
             {
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);  //Criptografia da senha 
+                usuario.ConfirmeSenha = BCrypt.Net.BCrypt.HashPassword(usuario.ConfirmeSenha); //Cripto ConfirmeSenha
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -166,8 +168,8 @@ namespace Projeto_Adote_Pet.Controllers
             {
                 try
                 {
-                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha); //Criptografia da senha 
-                    _context.Update(usuario);
+                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha); //Criptografia da senha                     
+                    usuario.ConfirmeSenha = BCrypt.Net.BCrypt.HashPassword(usuario.ConfirmeSenha); //Cripto ConfirmeSenha_context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

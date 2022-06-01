@@ -32,20 +32,20 @@
                 <a class="btn btn-outline-success" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>                
             </div> 
             
+            <!--Aviso de senha inválida-->
+            <h4>@ViewBag.Message</h4>
+            
             <div class="p-2 bd-highlight">
 	            <a class="container-fluid" href="#" id="forgot-pass">Esqueceu a senha?</a>
-	          </div>
+	        </div>
 
             
         </form>
 
-        
-
-        <h3>@ViewBag.Message</h3>
+                
 
     </div>
-
-    
+   
 </div>
 
 @section Scripts {

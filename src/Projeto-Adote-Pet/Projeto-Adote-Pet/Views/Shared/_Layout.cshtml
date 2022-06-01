@@ -23,9 +23,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Perfil</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pet" asp-action="Index">Pets</a>
-                        </li>
+                        
 
                     </ul>
 
@@ -38,7 +36,9 @@
                                     Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout"><img src="~/images/icone-sair.png" alt="sair" width=20px /></a>
                                                
                             </li>
-
+                            <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pet" asp-action="Index">Pets</a>
+                             </li>
                         }
                         else
                         {

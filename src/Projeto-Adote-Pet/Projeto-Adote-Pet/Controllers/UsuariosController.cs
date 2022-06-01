@@ -8,9 +8,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Projeto_Adote_Pet.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Projeto_Adote_Pet.Controllers
 {
+    [Authorize]
+
     public class UsuariosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,11 +23,12 @@ namespace Projeto_Adote_Pet.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
-
+        [AllowAnonymous]
         [HttpPost] // recebe os dados do formulário 
         public async Task<IActionResult> Login([Bind("Email, Senha")] Usuario usuario)
         {
@@ -50,7 +54,7 @@ namespace Projeto_Adote_Pet.Controllers
                     new Claim(ClaimTypes.NameIdentifier, pessoa.Nome),
                     new Claim(ClaimTypes.Role, pessoa.Perfil.ToString())
                 };
-                
+
                 //valida os dados
                 var pessoaIdentity = new ClaimsIdentity(claims, "login");
 
@@ -64,15 +68,15 @@ namespace Projeto_Adote_Pet.Controllers
                 };
 
                 await HttpContext.SignInAsync(principal, props);
-                
+
                 return Redirect("/"); //redirecionamento do cliente autenticado para Home "/"
 
 
-                
+
             }
 
             ViewBag.Message = "Usuário ou senha inválidos";
-            return View(); 
+            return View();
         }
 
         public async Task<IActionResult> Logout()
@@ -87,7 +91,7 @@ namespace Projeto_Adote_Pet.Controllers
             return View();
         }
 
-
+        
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
@@ -112,6 +116,7 @@ namespace Projeto_Adote_Pet.Controllers
             return View(usuario);
         }
 
+        [AllowAnonymous]
         // GET: Usuarios/Create
         public IActionResult Create()
         {
@@ -121,6 +126,7 @@ namespace Projeto_Adote_Pet.Controllers
         // POST: Usuarios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Perfil,Cpf,Nome,Email,Telefone,Endereco,Senha,ConfirmeSenha")] Usuario usuario)

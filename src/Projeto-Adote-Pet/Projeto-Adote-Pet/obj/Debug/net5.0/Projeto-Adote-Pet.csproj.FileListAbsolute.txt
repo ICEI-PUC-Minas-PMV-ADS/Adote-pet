@@ -4396,3 +4396,10 @@ C:\Users\Pichau\Documents\GitHub\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-P
 C:\Users\Pichau\Documents\GitHub\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.pdb
 C:\Users\Pichau\Documents\GitHub\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.genruntimeconfig.cache
 C:\Users\Pichau\Documents\GitHub\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\ref\Projeto-Adote-Pet.dll
+C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Create.cshtml.g.cs
+C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Delete.cshtml.g.cs
+C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Details.cshtml.g.cs
+C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Edit.cshtml.g.cs
+C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Index.cshtml.g.cs

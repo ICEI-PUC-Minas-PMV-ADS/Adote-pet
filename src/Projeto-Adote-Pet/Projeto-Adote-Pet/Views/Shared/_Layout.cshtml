@@ -18,37 +18,37 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">               
+                    <ul class="navbar-nav flex-grow-1">
+                        <!--Restringe visualização de View-->
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Perfil</a>
+                        </li>
+                        }
                         
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Perfil</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Pet" asp-action="Index">Pets</a>
                         </li>
                         
 
                     </ul>
 
                     <ul class="navbar-nav">
-
+                        
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
                                 
                                     Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout"><img src="~/images/icone-sair.png" alt="sair" width=20px /></a>
                                                
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pet" asp-action="Index">Pets</a>
-                             </li>
+                            </li>                            
                         }
                         else
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login"><img src="~/images/loginuser.png" alt="Login" width=30px />Login</a>                                
-                            </li>
-                            <li class="nav-item">   
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>                                        
-                            </li>
-
+                            </li>                            
                         }
                        
                     </ul>

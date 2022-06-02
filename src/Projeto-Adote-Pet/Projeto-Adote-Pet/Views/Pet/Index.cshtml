@@ -86,9 +86,15 @@
             </td>
             
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Idanimal">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Idanimal">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.Idanimal">Delete</a>
+                    <!--Restrige Editar e Delete-->
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Idanimal">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@item.Idanimal">Delete</a>
+                    }
+                
+                <a asp-action="Details" asp-route-id="@item.Idanimal">Detalhes</a>
+                
             </td>
         </tr>
 }

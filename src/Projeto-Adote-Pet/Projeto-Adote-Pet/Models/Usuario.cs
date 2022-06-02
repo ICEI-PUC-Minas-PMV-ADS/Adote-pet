@@ -10,7 +10,7 @@ namespace Projeto_Adote_Pet.Models
     [Table("Usuarios")]//tabela de usuário 
     public class Usuario
     {        
-        public int IdUser { get; set; }
+        //public int IdUser { get; set; }
         [Key]
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Cpf { get; set; }
@@ -48,7 +48,9 @@ namespace Projeto_Adote_Pet.Models
         public PerfilEnum Perfil { get; set; }
 
         //link virtualmente com FK dos Pets
-        public ICollection<PetModel> Pets { get; set; }
+
+        public PetModel Pet { get; set; }
+        //public ICollection<PetModel> Pets { get; set; }
     }
 
     public enum PerfilEnum

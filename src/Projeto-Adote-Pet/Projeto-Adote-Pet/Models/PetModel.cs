@@ -50,11 +50,14 @@ namespace Projeto_Adote_Pet.Models
         [Display(Name = "Status")]
         public PstatusEnum Pstatus { get; set; }
 
-        //public int UsuarioCpf { get; set; }
+        public string ImagePet { get; set; }
 
-        //[ForeignKey("UsuarioCpf")]
-        //public Usuario Usuario { get; set; }
+        //Foreignkey
+        public int UsuarioId { get; set; }
+        [ForeignKey("UsuarioId")]
+        public Usuario Usuario { get; set; }
 
+        //Enumerações
         public enum EspecieEnum
         {
             Cachorro,

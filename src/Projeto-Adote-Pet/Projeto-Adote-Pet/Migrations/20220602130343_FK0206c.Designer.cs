@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Projeto_Adote_Pet.Models;
 
 namespace Projeto_Adote_Pet.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220602130343_FK0206c")]
+    partial class FK0206c
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -67,7 +69,13 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<int>("Sexo")
                         .HasColumnType("int");
 
+                    b.Property<int>("UsuarioCpf")
+                        .HasColumnType("int");
+
                     b.HasKey("Idanimal");
+
+                    b.HasIndex("UsuarioCpf")
+                        .IsUnique();
 
                     b.ToTable("Pets");
                 });
@@ -115,6 +123,22 @@ namespace Projeto_Adote_Pet.Migrations
                     b.HasKey("Cpf");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("Projeto_Adote_Pet.Models.PetModel", b =>
+                {
+                    b.HasOne("Projeto_Adote_Pet.Models.Usuario", "Usuario")
+                        .WithOne("Pet")
+                        .HasForeignKey("Projeto_Adote_Pet.Models.PetModel", "UsuarioCpf")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
+                {
+                    b.Navigation("Pet");
                 });
 #pragma warning restore 612, 618
         }

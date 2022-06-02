@@ -54,9 +54,9 @@ namespace Projeto_Adote_Pet.Models
 
         //Foreignkey
         
-        [ForeignKey("UsuarioCpf")]
-        public string UsuarioCpf { get; set; }
-        public Usuario Usuario { get; set; }
+        //[ForeignKey("UsuarioCpf")]
+        //public int UsuarioCpf { get; set; }
+        //public Usuario Usuario { get; set; }
 
         //Enumerações
         public enum EspecieEnum

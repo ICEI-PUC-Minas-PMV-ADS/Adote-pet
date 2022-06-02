@@ -99,7 +99,7 @@ namespace Projeto_Adote_Pet.Controllers
         }
 
         // GET: Usuarios/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(int id)
         {
             if (id == null)
             {
@@ -143,7 +143,7 @@ namespace Projeto_Adote_Pet.Controllers
         }
 
         // GET: Usuarios/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(int id)
         {
             if (id == null)
             {
@@ -163,7 +163,7 @@ namespace Projeto_Adote_Pet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Cpf,Perfil,Nome,Email,Telefone,Cidade,Estado,Senha,ConfirmeSenha")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Cpf,Perfil,Nome,Email,Telefone,Cidade,Estado,Senha,ConfirmeSenha")] Usuario usuario)
         {
             if (id != usuario.Cpf)
             {
@@ -195,7 +195,7 @@ namespace Projeto_Adote_Pet.Controllers
         }
 
         // GET: Usuarios/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int id)
         {
             if (id == null)
             {
@@ -215,7 +215,7 @@ namespace Projeto_Adote_Pet.Controllers
         // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var usuario = await _context.Usuarios.FindAsync(id);
             _context.Usuarios.Remove(usuario);
@@ -223,7 +223,7 @@ namespace Projeto_Adote_Pet.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool UsuarioExists(string id)
+        private bool UsuarioExists(int id)
         {
             return _context.Usuarios.Any(e => e.Cpf == id);
         }

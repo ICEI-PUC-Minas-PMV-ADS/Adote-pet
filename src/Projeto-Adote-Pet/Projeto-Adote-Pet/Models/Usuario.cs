@@ -13,7 +13,7 @@ namespace Projeto_Adote_Pet.Models
         //public int IdUser { get; set; }
         [Key]
         [Required(ErrorMessage = "Campo Obrigatório!")]
-        public string Cpf { get; set; }
+        public int Cpf { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Nome { get; set; }

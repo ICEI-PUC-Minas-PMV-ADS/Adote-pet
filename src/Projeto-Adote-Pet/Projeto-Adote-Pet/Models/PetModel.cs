@@ -53,8 +53,8 @@ namespace Projeto_Adote_Pet.Models
         public string ImagePet { get; set; }
 
         //Foreignkey
-        public int UsuarioId { get; set; }
-        [ForeignKey("UsuarioId")]
+        public string UsuarioCpf { get; set; }
+        [ForeignKey("UsuarioCpf")]
         public Usuario Usuario { get; set; }
 
         //Enumerações

@@ -129,7 +129,7 @@ namespace Projeto_Adote_Pet.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Cpf,Perfil,Nome,Email,Telefone,Cidade,Estado,Senha,ConfirmeSenha")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Cpf,Perfil,,Nome,Email,Telefone,Cidade,Estado,Senha,ConfirmeSenha")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {

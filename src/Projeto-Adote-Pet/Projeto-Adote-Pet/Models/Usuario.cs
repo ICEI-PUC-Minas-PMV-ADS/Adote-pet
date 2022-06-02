@@ -9,8 +9,8 @@ namespace Projeto_Adote_Pet.Models
 {
     [Table("Usuarios")]//tabela de usuário 
     public class Usuario
-    {
-        public int Id { get; set; }
+    {        
+        public int IdUser { get; set; }
         [Key]
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Cpf { get; set; }

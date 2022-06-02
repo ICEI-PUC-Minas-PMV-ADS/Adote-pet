@@ -10,6 +10,7 @@ namespace Projeto_Adote_Pet.Models
     [Table("Usuarios")]//tabela de usuário 
     public class Usuario
     {
+        public int Id { get; set; }
         [Key]
         [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Cpf { get; set; }
@@ -27,6 +28,12 @@ namespace Projeto_Adote_Pet.Models
         public string Endereco { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
+        public string Cidade { get; set; }
+
+        [Required(ErrorMessage = "Escolha uma opção")]
+        public EstadoEnumU Estado { get; set; }
+
+        [Required(ErrorMessage = "Campo Obrigatório!")]
         
         [DataType(DataType.Password)] // Configuração para a senha do usuário não aparecer 
         public string Senha { get; set; }
@@ -38,17 +45,46 @@ namespace Projeto_Adote_Pet.Models
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
         
-        public Perfil Perfil { get; set; }
+        public PerfilEnum Perfil { get; set; }
 
         //link virtualmente com FK dos Pets
-        //public ICollection<PetModel> Pets { get; set; }
+        public ICollection<PetModel> Pets { get; set; }
     }
 
-    public enum Perfil
+    public enum PerfilEnum
     {
         Física,
         Jurídica
-
+    }
+    public enum EstadoEnumU
+    {
+        AC,
+        AL,
+        AP,
+        AM,
+        BA,
+        CE,
+        DF,
+        ES,
+        GO,
+        MA,
+        MT,
+        MS,
+        MG,
+        PA,
+        PB,
+        PR,
+        PE,
+        PI,
+        RJ,
+        RN,
+        RS,
+        RO,
+        RR,
+        SC,
+        SP,
+        SE,
+        TO
     }
 
 }

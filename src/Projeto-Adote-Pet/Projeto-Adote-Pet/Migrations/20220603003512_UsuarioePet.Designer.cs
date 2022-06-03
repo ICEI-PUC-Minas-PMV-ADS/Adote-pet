@@ -9,8 +9,8 @@ using Projeto_Adote_Pet.Models;
 namespace Projeto_Adote_Pet.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220530024222_Pet2905c")]
-    partial class Pet2905c
+    [Migration("20220603003512_UsuarioePet")]
+    partial class UsuarioePet
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,6 +32,7 @@ namespace Projeto_Adote_Pet.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Cor")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Descricao")
@@ -48,7 +49,11 @@ namespace Projeto_Adote_Pet.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagePet")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Porte")
@@ -71,8 +76,14 @@ namespace Projeto_Adote_Pet.Migrations
 
             modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
                 {
-                    b.Property<string>("Cpf")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Cpf")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConfirmeSenha")
                         .HasColumnType("nvarchar(max)");
@@ -84,6 +95,9 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<string>("Endereco")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()

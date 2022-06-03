@@ -2,7 +2,7 @@
 
 namespace Projeto_Adote_Pet.Migrations
 {
-    public partial class Cpf0206 : Migration
+    public partial class UsuarioePet : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -31,8 +31,7 @@ namespace Projeto_Adote_Pet.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Pets_UsuarioCpf",
                 table: "Pets",
-                column: "UsuarioCpf",
-                unique: true);
+                column: "UsuarioCpf");
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Pets_Usuarios_UsuarioCpf",

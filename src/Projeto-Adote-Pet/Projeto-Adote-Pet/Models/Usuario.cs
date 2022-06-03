@@ -49,8 +49,8 @@ namespace Projeto_Adote_Pet.Models
 
         //link virtualmente com FK dos Pets
 
-        //public PetModel Pet { get; set; }
-        //do professor public ICollection<PetModel> Pets { get; set; }
+        public PetModel Pets { get; set; }
+        
     }
 
     public enum PerfilEnum

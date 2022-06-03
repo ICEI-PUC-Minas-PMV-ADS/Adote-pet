@@ -9,18 +9,18 @@ using Projeto_Adote_Pet.Models;
 namespace Projeto_Adote_Pet.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220529003044_Pet2805")]
-    partial class Pet2805
+    [Migration("20220603002832_UsuarioePet")]
+    partial class UsuarioePet
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.16")
+                .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Projeto_Adote_Pet.Models.CadastroModel", b =>
+            modelBuilder.Entity("Projeto_Adote_Pet.Models.PetModel", b =>
                 {
                     b.Property<int>("Idanimal")
                         .ValueGeneratedOnAdd()
@@ -28,50 +28,62 @@ namespace Projeto_Adote_Pet.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Cidade")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Cor")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Cpf")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Descricao")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Especie")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Especie")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Estado")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
 
                     b.Property<string>("Idade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagePet")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Porte")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Porte")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Pstatus")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Pstatus")
+                        .HasColumnType("int");
 
                     b.Property<string>("Raca")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Sexo")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Sexo")
+                        .HasColumnType("int");
 
                     b.HasKey("Idanimal");
 
-                    b.ToTable("CadastroPet");
+                    b.ToTable("Pets");
                 });
 
             modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
                 {
-                    b.Property<string>("Cpf")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Cpf")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConfirmeSenha")
                         .HasColumnType("nvarchar(max)");
@@ -83,6 +95,9 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<string>("Endereco")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()

@@ -9,8 +9,8 @@ using Projeto_Adote_Pet.Models;
 namespace Projeto_Adote_Pet.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220530150626_Pet3005")]
-    partial class Pet3005
+    [Migration("20220603003725_FK0206")]
+    partial class FK0206
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,51 +32,64 @@ namespace Projeto_Adote_Pet.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Cor")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Especie")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Estado")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Especie")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
 
                     b.Property<string>("Idade")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagePet")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Porte")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Pstatus")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Porte")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pstatus")
+                        .HasColumnType("int");
 
                     b.Property<string>("Raca")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Sexo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Sexo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioCpf")
+                        .HasColumnType("int");
 
                     b.HasKey("Idanimal");
+
+                    b.HasIndex("UsuarioCpf")
+                        .IsUnique();
 
                     b.ToTable("Pets");
                 });
 
             modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
                 {
-                    b.Property<string>("Cpf")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Cpf")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConfirmeSenha")
                         .HasColumnType("nvarchar(max)");
@@ -88,6 +101,9 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<string>("Endereco")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -107,6 +123,22 @@ namespace Projeto_Adote_Pet.Migrations
                     b.HasKey("Cpf");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("Projeto_Adote_Pet.Models.PetModel", b =>
+                {
+                    b.HasOne("Projeto_Adote_Pet.Models.Usuario", "Usuario")
+                        .WithOne("Pets")
+                        .HasForeignKey("Projeto_Adote_Pet.Models.PetModel", "UsuarioCpf")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
+                {
+                    b.Navigation("Pets");
                 });
 #pragma warning restore 612, 618
         }

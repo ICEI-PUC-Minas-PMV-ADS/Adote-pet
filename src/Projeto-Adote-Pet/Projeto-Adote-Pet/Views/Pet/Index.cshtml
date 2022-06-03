@@ -6,7 +6,13 @@
 
 <div class="text-center">
     <h2>Pets Cadastrados</h2>
-    <a asp-action="Create" class="btn btn-outline-info"><img src="~/images/image-adicao.png" width="35" />Cadastrar Pet</a>
+    
+    <!--Restrige cadastro de Pet-->
+    @if (User.Identity.IsAuthenticated)
+    {
+        <a asp-action="Create" class="btn btn-outline-info"><img src="~/images/image-adicao.png" width="35" />Cadastrar Pet</a>
+    }
+    
 </div>
 <table class="table">
     <thead>

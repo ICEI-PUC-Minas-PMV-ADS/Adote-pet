@@ -2,7 +2,7 @@
 
 namespace Projeto_Adote_Pet.Migrations
 {
-    public partial class UsuarioePet : Migration
+    public partial class CPF0506 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -34,8 +34,7 @@ namespace Projeto_Adote_Pet.Migrations
                 name: "Usuarios",
                 columns: table => new
                 {
-                    Cpf = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Cpf = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),

@@ -9,8 +9,8 @@ using Projeto_Adote_Pet.Models;
 namespace Projeto_Adote_Pet.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220603010919_CPF0206")]
-    partial class CPF0206
+    [Migration("20220605192605_CPF0506")]
+    partial class CPF0506
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -69,14 +69,7 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<int>("Sexo")
                         .HasColumnType("int");
 
-                    b.Property<string>("UsuarioCpf")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Idanimal");
-
-                    b.HasIndex("UsuarioCpf")
-                        .IsUnique()
-                        .HasFilter("[UsuarioCpf] IS NOT NULL");
 
                     b.ToTable("Pets");
                 });
@@ -122,20 +115,6 @@ namespace Projeto_Adote_Pet.Migrations
                     b.HasKey("Cpf");
 
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("Projeto_Adote_Pet.Models.PetModel", b =>
-                {
-                    b.HasOne("Projeto_Adote_Pet.Models.Usuario", "Usuario")
-                        .WithOne("Pets")
-                        .HasForeignKey("Projeto_Adote_Pet.Models.PetModel", "UsuarioCpf");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
-                {
-                    b.Navigation("Pets");
                 });
 #pragma warning restore 612, 618
         }

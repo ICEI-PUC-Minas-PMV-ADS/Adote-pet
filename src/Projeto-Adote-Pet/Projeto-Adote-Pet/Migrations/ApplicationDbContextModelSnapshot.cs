@@ -67,23 +67,15 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<int>("Sexo")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioCpf")
-                        .HasColumnType("int");
-
                     b.HasKey("Idanimal");
-
-                    b.HasIndex("UsuarioCpf")
-                        .IsUnique();
 
                     b.ToTable("Pets");
                 });
 
             modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
                 {
-                    b.Property<int>("Cpf")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Cpf")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Cidade")
                         .IsRequired()
@@ -121,22 +113,6 @@ namespace Projeto_Adote_Pet.Migrations
                     b.HasKey("Cpf");
 
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("Projeto_Adote_Pet.Models.PetModel", b =>
-                {
-                    b.HasOne("Projeto_Adote_Pet.Models.Usuario", "Usuario")
-                        .WithOne("Pets")
-                        .HasForeignKey("Projeto_Adote_Pet.Models.PetModel", "UsuarioCpf")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
-                {
-                    b.Navigation("Pets");
                 });
 #pragma warning restore 612, 618
         }

@@ -8,27 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\**" />
     <Compile Remove="Views\Carrossel\**" />
-    <Content Remove="Migrations\**" />
     <Content Remove="Views\Carrossel\**" />
-    <EmbeddedResource Remove="Migrations\**" />
     <EmbeddedResource Remove="Views\Carrossel\**" />
-    <None Remove="Migrations\**" />
     <None Remove="Views\Carrossel\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\CarrosselController.cs" />
     <Compile Remove="Models\pesquisa.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Migrations\20220603003512_UsuarioePet.cs" />
-    <Compile Include="Migrations\20220603003512_UsuarioePet.Designer.cs" />
-    <Compile Include="Migrations\20220603003725_FK0206.cs" />
-    <Compile Include="Migrations\20220603003725_FK0206.Designer.cs" />
-    <Compile Include="Migrations\ApplicationDbContextModelSnapshot.cs" />
   </ItemGroup>
 
   <ItemGroup>

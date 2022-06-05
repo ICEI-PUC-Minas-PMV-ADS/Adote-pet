@@ -25,9 +25,6 @@ namespace Projeto_Adote_Pet.Models
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
-        public string Endereco { get; set; }
-
-        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Cidade { get; set; }
 
         [Required(ErrorMessage = "Escolha uma opção")]
@@ -45,15 +42,15 @@ namespace Projeto_Adote_Pet.Models
 
         [Required(ErrorMessage = "Campo Obrigatório!")]
         
-        public PerfilEnum Perfil { get; set; }
+        public Perfil Perfil { get; set; }
 
         //link virtualmente com FK dos Pets
 
-        //public PetModel Pets { get; set; }
+        public PetModel Pets { get; set; }
         
     }
 
-    public enum PerfilEnum
+    public enum Perfil
     {
         Física,
         Jurídica

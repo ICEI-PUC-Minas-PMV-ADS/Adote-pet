@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Projeto_Adote_Pet.Models;
 
 namespace Projeto_Adote_Pet.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220605194559_Create0506")]
+    partial class Create0506
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -67,14 +69,7 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<int>("Sexo")
                         .HasColumnType("int");
 
-                    b.Property<string>("UsuarioCpf")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Idanimal");
-
-                    b.HasIndex("UsuarioCpf")
-                        .IsUnique()
-                        .HasFilter("[UsuarioCpf] IS NOT NULL");
 
                     b.ToTable("Pets");
                 });
@@ -92,6 +87,10 @@ namespace Projeto_Adote_Pet.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Endereco")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -116,20 +115,6 @@ namespace Projeto_Adote_Pet.Migrations
                     b.HasKey("Cpf");
 
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("Projeto_Adote_Pet.Models.PetModel", b =>
-                {
-                    b.HasOne("Projeto_Adote_Pet.Models.Usuario", "Usuario")
-                        .WithOne("Pets")
-                        .HasForeignKey("Projeto_Adote_Pet.Models.PetModel", "UsuarioCpf");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("Projeto_Adote_Pet.Models.Usuario", b =>
-                {
-                    b.Navigation("Pets");
                 });
 #pragma warning restore 612, 618
         }

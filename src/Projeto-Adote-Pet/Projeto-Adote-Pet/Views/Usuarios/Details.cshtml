@@ -3,12 +3,17 @@
 @{
     ViewData["Title"] = "Details";
 }
-<br />
 <h2>Detalhes da sua conta</h2>
 <hr />
 
 <div>     
     <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Perfil)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Perfil)
+        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
         </dt>
@@ -40,17 +45,8 @@
             @Html.DisplayFor(model => model.Estado)
         </dd>
       
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Perfil)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Perfil)
-        </dd>
+        
     </dl>
-</div>
-
-<div>
-    <a class="btn btn-outline-info" asp-action="Edit"><img src="~/images/icone-editar.png"width="15" asp-route-id="@Model.Cpf">  Editar</a>                
 </div>
 
 <p> </p>

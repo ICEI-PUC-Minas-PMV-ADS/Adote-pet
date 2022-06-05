@@ -19,6 +19,7 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        
                         <!--Restringe visualização de View-->
                         @if (User.Identity.IsAuthenticated)
                         {
@@ -28,7 +29,7 @@
                         }
                         
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pet" asp-action="Index">Pets</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Pet" asp-action="Index"><img src="~/images/image-cao-gato.png" alt="Pets" width=30px>Pets</a>
                         </li>
                         
 

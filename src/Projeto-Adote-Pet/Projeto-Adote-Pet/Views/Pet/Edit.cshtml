@@ -15,14 +15,18 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Idanimal" />
             
+            <fieldset class="form-group" id="cStatus"><legend>Status</legend>
+                <input asp-for="Pstatus" id="cAdo" name="Pstatus" value="Adotado" type="radio"> <label for="cAdo">Adotado</label>
+                <input asp-for="Pstatus" id="cDisp" name="Pstatus" value="Disponível" type="radio"> <label for="cDisp">Disponível</label> 
+            </fieldset>             
             <fieldset class="form-group"><legend>Espécie</legend>
-                <input asp-for="Especie" id="cCao" name="Especie" value="Cachorro" type="radio"> <label for="cCao">Cachorro</label>  <br />                   
-                <input asp-for="Especie" id="cGato" name="Especie" value="Gato" type="radio"><label for="cCao">Gato</label>                     
+                <input asp-for="Especie" id="cCao" name="Especie" value="Cachorro" type="radio"> <label for="cCao">Cachorro</label>                   
+                <input asp-for="Especie" id="cGato" name="Especie" value="Gato" type="radio"> <label for="cGato">Gato</label>                     
             </fieldset>
             
-            <fieldset class="form-group" id="cSexo"><legend>Sexo</legend>
-                <input asp-for="Sexo" id="cMac" name="Sexo" value="Macho" type="radio"> <label for="cMac">Macho</label> <br />
-                <input asp-for="Sexo" id="cFem" name="Sexo" value="Fêmea" type="radio"> <label for="cFem">Fêmea</label> 
+            <fieldset class="form-group" id="cSexo"><legend>Sexo</legend>                
+                <input asp-for="Sexo" id="cFem" name="Sexo" value="Fêmea" type="radio"> <label for="cFem">Fêmea</label>
+                <input asp-for="Sexo" id="cMac" name="Sexo" value="Macho" type="radio"> <label for="cMac">Macho</label>
             </fieldset>                                   
             <div class="form-group">
                 <label asp-for="Raca" class="control-label"></label>
@@ -36,9 +40,9 @@
             </div>
 
             <fieldset class="form-group"><legend>Porte</legend>
-                <input asp-for="Porte" id="cPeq" name="Porte" value="Pequeno" type="radio"> <label for="CPeq">Pequeno</label> <br />                   
-                <input asp-for="Porte" id="cMed" name="Porte" value="Médio" type="radio"><label for="cMed">Médio</label> <br />
-                <input asp-for="Porte" id="cGra" name="Porte" value="Grande" type="radio"><label for="cGra">Grande</label>                     
+                <input asp-for="Porte" id="cPeq" name="Porte" value="Pequeno" type="radio"> <label for="cPeq">Pequeno</label>                    
+                <input asp-for="Porte" id="cMed" name="Porte" value="Médio" type="radio"> <label for="cMed">Médio</label> 
+                <input asp-for="Porte" id="cGra" name="Porte" value="Grande" type="radio"> <label for="cGra">Grande</label>                     
             </fieldset>
 
             <div class="form-group">
@@ -53,7 +57,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Cidade" class="control-label"></label>
-                <input asp-for="Cidade" class="form-control" placeholder="Escreva o nome completo da cidade que está o Pet" />
+                <input asp-for="Cidade" class="form-control" placeholder="Nome completo da cidade que está o Pet" />
                 <span asp-validation-for="Cidade" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -65,11 +69,7 @@
                 <label asp-for="Descricao" class="control-label"></label>
                 <input asp-for="Descricao" class="form-control" placeholder="Descreva um pouco sobre o Pet"/>
                 <span asp-validation-for="Descricao" class="text-danger"></span>
-            </div>
-            <fieldset class="form-group" id="cStatus"><legend>Status</legend>
-                <input asp-for="Pstatus" id="cAdo" name="Pstatus" value="Adotado" type="radio"> <label for="cAdo">Adotado</label> <br />
-                <input asp-for="Pstatus" id="cDisp" name="Pstatus" value="Disponível" type="radio"> <label for="cDisp">Disponível</label> 
-            </fieldset>  
+            </div>  
             
             <div class="form-group">
                 <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />

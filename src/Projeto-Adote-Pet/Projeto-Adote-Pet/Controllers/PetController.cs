@@ -148,5 +148,17 @@ namespace Projeto_Adote_Pet.Controllers
         {
             return _context.Pets.Any(e => e.Idanimal == id);
         }
+
+        public async Task<IActionResult> Index(string searchString)
+        {
+            var pet = from p in _context.Pets select p;
+
+            if(!String.IsNullOrEmpty(searchString))
+            {
+                pet = pet.Where(s => s.Cidade!.Contains(searchString));
+            }
+
+            return View(await pet.ToListAsync());
+        }
     }
 }

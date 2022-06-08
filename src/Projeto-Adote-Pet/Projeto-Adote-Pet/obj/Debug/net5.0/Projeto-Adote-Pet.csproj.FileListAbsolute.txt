@@ -4406,3 +4406,4 @@ C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-
 C:\Users\Pichau\Documents\GitHub\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\bin\Debug\net5.0\Azure.Core.dll
 C:\Users\Pichau\Documents\GitHub\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\bin\Debug\net5.0\Azure.Search.Documents.dll
 C:\Users\Pichau\Documents\GitHub\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\bin\Debug\net5.0\System.Memory.Data.dll
+C:\Users\Pichau\Documents\GitHub\Adote-pet\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pesquisa\Index.cshtml.g.cs

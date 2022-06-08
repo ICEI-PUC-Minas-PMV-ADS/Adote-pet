@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Projeto-Adote-Pet",
+    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet",
+    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Views",
+    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Views\\Pet"
   ],
+  "SelectedNode": "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Views\\Pet\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }

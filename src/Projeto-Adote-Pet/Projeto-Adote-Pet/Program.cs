@@ -29,18 +29,6 @@ namespace Projeto_Adote_Pet
                     webBuilder.UseStartup<Startup>();
                 });
     }
+}
 
-    static void Main(string[] args)
-    {
-        string serviceName = "<busca>";
-        string indexName = "Busca";
-        string apiKey = "<>";
-
-        // Create a SearchIndexClient to send create/delete index commands
-        Uri serviceEndpoint = new Uri($"https://{serviceName}.search.windows.net/");
-        AzureKeyCredential credential = new AzureKeyCredential(apiKey);
-        SearchIndexClient adminClient = new SearchIndexClient(serviceEndpoint, credential);
-
-        // Create a SearchClient to load and query documents
-        SearchClient srchclient = new SearchClient(serviceEndpoint, indexName, credential);
-    }
+    

@@ -14,7 +14,7 @@ namespace Projeto_Adote_Pet.Models
 {
     public partial class Pet    
     {
-        [SimpleField(IsKey = true, IsFilterable = True)]
+        [Key]
         public int Idanimal { get; set; }
 
         public EspecieEnum Especie { get; set; }

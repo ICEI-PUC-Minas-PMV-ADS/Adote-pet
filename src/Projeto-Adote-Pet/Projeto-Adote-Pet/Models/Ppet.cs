@@ -5,14 +5,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using static Projeto_Adote_Pet.Models.PetModel;
-using System.Text.Json.Serialization;
 using Azure.Search.Documents.Indexes;
 using Azure.Search.Documents.Indexes.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Projeto_Adote_Pet.Models;
 
 
 namespace Projeto_Adote_Pet.Models
 {
-    public partial class Pet    
+    public class Ppets    
     {
         [Key]
         public int Idanimal { get; set; }
@@ -41,7 +44,6 @@ namespace Projeto_Adote_Pet.Models
 
         public string ImagePet { get; set; }
 
-        
        
     }
 }

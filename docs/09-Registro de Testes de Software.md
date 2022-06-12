@@ -18,9 +18,13 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 | Teste | CT-01 – Acesso a página de cadastro, tais como criar, excluir e editar. |
 | ----- | ------------------------------------------------------------ |
 | vídeo | https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/videoCadastro.mp4 |
+
+
 | Teste | CT-02 – Login Usuário                                        |
 | ----- | ------------------------------------------------------------ |
 | vídeo | https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Login.mp4 |
+
+
 
 | Teste | CT-04 – Cadastrar Pet                                        |
 | ----- | ------------------------------------------------------------ |

@@ -5,7 +5,7 @@
 }
 
 <div class="text-center">
-    <h2><img src="~/images/image-cao-gato.png" alt="Pets" width=35px>Pets Cadastrados</h2>
+    <h2>Pets Cadastrados</h2>
     
     <!--Restrige cadastro de Pet-->
     @if (User.Identity.IsAuthenticated)
@@ -21,8 +21,9 @@
     <div class="form-actions no-color">
         <p>
             Busca por Raça ou cidade: <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" />
-            <input type="submit" value="Pesquisar" class="btn btn-success" /> |
-            <a class="btn btn-secondary" asp-action="Index">Voltar lista</a>
+            <!--<input type="submit" value="Pesquisar" class="btn btn-success" />-->
+            <input type="image" src="~/images/icone-buscar.png" width="50" value="Pesquisar" class="btn btn-success" />
+            <a class="btn btn-outline-secondary" asp-action="Index">Voltar</a>
         </p>
     </div>
 </form>

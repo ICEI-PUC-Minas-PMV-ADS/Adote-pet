@@ -31,24 +31,25 @@ namespace Projeto_Adote_Pet.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
 
-         //Para enumerações apresenta erro
-                pets = pets.Where(
-                    s => s.Especie.Contains(searchString)
-                    || s.Sexo.Contains(searchString)
-                    || s.Raca.Contains(searchString)
-                    || s.Porte.Contains(searchString)
-                    || s.Cidade.Contains(searchString)
-                    || s.Estado.Contains(searchString)
-                    || s.Pstatus.Contains(searchString)
-                    );
+         //Para enumerações apresentou erro
+                pets = pets.Where(s => s.Raca.Contains(searchString)
+                    || s.Cidade.Contains(searchString));
+                //s => s.Especie.Contains(searchString)
+                //|| s.Sexo.Contains(searchString)
+
+                //|| s.Porte.Contains(searchString)
+
+                //|| s.Estado.Contains(searchString)
+                //|| s.Pstatus.Contains(searchString)
+
             }
 
             switch (sortOrder)
             {
-                case "Especie_desc":
-                    pets = pets.OrderByDescending(s => s.Nome);
+                case "especie_desc":
+                    pets = pets.OrderByDescending(s => s.Especie);
                     break;
-                case "Email":
+                case "Cidade":
                     pets = pets.OrderBy(s => s.Cidade);
                     break;
                 case "cidade_desc":

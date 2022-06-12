@@ -4403,3 +4403,15 @@ C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-
 C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Details.cshtml.g.cs
 C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Edit.cshtml.g.cs
 C:\Users\furla\OneDrive\Área de Trabalho\Projeto\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Index.cshtml.g.cs
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.csproj.AssemblyReference.cache
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.AssemblyInfoInputs.cache
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.AssemblyInfo.cs
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.csproj.CoreCompileInputs.cache
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.RazorAssemblyInfo.cache
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.RazorAssemblyInfo.cs
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.dll
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\refint\Projeto-Adote-Pet.dll
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.pdb

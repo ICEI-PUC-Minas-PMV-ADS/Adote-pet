@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Projeto_Adote_Pet.Controllers
 {
-  
+    [Authorize]
 
     public class UsuariosController : Controller
     {
@@ -21,23 +21,6 @@ namespace Projeto_Adote_Pet.Controllers
         public UsuariosController(ApplicationDbContext context)
         {
             _context = context;
-        }
-
-        
-
-        //Restrição de dados
-        public ActionResult IndexMeusDados()
-        {
-            if (User.Identity.IsAuthenticated)
-            {
-                var username = User.Identity.Name;
-                var usuario = _context.Usuarios.FirstOrDefault(m => m.Nome == username);
-
-                if (usuario != null)
-                    return View(usuario);
-            }
-
-            return RedirectToAction("Index");
         }
 
         [AllowAnonymous]
@@ -143,7 +126,7 @@ namespace Projeto_Adote_Pet.Controllers
         // POST: Usuarios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Cpf,Perfil,,Nome,Email,Telefone,Cidade,Estado,Senha,ConfirmeSenha")] Usuario usuario)
@@ -186,14 +169,13 @@ namespace Projeto_Adote_Pet.Controllers
             {
                 return NotFound();
             }
-            //acrescentado _context.Update(usuario);
+
             if (ModelState.IsValid)
             {
                 try
                 {
                     usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha); //Criptografia da senha                     
                     usuario.ConfirmeSenha = BCrypt.Net.BCrypt.HashPassword(usuario.ConfirmeSenha); //Cripto ConfirmeSenha_context.Update(usuario);
-                    _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -207,7 +189,7 @@ namespace Projeto_Adote_Pet.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(IndexMeusDados));
+                return RedirectToAction(nameof(Index));
             }
             return View(usuario);
         }

@@ -6,12 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Azure;
-using Azure.Search.Documents;
-using Azure.Search.Documents.Indexes;
-using Azure.Search.Documents.Indexes.Models;
-using Azure.Search.Documents.Models;
-
 
 namespace Projeto_Adote_Pet
 {
@@ -30,5 +24,3 @@ namespace Projeto_Adote_Pet
                 });
     }
 }
-
-    

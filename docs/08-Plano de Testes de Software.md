@@ -6,6 +6,7 @@
 
 |  CASO DE TESTE |    CT-01 – Acesso a página de cadastro    |
 |     :---:             |     :---:                                              |
+| Requisito Associado | RF-01 A aplicação deve permitir que o usuário gerencie o perfil, tais como criar, excluir e editar. |
 |    Objetivo do Teste  | Verificar se o cadastro está funcionando corretamente  |
 |    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, 4. Acessar a página de login/cadastro     |
 |    Critérios de Êxito | Deve ser permitido o preenchimento de todos os campos do cadastro. Ao clicar em “Cadastre-se”, ser redirecionado à página principal com usuário já logado.      |
@@ -18,24 +19,28 @@
 
 |  CASO DE TESTE |    CT-03 – Pesquisa de Pets   |
 |     :---:             |     :---:                                              |
-|    Objetivo do Teste  | Verificar se a pesquisa funciona corretamente e direciona para a página de Pets para aldoção de acordo com filtro utilizado.  |
+| Requisito Associado | RF-04 A aplicação deve permitir ao usuário pesquisar animais. |
+|    Objetivo do Teste  | Verificar se a pesquisa funciona corretamente e direciona para a página de Pets para adoção de acordo com filtro utilizado.  |
 |    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, 4. Acessar a ferramenta de pesquisa no canto superior     |
 |    Critérios de Êxito | Permitir a pesquisa de Pets por características físicas.   |
 
 |  CASO DE TESTE |    CT-04 – Cadastrar Pet    |
 |     :---:             |     :---:                                              |
+| Requisito Associado | RF-02 A aplicação deve permitir que o usuário gerencie informações de animais a serem adotados, tais como foto, localização e características dos animais. |
 |    Objetivo do Teste  | Verificar se é redirecionado para a página de formulário e permitir o preenchimento de todos os campos.  |
 |    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, 4. Acessar a página de login/cadastro , 5. Após logar, clicar em cadastrar Pet, 6. Preencher o formulário de cadastro    |
 |    Critérios de Êxito | Ao selecionar, deve ser redirecionado para a tela de Formulário de cadastro de Pets. Permitir o preenchimento correto das informações e envio de imagem do Pet.   |
 
 |  CASO DE TESTE |    CT-05 – Acessar Pets para adoção   |
 |     :---:             |     :---:                                              |
+| Requisito Associado | RF-03 A aplicação deve permitir que com um único perfil o usuário possa adotar ou postar um animal para adoção |
 |    Objetivo do Teste  | Verificar se é redirecionado para a Página principal  |
 |    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, onde exibirá os pets disponíveis para adoção     |
 |    Critérios de Êxito | Ao selecionar, deve ser redirecionado para a tela Sobre o Projeto. |
 
 |  CASO DE TESTE |    CT-06 – Adotar Pets   |
 |     :---:             |     :---:                                              |
+| Requisito Associado | RF-03 A aplicação deve permitir que com um único perfil o usuário possa adotar ou postar um animal para adoção |
 |    Objetivo do Teste  | Verificar se é redirecionado para a página de formulário para adoção.  |
 |    Passos do Teste    | 1. Acessar o Navegador, 2. Informar o endereço do Site, 3. Visualizar a página principal, onde exibirá os pets disponíveis para adoção, 4. Selecionar Pet para adoção, 5. Se usuário não estiver logado, ser redirecionado para a página de login, 6. Quando usuário estiver logado, ser redirecionado para formulário de preenchimento para adoção de Pet   |
 |    Critérios de Êxito | Ao selecionar Pet desejado, deve ser redirecionado para a página de formulário de adoção. |

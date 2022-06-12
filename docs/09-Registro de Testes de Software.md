@@ -1,5 +1,9 @@
 # Registro de Testes de Software
 
+<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+
+Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+
 | **ID** | **Descrição**                                                | **Prioridade** |
 | ------ | ------------------------------------------------------------ | -------------- |
 | Usuário01  | CT-01 – Acesso a página de cadastro, tais como criar, excluir e editar.| Criou e Excluiu com facilidade. Dificuldade ao editar           |
@@ -10,13 +14,25 @@
 | Usuário06 | CT-06 – Adotar Pets |  |
 
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
-
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 
 | Teste | CT-01 – Acesso a página de cadastro, tais como criar, excluir e editar. |
 | ----- | ------------------------------------------------------------ |
-| Vídeo |<video src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/cadastro-usuario.mp4"> |
+| vídeo | https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/videoCadastro.mp4 |
+
+
+| Teste | CT-02 – Login Usuário                                        |
+| ----- | ------------------------------------------------------------ |
+| vídeo | https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Login.mp4 |
+
+
+
+| Teste | CT-04 – Cadastrar Pet                                        |
+| ----- | ------------------------------------------------------------ |
+| vídeo | https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/cadastroPet.mp4 |
+
+
+
+
 
 
 

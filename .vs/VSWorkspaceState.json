@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Projeto-Adote-Pet",
+    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet",
+    "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Controllers"
   ],
-  "SelectedNode": "\\ProjectSettings.json",
+  "SelectedNode": "\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\Controllers\\PetController.cs",
   "PreviewInSolutionExplorer": false
 }

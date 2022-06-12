@@ -14,11 +14,24 @@
     }
     
 </div>
+
+<!--Caixa de busca-->
+    <form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Busca por Raça ou cidade: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Pesquisar" class="btn btn-outline-info" /> |
+            <a asp-action="Index">Voltar à lista</a>
+        </p>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Especie)
+                <!--@Html.DisplayNameFor(model => model.Especie)-->
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["EspecieSortParm"]">@Html.DisplayNameFor(model => model.Especie)</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Sexo)
@@ -39,7 +52,8 @@
                 @Html.DisplayNameFor(model => model.Cor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Cidade)
+                <!--@Html.DisplayNameFor(model => model.Cidade)-->
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["CidadeSortParm"]">@Html.DisplayNameFor(model => model.Cidade)</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Estado)

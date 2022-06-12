@@ -19,9 +19,47 @@ namespace Projeto_Adote_Pet.Controllers
         }
 
         // GET: Pet
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-            return View(await _context.Pets.ToListAsync());
+            ViewData["EspecieSortParm"] = String.IsNullOrEmpty(sortOrder) ? "especie_desc" : "";
+            ViewData["CidadeSortParm"] = sortOrder == "Cidade" ? "cidade_desc" : "Cidade";
+            ViewData["CurrentFilter"] = searchString;
+
+            var pets = from s in _context.Pets
+                           select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+
+         //Para enumerações apresentou erro
+                pets = pets.Where(s => s.Raca.Contains(searchString)
+                    || s.Cidade.Contains(searchString));
+                //s => s.Especie.Contains(searchString)
+                //|| s.Sexo.Contains(searchString)
+
+                //|| s.Porte.Contains(searchString)
+
+                //|| s.Estado.Contains(searchString)
+                //|| s.Pstatus.Contains(searchString)
+
+            }
+
+            switch (sortOrder)
+            {
+                case "especie_desc":
+                    pets = pets.OrderByDescending(s => s.Especie);
+                    break;
+                case "Cidade":
+                    pets = pets.OrderBy(s => s.Cidade);
+                    break;
+                case "cidade_desc":
+                    pets = pets.OrderByDescending(s => s.Cidade);
+                    break;
+                default:
+                    pets = pets.OrderBy(s => s.Especie);
+                    break;
+            }
+            return View(await pets.AsNoTracking().ToListAsync());
         }
 
         // GET: Pet/Details/5

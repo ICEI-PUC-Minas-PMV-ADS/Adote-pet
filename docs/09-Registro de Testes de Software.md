@@ -16,7 +16,8 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 | Teste | CT-01 – Acesso a página de cadastro, tais como criar, excluir e editar. |
 | ----- | ------------------------------------------------------------ |
-<video src = 'https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/videoCadastro.mp4'>
+| vídeo | https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/videoCadastro.mp4 |
+
 
 
 

@@ -123,7 +123,7 @@ namespace Projeto_Adote_Pet.Controllers
                 string nomeUnicoArquivo = UploadedFile(model);
         PetModel employee = new PetModel
         {
-            Idanimal = model.Idanimal, do
+            Idanimal = model.Idanimal,
             Especie = (PetModel.EspecieEnum)model.Especie,
             Sexo = (PetModel.SexoEnum)model.Sexo,
             Raca = model.Raca,

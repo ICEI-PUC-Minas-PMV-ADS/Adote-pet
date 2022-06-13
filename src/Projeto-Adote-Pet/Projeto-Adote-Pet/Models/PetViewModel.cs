@@ -50,7 +50,8 @@ namespace Projeto_Adote_Pet.Models
         [Display(Name = "Status")]
         public PstatusEnum Pstatus { get; set; }
 
-        public string ImagePet { get; set; }
+        // Alteração Fabio
+        public string Foto { get; set; }
 
 
         //Enumerações
@@ -109,7 +110,7 @@ namespace Projeto_Adote_Pet.Models
         //Fabio
         public class PetViewModel
         {
-            public IFormFile ImagemPet { get; set; }
+            public IFormFile Foto { get; set; }
         }
     }
 }

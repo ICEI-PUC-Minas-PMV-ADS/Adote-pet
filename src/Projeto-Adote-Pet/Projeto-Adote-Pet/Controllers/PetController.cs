@@ -187,6 +187,46 @@ namespace Projeto_Adote_Pet.Controllers
             return _context.Pets.Any(e => e.Idanimal == id);
         }
         //Inicio Imagem Pet
+        //Inicio Imagem Pet- Fabio
+
+        public async Task<IActionResult> Novo(PetViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                string nomeUnicoArquivo = UploadedFile(model);
+
+
+                Pet employee = new Pet
+                {
+                   // Nome = model.Nome,
+                   // Email = model.Email,
+                   // Idade = model.Idade,
+                    Foto = nomeUnicoArquivo,
+                };
+                dbContext.Add(employee);
+                await dbContext.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
+        }
+
+        private string UploadedFile(PetViewModel model)
+        {
+            string nomeUnicoArquivo = null;
+
+            if (model.Foto != null)
+            {
+                string pastaFotos = Path.Combine(webHostEnvironment.WebRootPath, "Imagens");
+                nomeUnicoArquivo = Guid.NewGuid().ToString() + "_" + model.Foto.FileName;
+                string caminhoArquivo = Path.Combine(pastaFotos, nomeUnicoArquivo);
+                using (var fileStream = new FileStream(caminhoArquivo, FileMode.Create))
+                {
+                    model.Foto.CopyTo(fileStream);
+                }
+            }
+            return nomeUnicoArquivo;
+
+            // fim imagem - Fabio
 
         
         // fim imagem

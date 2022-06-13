@@ -49,7 +49,7 @@ Com base na estrutura padrão, o bloco de conteúdo traz um filtro para facilita
 
 <br/>
 
-![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/home-tela.png)
+![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/home.png)
 
 
 
@@ -72,7 +72,7 @@ O usuário será redirecionado para a tela de cadastro caso não possua cadastro
 
   <br/>
 
-![cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/cadastro-tela.png)
+![cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Caduser.png)
 
 
 ## Tela – Cadastro Pet 
@@ -86,4 +86,4 @@ A tela cadastro pet, no bloco de conteúdo temos um formulário para que seja in
 
 <br/>
 
-![cadastro-pet](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/tela-cad-pet.png)
+![cadastro-pet](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/CadastroPet2.png)

@@ -43,11 +43,11 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<int>("Estado")
                         .HasColumnType("int");
 
-                    b.Property<string>("Idade")
-                        .IsRequired()
+                    b.Property<string>("Foto")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ImagePet")
+                    b.Property<string>("Idade")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")

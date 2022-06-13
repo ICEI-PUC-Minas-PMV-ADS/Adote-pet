@@ -49,10 +49,9 @@ namespace Projeto_Adote_Pet.Models
         [Required(ErrorMessage = "Escolha uma opção")]
         [Display(Name = "Status")]
         public PstatusEnum Pstatus { get; set; }
-
-        //ateração Fabio
         public string Foto { get; set; }
 
+        
         //Foreignkey
         
         [ForeignKey("UsuarioCpf")]

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Projeto_Adote_Pet.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Microsoft.EntityFrameworkCore;
 
 namespace Projeto_Adote_Pet.Controllers
 {
@@ -14,6 +15,7 @@ namespace Projeto_Adote_Pet.Controllers
     
     public class PetController : Controller
     {
+//alterado 12/06
         private readonly ApplicationDbContext _context;
         private readonly IWebHostEnvironment webHostEnvironment;
         public PetController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
@@ -121,17 +123,17 @@ namespace Projeto_Adote_Pet.Controllers
                 string nomeUnicoArquivo = UploadedFile(model);
         PetModel employee = new PetModel
         {
-            Especie = model.Especie,
-            Sexo = model.Sexo,
+            Especie = (PetModel.EspecieEnum)model.Especie,
+            Sexo = (PetModel.SexoEnum)model.Sexo,
             Raca = model.Raca,
             Idade = model.Idade,
-            Porte = model.Porte,
+            Porte = (PetModel.PorteEnum)model.Porte,
             Nome = model.Nome,
             Cor = model.Cor,
             Cidade = model.Cidade,
-            Estado = model.Estado,
+            Estado = (PetModel.EstadoEnum)model.Estado,
             Descricao = model.Descricao,
-            Pstatus = model.Pstatus,
+            Pstatus = (PetModel.PstatusEnum)model.Pstatus,
             Foto = nomeUnicoArquivo,
         };
         _context.Add(employee);

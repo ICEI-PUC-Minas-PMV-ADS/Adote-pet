@@ -8,7 +8,7 @@
 <h2><img src="~/images/image-adicao.png" width="45"/>Cadastre o Pet</h2>
 </div>
 <hr />
-<div class="row">
+< class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -70,8 +70,7 @@
             </div>
                     
                 <!--Fotos Pet - Fabio  -->   
-                <div class="row">
-                    <div class="col-md-8">
+                
                         <div class="form-group">
                             <label asp-for="Foto" class="control-label"></label>
                             <div class="custom-file">
@@ -80,8 +79,7 @@
                             </div>
                             <span asp-validation-for="Foto" class="text-danger"></span>
                         </div>
-                    </div>
-                </div>
+                   
                <!--Fim da parte da foto-->       
             
             <div class="form-group">                

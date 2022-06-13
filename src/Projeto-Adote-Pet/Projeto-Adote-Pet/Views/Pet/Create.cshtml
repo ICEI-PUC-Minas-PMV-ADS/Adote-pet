@@ -1,5 +1,5 @@
-﻿@using static Projeto_Adote_Pet.Models.PetModel
-@model Projeto_Adote_Pet.Models.PetModel
+﻿@using static Projeto_Adote_Pet.Models.PetViewModel
+@model Projeto_Adote_Pet.Models.PetViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -68,21 +68,18 @@
                 <input asp-for="Descricao" class="form-control" placeholder="Descreva um pouco sobre o Pet"/>
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
-                    
-                <!--Fotos Pet - Fabio  -->   
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label asp-for="Foto" class="control-label"></label>
-                            <div class="custom-file">
-                                <input asp-for="Foto" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">Escolha a imagem</label>
-                            </div>
-                            <span asp-validation-for="Foto" class="text-danger"></span>
-                        </div>
-                    </div>
-                </div>
-               <!--Fim da parte da foto-->       
+            
+            <!--Início Foto-->
+            <div class="form-group">
+                 <label asp-for="Foto" class="control-label"></label>
+                 <div class="custom-file">
+                    <input asp-for="Foto" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Escolha a imagem</label>
+                 </div>
+                     <span asp-validation-for="Foto" class="text-danger"></span>
+             </div>
+
+            <!--Fim da parte da foto-->         
             
             <div class="form-group">                
                 <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />
@@ -93,5 +90,6 @@
 </div>
 
 @section Scripts {
+
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

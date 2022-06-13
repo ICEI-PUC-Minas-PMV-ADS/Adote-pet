@@ -9,9 +9,13 @@
 
   <ItemGroup>
     <Compile Remove="Views\Carrossel\**" />
+    <Compile Remove="wwwroot\Imagens\**" />
     <Content Remove="Views\Carrossel\**" />
+    <Content Remove="wwwroot\Imagens\**" />
     <EmbeddedResource Remove="Views\Carrossel\**" />
+    <EmbeddedResource Remove="wwwroot\Imagens\**" />
     <None Remove="Views\Carrossel\**" />
+    <None Remove="wwwroot\Imagens\**" />
   </ItemGroup>
 
   <ItemGroup>

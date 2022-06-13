@@ -4848,3 +4848,4 @@ C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-A
 C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.csproj.CopyComplete
 C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.genruntimeconfig.cache
 C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\ref\Projeto-Adote-Pet.dll
+C:\Users\Denver\Documents\GitAtuais\GitAdote0706\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pet\Novo.cshtml.g.cs

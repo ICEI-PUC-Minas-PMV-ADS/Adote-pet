@@ -32,6 +32,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
+            <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["EspecieSortParm"]">@Html.DisplayNameFor(model => model.Especie)</a>
             </th>
             <th>
@@ -61,6 +64,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
+            
             <th>
                 @Html.DisplayNameFor(model => model.Pstatus)
             </th>
@@ -71,6 +75,18 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @if (@item.Foto != null || @item.Foto == "")                
+                {
+                    <img src="~/images/@item.Foto" class="img-thumbnail" height="150" width="150" asp-append-version="true" />
+                    @item.Pstatus
+                }
+                else
+                {
+                    <img src="~/images/image-cao-gato.png" class="rounded-circle" height="150" width="150" asp-append-version="true" />
+                    @item.Pstatus
+                }
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Especie)
             </td>
@@ -101,6 +117,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.Pstatus)
             </td>

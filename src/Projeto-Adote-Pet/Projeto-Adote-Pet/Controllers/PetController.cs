@@ -123,6 +123,7 @@ namespace Projeto_Adote_Pet.Controllers
                 string nomeUnicoArquivo = UploadedFile(model);
         PetModel employee = new PetModel
         {
+            Idanimal = model.Idanimal, do
             Especie = (PetModel.EspecieEnum)model.Especie,
             Sexo = (PetModel.SexoEnum)model.Sexo,
             Raca = model.Raca,
@@ -147,7 +148,7 @@ private string UploadedFile(PetViewModel model)
     string nomeUnicoArquivo = null;
     if (model.Foto != null)
     {
-        string pastaFotos = Path.Combine(webHostEnvironment.WebRootPath, "Imagens");
+        string pastaFotos = Path.Combine(webHostEnvironment.WebRootPath, "Images");
         nomeUnicoArquivo = Guid.NewGuid().ToString() + "_" + model.Foto.FileName;
         string caminhoArquivo = Path.Combine(pastaFotos, nomeUnicoArquivo);
         using (var fileStream = new FileStream(caminhoArquivo, FileMode.Create))

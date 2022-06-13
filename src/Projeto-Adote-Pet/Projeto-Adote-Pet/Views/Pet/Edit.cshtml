@@ -69,7 +69,18 @@
                 <label asp-for="Descricao" class="control-label"></label>
                 <input asp-for="Descricao" class="form-control" placeholder="Descreva um pouco sobre o Pet"/>
                 <span asp-validation-for="Descricao" class="text-danger"></span>
-            </div>  
+            </div>
+         
+            <!--Início Foto-->
+            <div class="form-group">
+                 <label asp-for="Foto" class="control-label"></label>
+                 <div class="custom-file">
+                    <input asp-for="Foto" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Escolha a imagem</label>
+                 </div>
+                     <span asp-validation-for="Foto" class="text-danger"></span>
+             </div>
+             <!--Fim da parte da foto-->      
             
             <div class="form-group">
                 <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />                

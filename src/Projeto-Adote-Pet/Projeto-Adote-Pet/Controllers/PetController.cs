@@ -203,8 +203,8 @@ namespace Projeto_Adote_Pet.Controllers
                    // Idade = model.Idade,
                     Foto = nomeUnicoArquivo,
                 };
-                dbContext.Add(employee);
-                await dbContext.SaveChangesAsync();
+                context.Add(employee);
+                await context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View();

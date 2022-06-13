@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Projeto_Adote_Pet.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
@@ -122,9 +121,17 @@ namespace Projeto_Adote_Pet.Controllers
                 string nomeUnicoArquivo = UploadedFile(model);
         PetModel employee = new PetModel
         {
-            Nome = model.Nome,
-            Email = model.Email,
+            Especie = model.Especie,
+            Sexo = model.Sexo,
+            Raca = model.Raca,
             Idade = model.Idade,
+            Porte = model.Porte,
+            Nome = model.Nome,
+            Cor = model.Cor,
+            Cidade = model.Cidade,
+            Estado = model.Estado,
+            Descricao = model.Descricao,
+            Pstatus = model.Pstatus,
             Foto = nomeUnicoArquivo,
         };
         _context.Add(employee);

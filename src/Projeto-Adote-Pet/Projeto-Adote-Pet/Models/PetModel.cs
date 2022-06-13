@@ -111,5 +111,10 @@ namespace Projeto_Adote_Pet.Models
             SE,
             TO
         }
+        //Fabio
+        public class PetViewModel
+        {
+            public IFormFile ImagemPet { get; set; }
+        }
     }
 }

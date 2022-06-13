@@ -50,7 +50,8 @@ namespace Projeto_Adote_Pet.Models
         [Display(Name = "Status")]
         public PstatusEnum Pstatus { get; set; }
 
-        public string ImagePet { get; set; }
+        //ateração Fabio
+        public string Foto { get; set; }
 
         //Foreignkey
         
@@ -111,10 +112,6 @@ namespace Projeto_Adote_Pet.Models
             SE,
             TO
         }
-        //Fabio
-        public class PetViewModel
-        {
-            public IFormFile ImagemPet { get; set; }
-        }
+       
     }
 }

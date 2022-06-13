@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Projeto_Adote_Pet.Models
 {
     [Table("Pets")] //Nome da tabela
-    public class PetModel
+    public class PetViewModel
     {
         [Key]
         public int Idanimal { get; set; }
@@ -52,11 +52,6 @@ namespace Projeto_Adote_Pet.Models
 
         public string ImagePet { get; set; }
 
-        //Foreignkey
-        
-        [ForeignKey("UsuarioCpf")]
-        public string UsuarioCpf { get; set; }
-        public Usuario Usuario { get; set; }
 
         //Enumerações
         public enum EspecieEnum

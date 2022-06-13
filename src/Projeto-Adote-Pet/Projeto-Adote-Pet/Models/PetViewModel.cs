@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Projeto_Adote_Pet.Models
 {
     [Table("Pets")] //Nome da tabela
-    public class PetModel
+    public class PetViewModel
     {
         [Key]
         public int Idanimal { get; set; }
@@ -49,14 +49,10 @@ namespace Projeto_Adote_Pet.Models
         [Required(ErrorMessage = "Escolha uma opção")]
         [Display(Name = "Status")]
         public PstatusEnum Pstatus { get; set; }
-        public string Foto { get; set; }
 
-        
-        //Foreignkey
-        
-        [ForeignKey("UsuarioCpf")]
-        public string UsuarioCpf { get; set; }
-        public Usuario Usuario { get; set; }
+        // Alteração Fabio
+        public IFormFile Foto { get; set; }
+
 
         //Enumerações
         public enum EspecieEnum
@@ -111,6 +107,6 @@ namespace Projeto_Adote_Pet.Models
             SE,
             TO
         }
-       
+
     }
 }

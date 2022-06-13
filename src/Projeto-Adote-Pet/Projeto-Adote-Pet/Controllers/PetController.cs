@@ -4,18 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Projeto_Adote_Pet.Models;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace Projeto_Adote_Pet.Controllers
 {
+    
+    
     public class PetController : Controller
     {
         private readonly ApplicationDbContext _context;
-
-        public PetController(ApplicationDbContext context)
+        private readonly IWebHostEnvironment webHostEnvironment;
+        public PetController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            webHostEnvironment = hostEnvironment;
         }
 
         // GET: Pet
@@ -85,10 +89,17 @@ namespace Projeto_Adote_Pet.Controllers
         {
             return View();
         }
+        
+//Get: Para chamar imagem
+        public IActionResult Novo()
+        {
+            return View();
+        }
 
         // POST: Pet/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Id")] PetModel petModel)
@@ -102,8 +113,52 @@ namespace Projeto_Adote_Pet.Controllers
             return View(petModel);
         }
 
-        // GET: Pet/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+// Inicio imagens
+        public async Task<IActionResult> Novo(PetViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                string nomeUnicoArquivo = UploadedFile(model);
+        PetModel employee = new PetModel
+        {
+            Especie = model.Especie,
+            Sexo = model.Sexo,
+            Raca = model.Raca,
+            Idade = model.Idade,
+            Porte = model.Porte,
+            Nome = model.Nome,
+            Cor = model.Cor,
+            Cidade = model.Cidade,
+            Estado = model.Estado,
+            Descricao = model.Descricao,
+            Pstatus = model.Pstatus,
+            Foto = nomeUnicoArquivo,
+        };
+        _context.Add(employee);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+    }
+            return View();
+}
+private string UploadedFile(PetViewModel model)
+{
+    string nomeUnicoArquivo = null;
+    if (model.Foto != null)
+    {
+        string pastaFotos = Path.Combine(webHostEnvironment.WebRootPath, "Imagens");
+        nomeUnicoArquivo = Guid.NewGuid().ToString() + "_" + model.Foto.FileName;
+        string caminhoArquivo = Path.Combine(pastaFotos, nomeUnicoArquivo);
+        using (var fileStream = new FileStream(caminhoArquivo, FileMode.Create))
+        {
+            model.Foto.CopyTo(fileStream);
+        }
+    }
+    return nomeUnicoArquivo;
+}
+// fim da imagem
+
+// GET: Pet/Edit/5
+public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -186,9 +241,6 @@ namespace Projeto_Adote_Pet.Controllers
         {
             return _context.Pets.Any(e => e.Idanimal == id);
         }
-        //Inicio Imagem Pet
-
         
-        // fim imagem
     }
 }

@@ -8,7 +8,7 @@
 <h2><img src="~/images/image-adicao.png" width="45"/>Cadastre o Pet</h2>
 </div>
 <hr />
-<div class="row">
+< class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -68,6 +68,7 @@
                 <input asp-for="Descricao" class="form-control" placeholder="Descreva um pouco sobre o Pet"/>
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
+<<<<<<< HEAD
             
             <!--Início Foto-->
             <div class="form-group">
@@ -80,6 +81,21 @@
              </div>
 
             <!--Fim da parte da foto-->         
+=======
+                    
+                <!--Fotos Pet - Fabio  -->   
+                
+                        <div class="form-group">
+                            <label asp-for="Foto" class="control-label"></label>
+                            <div class="custom-file">
+                                <input asp-for="Foto" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Escolha a imagem</label>
+                            </div>
+                            <span asp-validation-for="Foto" class="text-danger"></span>
+                        </div>
+                   
+               <!--Fim da parte da foto-->       
+>>>>>>> 919c097541abc1176535583fb53ace0b16a8aa5b
             
             <div class="form-group">                
                 <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />

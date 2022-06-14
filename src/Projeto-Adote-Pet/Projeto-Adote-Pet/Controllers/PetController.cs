@@ -88,13 +88,13 @@ namespace Projeto_Adote_Pet.Controllers
         }
 
         // GET: Pet/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
         
 //Get: Para chamar imagem
-        public IActionResult CreateNovo()
+        public IActionResult Create()
         {
             return View();
         }
@@ -103,22 +103,24 @@ namespace Projeto_Adote_Pet.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        
+        //public async Task<IActionResult> Create([Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto")] PetModel petModel)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _context.Add(petModel);
+        //        await _context.SaveChangesAsync();
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(petModel);
+        //}
         [HttpPost]
         [ValidateAntiForgeryToken]
-        
-        public async Task<IActionResult> Create([Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto")] PetModel petModel)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(petModel);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(petModel);
-        }
 
-    // Inicio imagens
-        public async Task<IActionResult> CreateNovo(PetViewModel model)
+        // Inicio imagens
+        public async Task<IActionResult> Create(PetViewModel model)
         {
             if (ModelState.IsValid)
             {

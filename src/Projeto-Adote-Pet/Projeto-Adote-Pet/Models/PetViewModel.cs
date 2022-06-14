@@ -44,7 +44,6 @@ namespace Projeto_Adote_Pet.Models
         public EstadoEnum Estado { get; set; }
         
         [Display(Name = "Descrição")]
-        [Required(ErrorMessage = "Campo Obrigatório!")]
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Escolha uma opção")]

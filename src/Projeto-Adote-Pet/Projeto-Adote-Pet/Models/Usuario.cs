@@ -46,7 +46,7 @@ namespace Projeto_Adote_Pet.Models
 
         //link virtualmente com FK dos Pets
 
-        public PetModel Pets { get; set; }
+        public ICollection<PetModel> Pets { get; set; }
         
     }
 

@@ -2,7 +2,7 @@
 @model Projeto_Adote_Pet.Models.PetViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "CreateNovo";
 }
 <div>
 <h2><img src="~/images/image-adicao.png" width="45"/>Cadastre o Pet</h2>
@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="CreateNovo">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <fieldset class="form-group" id="cStatus"><legend>Status</legend>

@@ -37,7 +37,8 @@ namespace Projeto_Adote_Pet.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
 
-         //Para enumerações apresentou erro
+         //Para pesquisa em enumerações apresentou erro
+
                 pets = pets.Where(s => s.Raca.Contains(searchString)
                     || s.Cidade.Contains(searchString));
                 //s => s.Especie.Contains(searchString)
@@ -93,7 +94,7 @@ namespace Projeto_Adote_Pet.Controllers
         }
         
 //Get: Para chamar imagem
-        public IActionResult Novo()
+        public IActionResult CreateNovo()
         {
             return View();
         }
@@ -104,7 +105,8 @@ namespace Projeto_Adote_Pet.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Id")] PetModel petModel)
+        
+        public async Task<IActionResult> Create([Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto")] PetModel petModel)
         {
             if (ModelState.IsValid)
             {
@@ -115,8 +117,8 @@ namespace Projeto_Adote_Pet.Controllers
             return View(petModel);
         }
 
-// Inicio imagens
-        public async Task<IActionResult> Novo(PetViewModel model)
+    // Inicio imagens
+        public async Task<IActionResult> CreateNovo(PetViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -158,6 +160,7 @@ private string UploadedFile(PetViewModel model)
     }
     return nomeUnicoArquivo;
 }
+
 // fim da imagem
 
 // GET: Pet/Edit/5
@@ -181,7 +184,7 @@ public async Task<IActionResult> Edit(int? id)
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Id")] PetModel petModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto")] PetModel petModel)
         {
             if (id != petModel.Idanimal)
             {

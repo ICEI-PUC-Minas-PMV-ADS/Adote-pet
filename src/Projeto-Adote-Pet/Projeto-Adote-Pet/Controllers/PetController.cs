@@ -120,7 +120,8 @@ namespace Projeto_Adote_Pet.Controllers
         [ValidateAntiForgeryToken]
 
         // Inicio imagens
-        public async Task<IActionResult> Create(PetViewModel model)
+      
+        public async Task<IActionResult> Create([Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto")]PetViewModel model)
         {
             if (ModelState.IsValid)
             {

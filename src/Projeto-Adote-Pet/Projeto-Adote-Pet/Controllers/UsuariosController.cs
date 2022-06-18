@@ -175,7 +175,8 @@ namespace Projeto_Adote_Pet.Controllers
                 try
                 {
                     usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha); //Criptografia da senha                     
-                    usuario.ConfirmeSenha = BCrypt.Net.BCrypt.HashPassword(usuario.ConfirmeSenha); //Cripto ConfirmeSenha_context.Update(usuario);
+                    usuario.ConfirmeSenha = BCrypt.Net.BCrypt.HashPassword(usuario.ConfirmeSenha); //Cripto ConfirmeSenha
+                    _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

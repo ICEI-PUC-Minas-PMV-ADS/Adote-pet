@@ -51,7 +51,7 @@ namespace Projeto_Adote_Pet.Controllers
                 {
                     //carregar as credenciais 
                     new Claim(ClaimTypes.Name, pessoa.Nome),
-                    new Claim(ClaimTypes.NameIdentifier, pessoa.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, pessoa.Nome),                 
                     new Claim(ClaimTypes.Role, pessoa.Perfil.ToString())
                 };
 

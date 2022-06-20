@@ -8,6 +8,7 @@ using Projeto_Adote_Pet.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using Microsoft.EntityFrameworkCore;
+using static Projeto_Adote_Pet.Models.PetModel;
 
 namespace Projeto_Adote_Pet.Controllers
 {
@@ -31,7 +32,7 @@ namespace Projeto_Adote_Pet.Controllers
             ViewData["CidadeSortParm"] = sortOrder == "Cidade" ? "cidade_desc" : "Cidade";
             ViewData["CurrentFilter"] = searchString;
 
-            var pets = from s in _context.Pets
+            var pets = from s in _context.Pets.Include(x=>x.Usuario)
                            select s;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -40,9 +41,9 @@ namespace Projeto_Adote_Pet.Controllers
          //Para pesquisa em enumerações apresentou erro
 
                 pets = pets.Where(s => s.Raca.Contains(searchString)
-                    || s.Cidade.Contains(searchString));
+                    || s.Cidade.Contains(searchString)
                 //s => s.Especie.Contains(searchString)
-                //|| s.Sexo.Contains(searchString)
+                || s.Sexo==(SexoEnum)Enum.Parse(typeof(SexoEnum),searchString));
 
                 //|| s.Porte.Contains(searchString)
 
@@ -104,6 +105,7 @@ namespace Projeto_Adote_Pet.Controllers
       
         public async Task<IActionResult> Create(PetViewModel model)
         {
+            var usuario = User;
             if (ModelState.IsValid)
             {
                 await _context.SaveChangesAsync();
@@ -142,6 +144,7 @@ namespace Projeto_Adote_Pet.Controllers
             {
                 model.Foto.CopyTo(fileStream);
             }
+
         }
         return nomeUnicoArquivo;
     }

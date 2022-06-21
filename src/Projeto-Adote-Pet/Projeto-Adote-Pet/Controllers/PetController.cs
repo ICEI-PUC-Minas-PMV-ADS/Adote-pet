@@ -42,13 +42,11 @@ namespace Projeto_Adote_Pet.Controllers
 
                 pets = pets.Where(s => s.Raca.Contains(searchString)
                     || s.Cidade.Contains(searchString)
-                //s => s.Especie.Contains(searchString)
-                || s.Sexo==(SexoEnum)Enum.Parse(typeof(SexoEnum),searchString));
-
-                //|| s.Porte.Contains(searchString)
-
-                //|| s.Estado.Contains(searchString)
-                //|| s.Pstatus.Contains(searchString)
+                    || s.Especie == (EspecieEnum)Enum.Parse(typeof(EspecieEnum), searchString)
+                    || s.Porte == (PorteEnum)Enum.Parse(typeof(PorteEnum), searchString)
+                    || s.Pstatus == (PstatusEnum)Enum.Parse(typeof(PstatusEnum), searchString)
+                    || s.Estado == (EstadoEnum)Enum.Parse(typeof(EstadoEnum), searchString)
+                    || s.Sexo==(SexoEnum)Enum.Parse(typeof(SexoEnum),searchString));
 
             }
 

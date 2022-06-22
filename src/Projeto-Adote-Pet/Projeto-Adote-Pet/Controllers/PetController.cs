@@ -103,7 +103,11 @@ namespace Projeto_Adote_Pet.Controllers
       
         public async Task<IActionResult> Create(PetViewModel model)
         {
+<<<<<<< HEAD
             //var usuario = User;
+=======
+           // var usuario = User;
+>>>>>>> 75dcc5f9266567f6942e8665342362a84ed02c2e
             if (ModelState.IsValid)
             {
                 await _context.SaveChangesAsync();
@@ -138,7 +142,7 @@ namespace Projeto_Adote_Pet.Controllers
                     string pastaFotos = Path.Combine(webHostEnvironment.WebRootPath, "Images");
                     nomeUnicoArquivo = Guid.NewGuid().ToString() + "_" + model.Foto.FileName;
                     string caminhoArquivo = Path.Combine(pastaFotos, nomeUnicoArquivo);
-                    using (var fileStream = new FileStream(caminhoArquivo, FileMode.Create))
+                using (var fileStream = new FileStream(caminhoArquivo, FileMode.Create))
             {
                 model.Foto.CopyTo(fileStream);
             }

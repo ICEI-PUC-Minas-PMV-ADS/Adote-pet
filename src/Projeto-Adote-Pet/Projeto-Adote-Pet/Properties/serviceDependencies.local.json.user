@@ -6,6 +6,16 @@
     }
   },
   "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "cb9f7498-9cbc-4b9c-925a-e1f123e33be1"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Projeto-Adote-Pet20220618191842ResourceGroup"
+    },
     "subscriptionId": {
       "Name": "subscriptionId",
       "Type": "subscription",

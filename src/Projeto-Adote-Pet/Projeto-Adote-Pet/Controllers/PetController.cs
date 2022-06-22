@@ -103,7 +103,7 @@ namespace Projeto_Adote_Pet.Controllers
       
         public async Task<IActionResult> Create(PetViewModel model)
         {
-            var usuario = User;
+            //var usuario = User;
             if (ModelState.IsValid)
             {
                 await _context.SaveChangesAsync();

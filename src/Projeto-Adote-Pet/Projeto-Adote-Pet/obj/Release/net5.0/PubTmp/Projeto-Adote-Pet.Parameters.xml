@@ -3,7 +3,4 @@
   <parameter name="IIS Web Application Name" description="" value="Projeto-Adote-Pet20220622192456" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote2206\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
   </parameter>
-  <parameter name="Projeto_Adote_Pet.Models.ApplicationDbContext" description="" value="Data Source=tcp:adotepetserver.database.windows.net,1433;Initial Catalog=db-adotepet;User Id=admadotepet@adotepet;Password=@Ads2022" tags="dbfullsql">
-    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Denver\\Documents\\GitAtuais\\GitAdote2206\\src\\Projeto-Adote-Pet\\Projeto-Adote-Pet\\obj\\Release\\net5\.0\\PubTmp\\EFSQLScripts\\Projeto_Adote_Pet\.Models\.ApplicationDbContext\.sql$" />
-  </parameter>
 </parameters>

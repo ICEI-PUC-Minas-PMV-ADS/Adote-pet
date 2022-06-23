@@ -2,7 +2,7 @@
   "dependencies": {
     "mssql1": {
       "restored": true,
-      "restoreTime": "2022-06-21T01:34:42.8454316Z"
+      "restoreTime": "2022-06-23T01:56:38.6934633Z"
     }
   },
   "parameters": {
@@ -14,7 +14,7 @@
     "mssql1.resourceGroupName": {
       "Name": "mssql1.resourceGroupName",
       "Type": "resourceGroup",
-      "Value": "Projeto-Adote-Pet20220618191842ResourceGroup"
+      "Value": "Adote-Pet"
     },
     "subscriptionId": {
       "Name": "subscriptionId",

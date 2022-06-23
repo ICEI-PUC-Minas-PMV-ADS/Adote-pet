@@ -32,21 +32,23 @@ namespace Projeto_Adote_Pet.Controllers
             ViewData["CidadeSortParm"] = sortOrder == "Cidade" ? "cidade_desc" : "Cidade";
             ViewData["CurrentFilter"] = searchString;
 
+        // Include(x => x.Usuario) tenta relacionar os Pets aos usuários
+
             var pets = from s in _context.Pets.Include(x=>x.Usuario)
                            select s;
 
             if (!String.IsNullOrEmpty(searchString))
             {
 
-         //Para pesquisa em enumerações apresentou erro
+                //Para pesquisa em enumerações apresentou erro
 
                 pets = pets.Where(s => s.Raca.Contains(searchString)
-                    || s.Cidade.Contains(searchString)
-                    || s.Especie == (EspecieEnum)Enum.Parse(typeof(EspecieEnum), searchString)
-                    || s.Porte == (PorteEnum)Enum.Parse(typeof(PorteEnum), searchString)
-                    || s.Pstatus == (PstatusEnum)Enum.Parse(typeof(PstatusEnum), searchString)
-                    || s.Estado == (EstadoEnum)Enum.Parse(typeof(EstadoEnum), searchString)
-                    || s.Sexo==(SexoEnum)Enum.Parse(typeof(SexoEnum),searchString));
+                    || s.Cidade.Contains(searchString));
+                    //|| s.Especie == (EspecieEnum)Enum.Parse(typeof(EspecieEnum), searchString)
+                    //|| s.Porte == (PorteEnum)Enum.Parse(typeof(PorteEnum), searchString)
+                    //|| s.Pstatus == (PstatusEnum)Enum.Parse(typeof(PstatusEnum), searchString)
+                    //|| s.Estado == (EstadoEnum)Enum.Parse(typeof(EstadoEnum), searchString)
+                    //|| s.Sexo==(SexoEnum)Enum.Parse(typeof(SexoEnum),searchString));
 
             }
 
@@ -103,11 +105,9 @@ namespace Projeto_Adote_Pet.Controllers
       
         public async Task<IActionResult> Create(PetViewModel model)
         {
-<<<<<<< HEAD
+
             //var usuario = User;
-=======
-           // var usuario = User;
->>>>>>> 75dcc5f9266567f6942e8665342362a84ed02c2e
+
             if (ModelState.IsValid)
             {
                 await _context.SaveChangesAsync();

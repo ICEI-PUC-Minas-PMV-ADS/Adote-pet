@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\Denver\Documents\GitAtuais\GitAdote2106\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\" />
+  <IisApp path="C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Release\net5.0\PubTmp\EFSQLScripts\Projeto_Adote_Pet.Models.ApplicationDbContext.sql" />
 </sitemanifest>

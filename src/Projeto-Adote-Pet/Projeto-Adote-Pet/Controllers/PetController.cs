@@ -29,7 +29,7 @@ namespace Projeto_Adote_Pet.Controllers
         public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
             ViewData["EspecieSortParm"] = String.IsNullOrEmpty(sortOrder) ? "especie_desc" : "";
-            ViewData["CidadeSortParm"] = sortOrder == "Cidade" ? "cidade_desc" : "Cidade";
+            ViewData["SexoSortParm"] = sortOrder == "Sexo" ? "sexo_desc" : "Sexo";
             ViewData["CurrentFilter"] = searchString;
 
         // Include(x => x.Usuario) tenta relacionar os Pets aos usuários
@@ -57,11 +57,11 @@ namespace Projeto_Adote_Pet.Controllers
                 case "especie_desc":
                     pets = pets.OrderByDescending(s => s.Especie);
                     break;
-                case "Cidade":
-                    pets = pets.OrderBy(s => s.Cidade);
+                case "Sexo":
+                    pets = pets.OrderBy(s => s.Sexo);
                     break;
-                case "cidade_desc":
-                    pets = pets.OrderByDescending(s => s.Cidade);
+                case "sexo_desc":
+                    pets = pets.OrderByDescending(s => s.Sexo);
                     break;
                 default:
                     pets = pets.OrderBy(s => s.Especie);

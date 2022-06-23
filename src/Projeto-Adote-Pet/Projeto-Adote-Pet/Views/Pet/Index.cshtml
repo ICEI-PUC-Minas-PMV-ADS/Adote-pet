@@ -28,7 +28,7 @@
     </div>
 </form>
 
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -37,8 +37,8 @@
             <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["EspecieSortParm"]">@Html.DisplayNameFor(model => model.Especie)</a>
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sexo)
+            <th>                
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["SexoSortParm"]">@Html.DisplayNameFor(model => model.Sexo)</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Raca)
@@ -46,7 +46,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Idade)
             </th>
-            <th>
+@*@*            <th>
                 @Html.DisplayNameFor(model => model.Porte)
             </th>
             <th>
@@ -54,20 +54,21 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Cor)
-            </th>
+            </th>*@
+            
             <th>
-                <a asp-action="Index" asp-route-sortOrder="@ViewData["CidadeSortParm"]">@Html.DisplayNameFor(model => model.Cidade)</a>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>                
+                @Html.DisplayNameFor(model => model.Cidade)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Estado)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
             
-            <th>
+@*            <th>
                 @Html.DisplayNameFor(model => model.Pstatus)
-            </th>
+            </th>*@
             
             <th></th>
         </tr>
@@ -78,7 +79,7 @@
             <td>
                 @if (@item.Foto != null || @item.Foto == "")                
                 {
-                    <img src="~/images/@item.Foto" class="img-thumbnail" height="150" width="150" asp-append-version="true" />
+                    <img src="~/images/@item.Foto" class="img-thumbnail" height="200" width="200" asp-append-version="true" />
                     @item.Pstatus
                 }
                 else
@@ -99,7 +100,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Idade)
             </td>
-            <td>
+@*            <td>
                 @Html.DisplayFor(modelItem => item.Porte)
             </td>
             <td>
@@ -107,6 +108,10 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Cor)
+            </td>*@
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Cidade)
@@ -114,13 +119,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Estado)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
             
-            <td>
+@*            <td>
                 @Html.DisplayFor(modelItem => item.Pstatus)
-            </td>
+            </td>*@
             
             <td>
                     <!--Restrige Editar e Delete-->

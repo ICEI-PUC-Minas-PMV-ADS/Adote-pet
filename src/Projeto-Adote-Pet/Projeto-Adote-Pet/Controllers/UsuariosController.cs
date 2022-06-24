@@ -33,7 +33,7 @@ namespace Projeto_Adote_Pet.Controllers
         public async Task<IActionResult> Login([Bind("Email, Senha")] Usuario usuario)
         {
             // Abaixo validação do usuário e senha 
-            var pessoa = await _context.Usuarios
+            var pessoa = await _context.Usuarios.Include(x => x.Pets)
                .FirstOrDefaultAsync(m => m.Email == usuario.Email);
 
             if (pessoa == null)
@@ -106,7 +106,7 @@ namespace Projeto_Adote_Pet.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios
+            var usuario = await _context.Usuarios.Include(x => x.Pets)
                 .FirstOrDefaultAsync(m => m.Cpf == id);
             if (usuario == null)
             {

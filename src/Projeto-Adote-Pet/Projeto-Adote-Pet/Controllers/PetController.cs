@@ -34,7 +34,7 @@ namespace Projeto_Adote_Pet.Controllers
 
         // Include(x => x.Usuario) tenta relacionar os Pets aos usuários
 
-            var pets = from s in _context.Pets.Include(x=>x.Usuario)
+            var pets = from s in _context.Pets.Include(x => x.Usuario)
                            select s;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -70,6 +70,8 @@ namespace Projeto_Adote_Pet.Controllers
             return View(await pets.AsNoTracking().ToListAsync());
         }
 
+
+
 // GET: Pet/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -78,7 +80,7 @@ namespace Projeto_Adote_Pet.Controllers
                 return NotFound();
             }
 
-            var petModel = await _context.Pets
+            var petModel = await _context.Pets.Include(x => x.Usuario)
                 .FirstOrDefaultAsync(m => m.Idanimal == id);
             if (petModel == null)
             {
@@ -214,7 +216,7 @@ public async Task<IActionResult> Edit(int? id)
                 return NotFound();
             }
 
-            var petModel = await _context.Pets
+            var petModel = await _context.Pets.Include(x => x.Usuario)
                 .FirstOrDefaultAsync(m => m.Idanimal == id);
             if (petModel == null)
             {

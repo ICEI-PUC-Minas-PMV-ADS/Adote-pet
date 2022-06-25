@@ -34,7 +34,8 @@ namespace Projeto_Adote_Pet.Controllers
 
         // Include(x => x.Usuario) tenta relacionar os Pets aos usuários
 
-            var pets = from s in _context.Pets.Include(x => x.Usuario)
+            var pets = from s in _context.Pets
+                       .Include(p => p.Usuario)
                            select s;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -80,7 +81,8 @@ namespace Projeto_Adote_Pet.Controllers
                 return NotFound();
             }
 
-            var petModel = await _context.Pets.Include(x => x.Usuario)
+            var petModel = await _context.Pets
+                .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.Idanimal == id);
             if (petModel == null)
             {
@@ -90,16 +92,17 @@ namespace Projeto_Adote_Pet.Controllers
             return View(petModel);
         }
 
-// GET: Pet/Create e imagens
+        // GET: Pets/Create
         public IActionResult Create()
         {
+            ViewData["UsuarioCpf"] = new SelectList(_context.Usuarios, "Cpf", "Cpf");
             return View();
         }
 
-// POST: Pet/Create
+        // POST: Pet/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
 
@@ -129,11 +132,16 @@ namespace Projeto_Adote_Pet.Controllers
             Descricao = model.Descricao,
             Pstatus = (PetModel.PstatusEnum)model.Pstatus,
             Foto = nomeUnicoArquivo,
+            UsuarioCpf = model.UsuarioCpf,
         };
-        _context.Add(employee);
+                _context.Add(employee);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
     }
+    // não consegui alterar para
+        //ViewData["UsuarioCpf"] = new SelectList(_context.Usuarios, "Cpf", "Cpf", petModel.UsuarioCpf);
+        //return View(petModel);
+
             return View();
 }
         private string UploadedFile(PetViewModel model)
@@ -168,6 +176,7 @@ public async Task<IActionResult> Edit(int? id)
             {
                 return NotFound();
             }
+            ViewData["UsuarioCpf"] = new SelectList(_context.Usuarios, "Cpf", "Cpf", petModel.UsuarioCpf);
             return View(petModel);
         }
 
@@ -178,7 +187,7 @@ public async Task<IActionResult> Edit(int? id)
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto")] PetModel petModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto,UsuarioCpf")] PetModel petModel)
         {
             if (id != petModel.Idanimal)
             {
@@ -205,6 +214,7 @@ public async Task<IActionResult> Edit(int? id)
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UsuarioCpf"] = new SelectList(_context.Usuarios, "Cpf", "Cpf", petModel.UsuarioCpf);
             return View(petModel);
         }
 
@@ -216,7 +226,8 @@ public async Task<IActionResult> Edit(int? id)
                 return NotFound();
             }
 
-            var petModel = await _context.Pets.Include(x => x.Usuario)
+            var petModel = await _context.Pets
+                .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.Idanimal == id);
             if (petModel == null)
             {

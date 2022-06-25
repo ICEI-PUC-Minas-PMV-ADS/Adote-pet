@@ -53,6 +53,7 @@ namespace Projeto_Adote_Pet.Models
         // Alteração Fabio
         public IFormFile Foto { get; set; }
 
+        public string UsuarioCpf { get; set; }
 
         //Enumerações
         public enum EspecieEnum

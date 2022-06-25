@@ -42,15 +42,6 @@ namespace Projeto_Adote_Pet.Migrations
                     b.Property<int>("Estado")
                         .HasColumnType("int");
 
-                    b.Property<string>("FkEmail")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FkNome")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FkTelefone")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Foto")
                         .HasColumnType("nvarchar(max)");
 

@@ -50,23 +50,23 @@ namespace Projeto_Adote_Pet.Models
         public PstatusEnum Pstatus { get; set; }
         public string Foto { get; set; }
 
-        
+
         //Foreignkey
-        
-        //[ForeignKey("UsuarioCpf")]
-        //public string UsuarioCpf { get; set; }
-        //public Usuario Usuario { get; set; }
 
-        [ForeignKey("Nome")]
-        public string FkNome { get; set; }        
-
-        [ForeignKey("Email")]
-        public string FkEmail { get; set; }
-
-        [ForeignKey("Telefone")]
-        public string FkTelefone { get; set; }
-        
+        public string UsuarioCpf { get; set; }        
+        [ForeignKey("UsuarioCpf")]        
         public Usuario Usuario { get; set; }
+
+        //[ForeignKey("Nome")]
+        //public string FkNome { get; set; }        
+
+        //[ForeignKey("Email")]
+        //public string FkEmail { get; set; }
+
+        //[ForeignKey("Telefone")]
+        //public string FkTelefone { get; set; }
+        
+        //public Usuario Usuario { get; set; }
 
     //Enumerações
     public enum EspecieEnum

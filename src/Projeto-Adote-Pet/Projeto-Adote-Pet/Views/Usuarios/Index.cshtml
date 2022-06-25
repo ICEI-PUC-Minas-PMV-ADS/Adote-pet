@@ -5,7 +5,7 @@
 }
 
 <div class="text-center">
-    <h2 class="display-5">Usuário</h2>       
+    <h3 class="display-5">Usuário</h3>       
 </div>
 
 <table class="table table-striped">
@@ -26,9 +26,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Estado)
             </th>
-@*            <th>
+            <th>
                 @Html.DisplayNameFor(model => model.Perfil)
-            </th>*@
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -51,9 +51,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Estado)
             </td>
-@*            <td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Perfil)
-            </td>*@
+            </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Cpf">Editar</a> |
                 <a asp-action="Details" asp-route-id="@item.Cpf">Detalhes</a> |

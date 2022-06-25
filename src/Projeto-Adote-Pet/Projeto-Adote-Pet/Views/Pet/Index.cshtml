@@ -5,7 +5,7 @@
 }
 
 <div class="text-center">
-    <h2>Pets Cadastrados</h2>
+    <h3>Pets Cadastrados</h3>
     
     <!--Restrige cadastro de Pet-->
     @if (User.Identity.IsAuthenticated)
@@ -62,11 +62,11 @@
             <th>                
                 @Html.DisplayNameFor(model => model.Cidade)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Estado)
             </th>
             
-@*            <th>
+            <th>
                 @Html.DisplayNameFor(model => model.Pstatus)
             </th>*@
             
@@ -117,11 +117,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Cidade)
             </td>
-            <td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.Estado)
             </td>
             
-@*            <td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Pstatus)
             </td>*@
             

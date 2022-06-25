@@ -42,12 +42,14 @@ namespace Projeto_Adote_Pet.Models
         [Required(ErrorMessage = "Escolha uma opção")]
         public EstadoEnum Estado { get; set; }
         
-        [Display(Name = "Descrição")]
+        [Display(Name = "Descrição (Opcional)")]
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Escolha uma opção")]
         [Display(Name = "Status")]
         public PstatusEnum Pstatus { get; set; }
+
+        [Display(Name = "Foto (Obrigatória)")]
         public string Foto { get; set; }
 
 

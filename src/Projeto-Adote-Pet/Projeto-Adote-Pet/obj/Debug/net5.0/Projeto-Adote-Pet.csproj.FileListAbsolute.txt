@@ -5738,8 +5738,3 @@ C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-A
 C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.csproj.CopyComplete
 C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Projeto-Adote-Pet.genruntimeconfig.cache
 C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\ref\Projeto-Adote-Pet.dll
-C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pets\Create.cshtml.g.cs
-C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pets\Delete.cshtml.g.cs
-C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pets\Details.cshtml.g.cs
-C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pets\Edit.cshtml.g.cs
-C:\Users\Denver\Documents\GitAtuais\GitAdote2206\src\Projeto-Adote-Pet\Projeto-Adote-Pet\obj\Debug\net5.0\Razor\Views\Pets\Index.cshtml.g.cs

@@ -21,13 +21,6 @@ namespace Projeto_Adote_Pet.Controllers
         private readonly ApplicationDbContext _context;
         private string _filePath;
 
-//Imagens v1.0
-//private readonly IWebHostEnvironment webHostEnvironment;
-//public PetController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
-//{
-//    _context = context;
-//    webHostEnvironment = hostEnvironment;
-//}
 
         public PetController(ApplicationDbContext context, IWebHostEnvironment env)
         {
@@ -119,7 +112,7 @@ namespace Projeto_Adote_Pet.Controllers
         public async Task<IActionResult> Create([Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto,UsuarioCpf")] PetModel petModel, IFormFile anexo)
         {
             if (ModelState.IsValid)
-            {
+            {                
                 if (!ValidaImagem(anexo))
                     return View(petModel);
 
@@ -136,63 +129,6 @@ namespace Projeto_Adote_Pet.Controllers
         }
 
         
-
-        // Inicio imagens
-
-        //        public async Task<IActionResult> Create(PetViewModel model)
-        //        {
-
-        //            //var usuario = User;
-
-        //            if (ModelState.IsValid)
-        //            {
-        //                await _context.SaveChangesAsync();
-        //                string nomeUnicoArquivo = UploadedFile(model);
-        //                PetModel employee = new PetModel
-        //        {
-        //            Idanimal = model.Idanimal,
-        //            Especie = (PetModel.EspecieEnum)model.Especie,
-        //            Sexo = (PetModel.SexoEnum)model.Sexo,
-        //            Raca = model.Raca,
-        //            Idade = model.Idade,
-        //            Porte = (PetModel.PorteEnum)model.Porte,
-        //            Nome = model.Nome,
-        //            Cor = model.Cor,
-        //            Cidade = model.Cidade,
-        //            Estado = (PetModel.EstadoEnum)model.Estado,
-        //            Descricao = model.Descricao,
-        //            Pstatus = (PetModel.PstatusEnum)model.Pstatus,
-        //            Foto = nomeUnicoArquivo,
-        //            UsuarioCpf = model.UsuarioCpf,
-        //        };
-        //                _context.Add(employee);
-        //                await _context.SaveChangesAsync();
-        //                return RedirectToAction(nameof(Index));
-        //    }
-        //    // não consegui alterar para
-        //        //ViewData["UsuarioCpf"] = new SelectList(_context.Usuarios, "Cpf", "Cpf", petModel.UsuarioCpf);
-        //        //return View(petModel);
-
-        //            return View();
-        //}
-        //        private string UploadedFile(PetViewModel model)
-        //        {
-        //            string nomeUnicoArquivo = null;
-        //            if (model.Foto != null)
-        //                {
-        //                    string pastaFotos = Path.Combine(webHostEnvironment.WebRootPath, "Images");
-        //                    nomeUnicoArquivo = Guid.NewGuid().ToString() + "_" + model.Foto.FileName;
-        //                    string caminhoArquivo = Path.Combine(pastaFotos, nomeUnicoArquivo);
-        //                using (var fileStream = new FileStream(caminhoArquivo, FileMode.Create))
-        //            {
-        //                model.Foto.CopyTo(fileStream);
-        //            }
-
-        //        }
-        //        return nomeUnicoArquivo;
-        //    }
-
-        //// fim da imagem
 
         // GET: Pet/Edit/5
         public async Task<IActionResult> Edit(int? id)

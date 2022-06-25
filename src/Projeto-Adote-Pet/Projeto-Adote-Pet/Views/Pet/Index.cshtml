@@ -77,14 +77,15 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @if (@item.Foto != null || @item.Foto == "")                
+
+               @if (@item.Foto != null || @item.Foto == "")                
                 {
-                    <img src="~/images/@item.Foto" class="img-thumbnail" height="200" width="200" asp-append-version="true" />
+                    <img src="~/fotos/@item.Foto" class="img-thumbnail" width="200" asp-append-version="true" />
                     @item.Pstatus
                 }
                 else
                 {
-                    <img src="~/images/image-cao-gato.png" class="img-thumbnail" height="200" width="200" asp-append-version="true" />
+                    <img src="~/fotos/image001.png" class="img-thumbnail" width="200" asp-append-version="true" />
                     @item.Pstatus
                 }
             </td>

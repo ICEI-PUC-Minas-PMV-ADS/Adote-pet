@@ -80,7 +80,13 @@
                  </div>
                      <span asp-validation-for="Foto" class="text-danger"></span>
              </div>
-             <!--Fim da parte da foto-->      
+             <!--Fim da parte da foto-->
+             
+             <div class="form-group">
+                <label asp-for="UsuarioCpf" class="control-label"></label>
+                <select asp-for="UsuarioCpf" class="form-control" asp-items="ViewBag.UsuarioCpf"></select>
+                <span asp-validation-for="UsuarioCpf" class="text-danger"></span>
+            </div>
             
             <div class="form-group">
                 <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />                

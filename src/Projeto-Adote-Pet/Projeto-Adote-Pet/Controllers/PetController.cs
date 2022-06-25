@@ -273,7 +273,13 @@ namespace Projeto_Adote_Pet.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var petModel = await _context.Pets.FindAsync(id);
+            var petModel = await _context.Pets.FindAsync(id);        
+            //para apagar as imagens também    
+            string filePathName = _filePath + "\\fotos\\" + petModel.Foto;
+
+                if (System.IO.File.Exists(filePathName))
+                    System.IO.File.Delete(filePathName);
+
             _context.Pets.Remove(petModel);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -304,7 +310,7 @@ namespace Projeto_Adote_Pet.Controllers
         {
             var nome = Guid.NewGuid().ToString() + anexo.FileName;
 
-            var filePath = _filePath + "\\fotos;";
+            var filePath = _filePath + "\\fotos";
             if (!Directory.Exists(filePath))
             {
                 Directory.CreateDirectory(filePath);

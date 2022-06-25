@@ -1,5 +1,5 @@
-﻿@using static Projeto_Adote_Pet.Models.PetViewModel
-@model Projeto_Adote_Pet.Models.PetViewModel
+﻿@using static Projeto_Adote_Pet.Models.PetModel
+@model Projeto_Adote_Pet.Models.PetModel
 
 @{
     ViewData["Title"] = "Create";
@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create"enctype="multipart/form-data">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <fieldset class="form-group" id="cStatus"><legend>Status</legend>
@@ -69,22 +69,34 @@
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
          
-            <!--Início Foto-->
+            <!--Início Foto v.2-->
             <div class="form-group">
                  <label asp-for="Foto" class="control-label"></label>
-                 <div class="custom-file">
+                 <input type="file" name="anexo" />
+                 <span asp-validation-for="Foto" class="text-danger"></span>
+
+<!--Imagem v.1 PetViewModel-->
+                 <@*div class="custom-file">
                     <input asp-for="Foto" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Escolha a imagem</label>
                  </div>
-                     <span asp-validation-for="Foto" class="text-danger"></span>
+                     <span asp-validation-for="Foto" class="text-danger"></span>*@
              </div>
 
-            <!--Fim da parte da foto-->         
+            <!--Fim da parte da foto--> 
+            
+            <div class="form-group">
+                <label asp-for="UsuarioCpf" class="control-label"></label>
+                <select asp-for="UsuarioCpf" class="form-control" asp-items="ViewBag.UsuarioCpf"></select>
+                <span asp-validation-for="UsuarioCpf" class="text-danger"></span>
+            </div>
             
             <div class="form-group">                
                 <input type="image" src="~/images/icone-salvar.png" width="60" value="Salvar" class="btn btn-outline-success" />
                 <a asp-action="Index"><img src="~/images/icone-voltar.png" width="60" class="btn btn-secondary"></a>
             </div>
+
+
         </form>
     </div>
 </div>

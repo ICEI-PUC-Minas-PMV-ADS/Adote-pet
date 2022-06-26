@@ -28,48 +28,54 @@ As fontes usadas na aplicação são happy monkey  e sunny spells, e seguem as s
 
 ## Aplicação nas telas e fluxos
 
-### Tela - home / pesquisa
+### Tela - Inicial
 
-A tela inicial ou Home apresentada na figura abaixo permite visualizar os animas disponivel para adoção, na barra de pesquisa pode localizar outros animais e o login abre outra pagina.
-RF-04 - permite o usuario da aplicação pesquisar aniamis para adoção
-
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Home.png)
+![image](https://user-images.githubusercontent.com/90660885/175838350-03413977-2bf2-41e6-8023-03f799f93dbd.png)
 
 ### Tela - Login
 
 A tela de login possui duas 
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/homemodallogin.png)
+![image](https://user-images.githubusercontent.com/90660885/175838100-d6fd5bc0-6977-4cfc-8f46-ea58ac515878.png)
+
+Cadastro
+
+![image](https://user-images.githubusercontent.com/90660885/175838148-19cc0ec3-1947-4395-b1a7-af74c82c6475.png)
+
 
 ### Tela - buscar
 
 A tela buscar
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Buscar.png)
+![image](https://user-images.githubusercontent.com/90660885/175838081-a77dace7-d10e-4de7-bb7c-d7d7baf8c5a8.png)
 
 ### Tela - Cadastro usuario
 
 A tela de cadastro de usuario
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/cadastrousuario.png)
+![image](https://user-images.githubusercontent.com/90660885/175838187-3f36b1d2-b8ea-4733-a4dd-763b2861cd39.png)
 
 ### Tela - Editar perfil
 
 A tela de editar perfil
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/editarperfil.png)
+![image](https://user-images.githubusercontent.com/90660885/175838224-1d7832e0-88ff-4536-8b16-de83bc224377.png)
 
 ### Tela - Pets
 
 A tela de incluir e editar pets
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/incluireeditarpet.png)
+![image](https://user-images.githubusercontent.com/90660885/175838240-2ad38a2c-644e-407c-b031-ce66e1b57d65.png)
 
-### Tela - Sobre
+Editar
+![image](https://user-images.githubusercontent.com/90660885/175838264-6fae51ed-f947-4ed2-bc5d-070219bd0e2c.png)
 
-A tela sobre a 
+Detalhes
+![image](https://user-images.githubusercontent.com/90660885/175838283-1090a428-7abc-4d13-83a2-d07ede54cf48.png)
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/blob/main/docs/img/Sobre.png)
+
+
+
 
 
 

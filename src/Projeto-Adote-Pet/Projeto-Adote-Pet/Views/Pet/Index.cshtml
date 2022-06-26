@@ -78,16 +78,8 @@
         <tr>
             <td>
 
-               @if (@item.Foto != null || @item.Foto == "")                
-                {
-                    <img src="~/fotos/@item.Foto" class="img-thumbnail" width="200" asp-append-version="true" />
+                <img src="~/fotos/@item.Foto" class="img-thumbnail" width="200" asp-append-version="true" />
                     @item.Pstatus
-                }
-                else
-                {
-                    <img src="~/fotos/image001.png" class="img-thumbnail" width="200" asp-append-version="true" />
-                    @item.Pstatus
-                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Especie)

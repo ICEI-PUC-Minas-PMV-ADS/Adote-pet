@@ -239,6 +239,10 @@ namespace Projeto_Adote_Pet.Controllers
                     return true;
                 case "image/jpg":
                     return true;
+                case "image/gif":
+                    return true;
+                case "image/webp":
+                    return true;
                 default:
                     return false;
                     break;

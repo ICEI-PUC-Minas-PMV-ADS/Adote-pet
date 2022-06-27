@@ -74,12 +74,20 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model) 
+{
         <tr>
             <td>
-
-                <img src="~/fotos/@item.Foto" class="img-thumbnail" width="200" asp-append-version="true" />
-                    @item.Pstatus
+                @if (@item.Foto != null || @item.Foto == "")                
+                {
+                    <img src="~/fotos/@item.Foto" class="img-thumbnail" width="150" asp-append-version="true" />
+                    @item.Nome
+                }
+                else
+                {
+                    <img src="~/fotos/image001.png" class="rounded-circle" width="150" asp-append-version="true" />
+                    @item.Nome
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Especie)

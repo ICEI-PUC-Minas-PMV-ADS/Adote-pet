@@ -154,7 +154,7 @@ namespace Projeto_Adote_Pet.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto,UsuarioCpf")] PetModel petModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Idanimal,Especie,Sexo,Raca,Idade,Porte,Nome,Cor,Cidade,Estado,Descricao,Pstatus,Foto,UsuarioCpf")] PetModel petModel, IFormFile anexo)
         {
             if (id != petModel.Idanimal)
             {
@@ -165,6 +165,12 @@ namespace Projeto_Adote_Pet.Controllers
             {
                 try
                 {
+                    if (!ValidaImagem(anexo))
+                        return View(petModel);
+
+                    var nome = SalvarArquivo(anexo);
+                    petModel.Foto = nome;
+
                     _context.Update(petModel);
                     await _context.SaveChangesAsync();
                 }
@@ -231,13 +237,13 @@ namespace Projeto_Adote_Pet.Controllers
         {
             switch (anexo.ContentType)
             {
-                case "image/jpeg":
+                case "image/jpg":
                     return true;
                 case "image/bmp":
                     return true;
                 case "image/png":
                     return true;
-                case "image/jpg":
+                case "image/jpeg":
                     return true;
                 case "image/gif":
                     return true;

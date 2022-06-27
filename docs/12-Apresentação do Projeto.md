@@ -6,7 +6,8 @@ Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do proje
 
 ## Título do Projeto
 
-Nome e marca do projeto
+![image](https://user-images.githubusercontent.com/90660885/175844356-c5ac937f-c0c1-47a2-be45-6e25dbf8477f.png)
+
 
 ## Identidade Visual (Marca, Design)
 

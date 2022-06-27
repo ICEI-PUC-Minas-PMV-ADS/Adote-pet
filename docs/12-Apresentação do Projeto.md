@@ -4,6 +4,9 @@
 
 Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
 
+[AdotePet-Apresentacao.pptx](https://github.com/ICEI-PUC-Minas-PMV-ADS/Adote-pet/files/8988135/AdotePet-Apresentacao.pptx)
+
+
 ## Título do Projeto
 
 ![image](https://user-images.githubusercontent.com/90660885/175844356-c5ac937f-c0c1-47a2-be45-6e25dbf8477f.png)
